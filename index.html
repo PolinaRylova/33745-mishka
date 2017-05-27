@@ -6,7 +6,46 @@
   </head>
   <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+    <header class="page-header">
+      <div class="logo">MISHKA</div>
+      <nav class="main-nav"><!-- main-nav--open для открытого состояния меню -->
+	    <span class="main-nav__toggle">
+	      <span></span>
+	    </span>
+	    <div class="main-nav__wrapper">
+      	  <ul class="main-nav__list">
+      	    <li class="main-nav__item">
+      	  	  <form action="/echo" method="get">
+                <input type="search" name="search" class="main-nav__search-text" value="Поиск по сайту">
+                <input type="submit" name="submit" class="main-nav__search-submit" value="🔍">
+              </form>
+      	  	</li>
+      	  	<li class="main-nav__item">
+      	  		<a class="main-nav__link main-nav__link--big" href="">
+      	  		  <span class="main-nav__cart-icon"></span>Корзина: пока пуста
+      	  		</a>
+      	  	</li>
+      	  	<li class="main-nav__item">
+      	  		<a class="main-nav__link main-nav__link--big" href="">Каталог товаров</a>
+      	  	</li>
+      	  	<li class="main-nav__item">
+      	  		<a class="main-nav__link main-nav__link--big" href="">Вязание на заказ</a>
+      	  	</li>
+      	  	<li class="main-nav__item">
+      	  		<a class="main-nav__link" href="">Новые поступления</a>
+      	  	</li>
+      	  	<li class="main-nav__item">
+      	  		<a class="main-nav__link" href="">Распродажа</a>
+      	  	</li>
+      	  	<li class="main-nav__item">
+      	  		<span>Бесплатная доставка по России</span>
+      	  	</li>
+      	  </ul>
+        </div>
+      </nav> 
+    </header>
+
+    <!-- <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p> -->
 
   </body>
 </html>
