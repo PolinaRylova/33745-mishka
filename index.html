@@ -15,7 +15,7 @@
 	    <div class="main-nav__wrapper">
       	  <ul class="main-nav__list">
       	    <li class="main-nav__item">
-      	  	  <form action="/echo" method="get">
+      	  	  <form class="main-nav__search-form" action="/echo" method="get">
                 <input type="search" name="search" class="main-nav__search-text" value="Поиск по сайту">
                 <input type="submit" name="submit" class="main-nav__search-submit" value="🔍">
               </form>
@@ -83,7 +83,55 @@
     </sectoin>
 
     <sectoin class="about-us">
-    	<h2>Коротко о нас</h2>
+      <h2 class="about-us__title">Коротко о нас</h2>
+      <ul class="about-us__advantages-list">
+        <li class="about-us__advantages-item">
+          <img class="about-us__advantages-img" src="http://placehold.it/25x25" width="" height="" alt="">
+          <p class="about-us__advantages-text">Экологически чистые материалы</p>
+        </li>
+        <li class="about-us__advantages-item">
+          <img class="about-us__advantages-img" src="http://placehold.it/25x25" width="" height="" alt="">
+          <p class="about-us__advantages-text">Скандинавский стиль</p>
+        </li>
+        <li class="about-us__advantages-item">
+          <img class="about-us__advantages-img" src="http://placehold.it/25x25" width="" height="" alt="">
+          <p class="about-us__advantages-text">Увеличивает лайки на фотографиях</p>
+        </li>
+        <li class="about-us__advantages-item">
+          <img class="about-us__advantages-img" src="http://placehold.it/25x25" width="" height="" alt="">
+          <p class="about-us__advantages-text">Связано вручную с любовью и умилением</p>
+        </li>
+        <li class="about-us__advantages-item">
+          <img class="about-us__advantages-img" src="http://placehold.it/25x25" width="" height="" alt="">
+          <p class="about-us__advantages-text">Поддержка отечественного производителя</p>
+        </li>
+        <li class="about-us__advantages-item">
+          <img class="about-us__advantages-img" src="http://placehold.it/25x25" width="" height="" alt="">
+          <p class="about-us__advantages-text">Поставляется в подарочной упаковке</p>
+        </li>
+      </ul>
+      <div class="reviews">
+        <h2 class="reviews__title">Отзывы</h2>	
+        <div class="reviews__slider">
+          <ul class="reviews__list">
+            <li class="reviews__item">
+              <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+              <div class="reviews__author"><b>Анастасия Красильникова</b></div>
+              <small><a href="mailto:@misssssiskras">@misssssiskras</a></small>
+            </li>
+            <!--<li class="reviews__item">
+              <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+              <div class="reviews__author"><b>Анастасия Красильникова</b></div>
+              <small><a href="mailto:@misssssiskras">@misssssiskras</a></small>
+            </li>-->
+          </ul>
+        </div>
+        <div class="reviews__arrows">       
+          <span class="reviews__arrow  reviews__arrow‐prev">Prew</span>
+          <span class="reviews__arrow  reviews__arrow‐next">Next</span>
+        </div>
+        <button type="button" class="btn bth-write" onclick="">Написать</button>
+      </div>
     </sectoin>
 
     <sectoin class="contacts">
