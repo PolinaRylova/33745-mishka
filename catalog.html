@@ -7,118 +7,85 @@
   <body>
 
     <header class="page-header">
-      <div class="logo logo--page-header">
+      <div class="logo">
         <a class="logo__link" href="index.html">MISHKA</a>
       </div>
-      <nav class="main-nav"><!-- main-nav--open для открытого состояния меню -->
-	    <span class="main-nav__toggle">
-	      <span></span>
-	    </span>
-	    <div class="main-nav__wrapper">
-      	  <ul class="main-nav__list">
-      	    <li class="main-nav__item">
-      	  	  <form class="main-nav__search-form" action="/echo" method="get">
-                <input type="search" name="search" class="main-nav__search-text" value="Поиск по сайту">
-                <input type="submit" name="submit" class="main-nav__search-submit" value="🔍">
-              </form>
-      	  	</li>
-      	  	<li class="main-nav__item">
-      	  		<a class="main-nav__link main-nav__link--big" href="">
-      	  		  <span class="main-nav__cart-icon"></span>Корзина: пока пуста
-      	  		</a>
-      	  	</li>
-      	  	<li class="main-nav__item">
-      	  		<a class="main-nav__link main-nav__link--big" href="">Каталог товаров</a>
-      	  	</li>
-      	  	<li class="main-nav__item">
-      	  		<a class="main-nav__link main-nav__link--big" href="">Вязание на заказ</a>
-      	  	</li>
-      	  	<li class="main-nav__item">
-      	  		<a class="main-nav__link" href="">Новые поступления</a>
-      	  	</li>
-      	  	<li class="main-nav__item">
-      	  		<a class="main-nav__link" href="">Распродажа</a>
-      	  	</li>
-      	  	<li class="main-nav__item">
-      	  		<span>Бесплатная доставка по России</span>
-      	  	</li>
-      	  </ul>
-        </div>
-      </nav> 
+      <nav class="main-nav">
+        <span class="main-nav__toggle">Open menu</span>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--big">Каталог товаров</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="form.html" class="main-nav__link main-nav__link--big">Вязание на заказ</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="search.html" class="main-nav__link main-nav__link--big main-nav__link--src">Поиск по сайту</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="cart.html" class="main-nav__link main-nav__link--big main-nav__link--cart">Корзина: пока пуста</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
-    <sectoin class="product">
-      <h1 class="product__title">Каталог товаров</h1>
-    </sectoin>
-
     <section class="catalog">
-      <ul clas="catalog__list">
+      <h1 class="catalog__title">Каталог товаров</h1>
+      <ul class="catalog__list">
         <li class="catalog__item">
           <a class="catalog__link" href="product-desc.html">
-        	<img class="catalog__img" src="http://placehold.it/200x100" width="" height="" alt="Зайчик-попрыгайчик"><br>
-        	<b>Зайчик-попрыгайчик</b><br>
-        	<small>Рост 30 см, вес 200 г</small>
+        	  <img class="catalog__img" src="http://placehold.it/200x100" width="200" height="100" alt="Зайчик-попрыгайчик"><br>
+        	  Зайчик-попрыгайчик<br>
+        	  Рост 30 см, вес 200 г
           </a>
           <div class="catalog__buy-block">
-            <span class="price"><b>1200 руб.</b></span>
-            <button type="button" class="bth-open-modal-order">Заказать</button>
+            <span class="price">1200 руб.</span>
+            <a href="cart.html" class="bth-open-modal-order">Заказать</a>
           </div>
         </li>
         <li class="catalog__item">
           <a class="catalog__link" href="product-desc.html">
-        	<img class="catalog__img" src="http://placehold.it/200x100" width="" height="" alt="Корзинка для белья"><br>
-        	<b>Корзинка для белья</b><br>
-        	<small>Диаметр 15 см, высота 10 см</small>
+        	  <img class="catalog__img" src="http://placehold.it/200x100" width="200" height="100" alt="Корзинка для белья"><br>
+        	  Корзинка для белья<br>
+        	  Диаметр 15 см, высота 10 см
           </a>
           <div class="catalog__buy-block">
-            <span class="price"><b>690 руб.</b></span>
-            <button type="button" class="bth-open-modal-order">Заказать</button>
+            <span class="price">690 руб.</span>
+            <a href="cart.html" class="bth-open-modal-order">Заказать</a>
           </div>
         </li>
         <li class="catalog__item">
           <a class="catalog__link" href="product-desc.html">
-        	<img class="catalog__img" src="http://placehold.it/200x100" width="" height="" alt="Большая корзинка для игрушек"><br>
-        	<b>Большая корзинка для игрушек</b><br>
-        	<small>Диаметр 30 см, высота 30 см</small>
+        	  <img class="catalog__img" src="http://placehold.it/200x100" width="200" height="100" alt="Большая корзинка для игрушек"><br>
+        	  Большая корзинка для игрушек<br>
+        	  Диаметр 30 см, высота 30 см
           </a>
           <div class="catalog__buy-block">
-            <span class="price"><b>1500 руб.</b></span>
-            <button type="button" class="bth-open-modal-order">Заказать</button>
+            <span class="price">1500 руб.</span>
+            <a href="cart.html" class="bth-open-modal-order">Заказать</a>
           </div>
         </li>
       </ul>
       <div class="video-block">
-      	<div class="video-block__icon">
-      	  <img src="http://placehold.it/30x30" width="" height="" alt="Иконка видео">
-      	</div>
-      	<p class="video-block__title"><b>Процесс производства</b></p>
+      	<p class="video-block__title">Процесс производства</p>
       	<div class="video-block__video-container">
-      	  <video width="200" height="150" controls preload="metadata" src="" poster="http://placehold.it/200x100">
+      	  <video width="200" height="150" controls preload="metadata" poster="http://placehold.it/200x100"></video>
       	</div>
-      	<p class="video-block__desc"><small>По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</small></p>
-      	<button type="button" class="bth-open-modal-order">СДЕЛАТЬ ЗАКАЗ</button>
+      	<p class="video-block__desc">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+      	<a href="cart.html" class="bth-open-modal-order">СДЕЛАТЬ ЗАКАЗ</a>
       </div>
     </section>
 
     <footer class="page-footer">
-      <!-- <div class="logo logo--page-footer">
-             <a class="logo__link" ref="index.html">MISHKA</a>
-           </div> - скрыт на мобильной версии -->
+      <div class="logo" hidden>MISHKA</div>
       <div class="page-footer__social-links">
-        <a class="social‐link social‐link‐‐in" href="https://www.instagram.com/htmlacademy">
-          <img src="http://placehold.it/20x20" width="" height="" title="Мы в Инстаграме">
-        </a>
-      	<a class="social‐link social‐link‐‐fb" href="https://www.facebook.com/htmlacademy">
-      	  <img src="http://placehold.it/20x20" width="" height="" title="Мы в Фейсбуке">
-      	</a>
-      	<a class="social‐link  social‐link‐‐vk" href="https://www.twitter.com/htmlacademy_ru">
-      	  <img src="http://placehold.it/20x20" width="" height="" title="Мы в Твиттере">
-      	</a> 
+        <a href="https://www.instagram.com/htmlacademy" class="social‐link social‐link‐‐in">Мы в Инстаграме</a>
+        <a href="https://www.facebook.com/htmlacademy" class="social‐link social‐link‐‐fb">Мы в Фейсбуке</a>
+        <a href="https://www.twitter.com/htmlacademy_ru" class="social‐link social‐link‐‐vk">Мы в Твиттере</a> 
       </div>
       <div class="page‐footer__copyright">
-        Разработано: <a class="btn page‐footer__copyright‐link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img src="http://placehold.it/15x15" width="" height="" title="Продвинутый HTML и CSS">
-        </a>     
+        Разработано: <a href="https://www.htmlacademy.ru/intensive/adaptive" class="btn page‐footer__copyright‐link">Продвинутый HTML и CSS</a>     -->
+      </div>
     </footer>
 
     <div class="modal-content-order modal-content-show">
@@ -126,19 +93,19 @@
         <fieldset class="order-form__fieldset order-form__fieldset-user">
           <legend class="order-form__legend order-form__legend-user">ФИО</legend>
 
-          <label for="user-first-name"><b>Имя:</b></label>
+          <label for="user-first-name">Имя:</label>
           <input type="text" name="user-first-name" id="user-first-name" placeholder="Введите ваше имя*" required>
 
-          <label for="user-last-name"><b>Фамилия:</b></label>
+          <label for="user-last-name">Фамилия:</label>
           <input type="text" name="user-last-name" id="user-last-name" placeholder="Укажите фамилию*" required>
 
-          <label for="user-patronymic-name"><b>Отчество:</b></label>
+          <label for="user-patronymic-name">Отчество:</label>
           <input type="text" name="user-patronymic-name" id="user-patronymic-name" placeholder="Отчество, если желаете">
         </fieldset>
 
         <fieldset class="order-form__fieldset order-form__fieldset-tel">
           <legend class="order-form__legend order-form__legend-user">ТЕЛ</legend>
-          <input type="tel" name="tel" pattern="+7-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="+7 XXX XX XX*" required>
+          <input type="tel" name="tel" pattern="\+7\-[0-9]{3}\-[0-9]{3}\-[0-9]{2}\-[0-9]{2}" placeholder="+7 XXX XXX XX XX*" required>
         </fieldset>
 
         <fieldset class="order-form__fieldset order-form__fieldset-email">
@@ -151,10 +118,10 @@
           <textarea name="letter" rows="4" placeholder="Опишите все ваши пожелания к заказу"></textarea>
         </fieldset>
 
-        <span><small>*Поля обязательные для заполнения</small></span>
+        <span>*Поля обязательные для заполнения</span>
 
         <button type="submit" class="btn bth-send-order">ОТПРАВИТЬ ЗАКАЗ</button>
-        <button type="button" class="modal-close-btn" title="Close">Закрыть окно</button>         
+        <button type="button" class="modal-close-btn" title="Close">Закрыть окно</button>
       </form>
     </div>
 

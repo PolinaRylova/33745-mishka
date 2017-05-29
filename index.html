@@ -5,175 +5,128 @@
     <title>Мишка</title>
   </head>
   <body>
-
     <header class="page-header">
-      <div class="logo logo--page-header">MISHKA</div>
-      <nav class="main-nav"><!-- main-nav--open для открытого состояния меню -->
-	    <span class="main-nav__toggle">
-	      <span></span>
-	    </span>
-	    <div class="main-nav__wrapper">
-      	  <ul class="main-nav__list">
-      	    <li class="main-nav__item">
-      	  	  <form class="main-nav__search-form" action="/echo" method="get">
-                <input type="search" name="search" class="main-nav__search-text" value="Поиск по сайту">
-                <input type="submit" name="submit" class="main-nav__search-submit" value="🔍">
-              </form>
-      	  	</li>
-      	  	<li class="main-nav__item">
-      	  		<a class="main-nav__link main-nav__link--big" href="">
-      	  		  <span class="main-nav__cart-icon"></span>Корзина: пока пуста
-      	  		</a>
-      	  	</li>
-      	  	<li class="main-nav__item">
-      	  		<a class="main-nav__link main-nav__link--big" href="">Каталог товаров</a>
-      	  	</li>
-      	  	<li class="main-nav__item">
-      	  		<a class="main-nav__link main-nav__link--big" href="">Вязание на заказ</a>
-      	  	</li>
-      	  	<li class="main-nav__item">
-      	  		<a class="main-nav__link" href="">Новые поступления</a>
-      	  	</li>
-      	  	<li class="main-nav__item">
-      	  		<a class="main-nav__link" href="">Распродажа</a>
-      	  	</li>
-      	  	<li class="main-nav__item">
-      	  		<span>Бесплатная доставка по России</span>
-      	  	</li>
-      	  </ul>
-        </div>
-      </nav> 
+      <div class="logo">MISHKA</div>
+      <nav class="main-nav">
+        <span class="main-nav__toggle">Open menu</span>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--big">Каталог товаров</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="form.html" class="main-nav__link main-nav__link--big">Вязание на заказ</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="search.html" class="main-nav__link main-nav__link--big main-nav__link--src">Поиск по сайту</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="cart.html" class="main-nav__link main-nav__link--big main-nav__link--cart">Корзина: пока пуста</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
-    <sectoin class="product">
+    <section class="product">
       <h1 class="product__title">Милые штуки ручной работы для дома</h1>
       <ul class="product__categories-list">
-      	<li class="product__categories-item">
-      	  <a class="product__categories-link" href="">Предметы интерьера</a>	
-      	</li>
-      	<li class="product__categories-item">
-      	  <a class="product__categories-link" href="">Детские игрушки</a>	
-      	</li>
+        <li class="product__categories-item">
+          <a href="catalog-interior.html" class="product__categories-link">Предметы интерьера</a>
+        </li>
+        <li class="product__categories-item">
+          <a href="catalog-toys.html" class="product__categories-link">Детские игрушки</a>
+        </li>
       </ul>
-    </sectoin>
+    </section>
 
-    <sectoin class="popular-product">
+    <section class="popular-product">
       <h2 class="popular-product__title">Вязаные корзинки</h2>
       <div class="popular-product-flag">
-      	<span>Товар недели</span>
+        <span>Товар недели</span>
       </div>
       <p class="popular-product__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трёх размерах</p>
       <table class="popular-product__definition">
-      	<tr>
-      	  <th class="popular-product__param-color">Цвет:</th>
-      	  <td class="popular-product__value-color">&quot;Тиффани&quot;/серый</td>
-      	</tr>
-      	<tr>
-      	  <th class="popular-product__param-diameter">Диаметр:</th>
-      	  <td class="popular-product__value-diameter">25 см</td>
-      	</tr>
-      	<tr>
-      	  <th class="popular-product__param-hight">Высота:</th>
-      	  <td class="popular-product__value-hight">15 см</td>
-      	</tr>
+        <tr>
+          <th class="popular-product__param-color">Цвет:</th>
+          <td class="popular-product__value-color">&quot;Тиффани&quot;/серый</td>
+        </tr>
+        <tr>
+          <th class="popular-product__param-diameter">Диаметр:</th>
+          <td class="popular-product__value-diameter">25 см</td>
+        </tr>
+        <tr>
+          <th class="popular-product__param-hight">Высота:</th>
+          <td class="popular-product__value-hight">15 см</td>
+        </tr>
       </table>
-      <img src="http://placehold.it/150x100" width="" height="" alt="Вязаные корзинки">
-      <div class="popular-product__price"><b>Цена: <span>990</span> руб.</b></div>
-      <button type="button" class="btn bth-open-modal-order">Заказать</button>
-    </sectoin>
+      <img src="http://placehold.it/150x100" width="150" height="100" alt="Вязаные корзинки">
+      <div class="popular-product__price">Цена: <span>990</span> руб.</div>
+      <a href="cart.html" class="btn bth-open-modal-order">Заказать</a>
+    </section>
 
-    <sectoin class="about-us">
+    <section class="about-us">
       <h2 class="about-us__title">Коротко о нас</h2>
       <ul class="about-us__advantages-list">
-        <li class="about-us__advantages-item">
-          <img class="about-us__advantages-img" src="http://placehold.it/25x25" width="" height="" alt="">
-          <p class="about-us__advantages-text">Экологически чистые материалы</p>
-        </li>
-        <li class="about-us__advantages-item">
-          <img class="about-us__advantages-img" src="http://placehold.it/25x25" width="" height="" alt="">
-          <p class="about-us__advantages-text">Скандинавский стиль</p>
-        </li>
-        <li class="about-us__advantages-item">
-          <img class="about-us__advantages-img" src="http://placehold.it/25x25" width="" height="" alt="">
-          <p class="about-us__advantages-text">Увеличивает лайки на фотографиях</p>
-        </li>
-        <li class="about-us__advantages-item">
-          <img class="about-us__advantages-img" src="http://placehold.it/25x25" width="" height="" alt="">
-          <p class="about-us__advantages-text">Связано вручную с любовью и умилением</p>
-        </li>
-        <li class="about-us__advantages-item">
-          <img class="about-us__advantages-img" src="http://placehold.it/25x25" width="" height="" alt="">
-          <p class="about-us__advantages-text">Поддержка отечественного производителя</p>
-        </li>
-        <li class="about-us__advantages-item">
-          <img class="about-us__advantages-img" src="http://placehold.it/25x25" width="" height="" alt="">
-          <p class="about-us__advantages-text">Поставляется в подарочной упаковке</p>
-        </li>
+        <li class="about-us__advantages-item about-us__advantages-item--eco">Экологически чистые материалы</li>
+        <li class="about-us__advantages-item about-us__advantages-item--style">Скандинавский стиль</li>
+        <li class="about-us__advantages-item about-us__advantages-item--like">Увеличивает лайки на фотографиях</li>
+        <li class="about-us__advantages-item about-us__advantages-item--handmade">Связано вручную с любовью и умилением</li>
+        <li class="about-us__advantages-item about-us__advantages-item--native">Поддержка отечественного производителя</li>
+        <li class="about-us__advantages-item about-us__advantages-item--gift">Поставляется в подарочной упаковке</li>
       </ul>
-      <div class="reviews">
-        <h2 class="reviews__title">Отзывы</h2>	
-        <div class="reviews__slider">
-          <ul class="reviews__list">
-            <li class="reviews__item">
-              <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-              <div class="reviews__author"><b>Анастасия Красильникова</b></div>
-              <small><a href="https://www.twitter.com/misssssiskras">@misssssiskras</a></small>
+      <div class="reviews">
+        <h2 class="reviews__title">Отзывы</h2>
+        <div class="reviews__slider">
+          <ul class="reviews__list">
+            <li class="reviews__item">
+              <p class="reviews__text">
+              Я молодая мама, но всё равно фотографии не набирали лайков,
+              как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке,
+              и мои фотографии сразу стали более стильными, а также набирают больше лайков!
+              </p>
+              <div class="reviews__author">Анастасия Красильникова</div>
+              <a href="https://www.twitter.com/misssssiskras">@misssssiskras</a>
             </li>
-            <!--<li class="reviews__item">
-              <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-              <div class="reviews__author"><b>Анастасия Красильникова</b></div>
-              <small><a href="mailto:@misssssiskras">@misssssiskras</a></small>
-            </li>-->
           </ul>
         </div>
-        <div class="reviews__arrows">       
-          <span class="reviews__arrow  reviews__arrow‐prev">Prew</span>
-          <span class="reviews__arrow  reviews__arrow‐next">Next</span>
+        <div class="reviews__arrows">       
+          <a class="reviews__arrow reviews__arrow‐prev">Prev</a>
+          <a class="reviews__arrow reviews__arrow‐next">Next</a>
         </div>
-        <button type="button" class="btn bth-write-review" onclick="location.href='https://mimimishkashop.ru/reviews.html'">Написать</button>
+        <a href="reviews.html" class="btn bth-write-review">Написать</a>
       </div>
-    </sectoin>
+    </section>
 
-    <sectoin class="contacts">
+    <section class="contacts">
       <h2 class="contacts__title">Контакты</h2>
-      <a class="open-map" href="#">
-      	<img src="http://placehold.it/30x50" width="" height="" alt="">
+      <a href="contacts.html" class="open-map">
+        <img src="http://placehold.it/30x50" width="30" height="50" alt="Наш офис на карте">
       </a>
       <ul class="contacts__list">
-      	<li class="contacts__item contacts__item--email">
-      	  e-mail: <a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
-      	</li>
-      	<li class="contacts__item contacts__item--address">
-      		адрес: г. Санкт-Петербург,<br>
-      		ул. Большая Конюшенная,<br>
-      		д. 19/8, офис 101
-      	</li>
+        <li class="contacts__item contacts__item--email">
+          e-mail: <a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+        </li>
+        <li class="contacts__item contacts__item--address">
+          адрес: г. Санкт-Петербург,<br>
+          ул. Большая Конюшенная,<br>
+          д. 19/8, офис 101
+        </li>
       </ul>
-      <div class="contacts__map">
-        <a class="contacts__map-link" href="">
-          <img src="http://placehold.it/240x360" width="" height="" alt="Наш офис на карте">
-        </a>	
+      <div class="contacts__map" id="yandex-map">
+        <img src="http://placehold.it/240x360" width="240" height="360" alt="Наш офис на карте">
       </div>
-      <button type="button" class="btn bth-write-us" onclick="location.href='https://mimimishkashop.ru/feedback.html'">Напишите нам</button>
-    </sectoin>
-    
+      <a href="feedback.html" class="btn bth-write-us">Напишите нам</a>
+  </section>
+
     <footer class="page-footer">
-      <!-- <div class="logo logo--page-footer">MISHKA</div> - скрыт на мобильной версии -->
+      <div class="logo" hidden>MISHKA</div>
       <div class="page-footer__social-links">
-        <a class="social‐link social‐link‐‐in" href="https://www.instagram.com/htmlacademy">
-          <img src="http://placehold.it/20x20" width="" height="" title="Мы в Инстаграме">
-        </a>
-      	<a class="social‐link social‐link‐‐fb" href="https://www.facebook.com/htmlacademy">
-      	  <img src="http://placehold.it/20x20" width="" height="" title="Мы в Фейсбуке">
-      	</a>
-      	<a class="social‐link  social‐link‐‐vk" href="https://www.twitter.com/htmlacademy_ru">
-      	  <img src="http://placehold.it/20x20" width="" height="" title="Мы в Твиттере">
-      	</a> 
+        <a href="https://www.instagram.com/htmlacademy" class="social‐link social‐link‐‐in">Мы в Инстаграме</a>
+        <a href="https://www.facebook.com/htmlacademy" class="social‐link social‐link‐‐fb">Мы в Фейсбуке</a>
+        <a href="https://www.twitter.com/htmlacademy_ru" class="social‐link social‐link‐‐vk">Мы в Твиттере</a> 
       </div>
       <div class="page‐footer__copyright">
-        Разработано: <a class="btn page‐footer__copyright‐link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img src="http://placehold.it/15x15" width="" height="" title="Продвинутый HTML и CSS">
-        </a>     
+        Разработано: <a href="https://www.htmlacademy.ru/intensive/adaptive" class="btn page‐footer__copyright‐link">Продвинутый HTML и CSS</a>     -->
+      </div>
     </footer>
 
     <div class="modal-content-order modal-content-show">
@@ -181,19 +134,19 @@
         <fieldset class="order-form__fieldset order-form__fieldset-user">
           <legend class="order-form__legend order-form__legend-user">ФИО</legend>
 
-          <label for="user-first-name"><b>Имя:</b></label>
+          <label for="user-first-name">Имя:</label>
           <input type="text" name="user-first-name" id="user-first-name" placeholder="Введите ваше имя*" required>
 
-          <label for="user-last-name"><b>Фамилия:</b></label>
+          <label for="user-last-name">Фамилия:</label>
           <input type="text" name="user-last-name" id="user-last-name" placeholder="Укажите фамилию*" required>
 
-          <label for="user-patronymic-name"><b>Отчество:</b></label>
+          <label for="user-patronymic-name">Отчество:</label>
           <input type="text" name="user-patronymic-name" id="user-patronymic-name" placeholder="Отчество, если желаете">
         </fieldset>
 
         <fieldset class="order-form__fieldset order-form__fieldset-tel">
           <legend class="order-form__legend order-form__legend-user">ТЕЛ</legend>
-          <input type="tel" name="tel" pattern="+7-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="+7 XXX XX XX*" required>
+          <input type="tel" name="tel" pattern="\+7\-[0-9]{3}\-[0-9]{3}\-[0-9]{2}\-[0-9]{2}" placeholder="+7 XXX XXX XX XX*" required>
         </fieldset>
 
         <fieldset class="order-form__fieldset order-form__fieldset-email">
@@ -206,18 +159,13 @@
           <textarea name="letter" rows="4" placeholder="Опишите все ваши пожелания к заказу"></textarea>
         </fieldset>
 
-        <span><small>*Поля обязательные для заполнения</small></span>
+        <span>*Поля обязательные для заполнения</span>
 
         <button type="submit" class="btn bth-send-order">ОТПРАВИТЬ ЗАКАЗ</button>
-        <button type="button" class="modal-close-btn" title="Close">Закрыть окно</button>         
+        <button type="button" class="modal-close-btn" title="Close">Закрыть окно</button>
       </form>
     </div>
 
-    <div class="modal-content-map">
-      <div id="yandex-map"></div>
-      <button type="button" class="modal-close-btn" title="Close">Закрыть карту</button>
-    </div>
-
-    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac0454e273c88c90af7b3b7f59387aa0c7c083850389827b5b2c79f7c7bb3ade3&amp;width=100%25&amp;height=500&amp;id="yandex-map"&amp;lang=ru_RU&amp;scroll=true"></script>
+    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac0454e273c88c90af7b3b7f59387aa0c7c083850389827b5b2c79f7c7bb3ade3&amp;width=100%25&amp;height=500&amp;id=yandex-map&amp;lang=ru_RU&amp;scroll=true"></script>
   </body>
 </html>
