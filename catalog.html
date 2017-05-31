@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Мишка</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 
@@ -32,97 +33,137 @@
     <section class="catalog">
       <h1 class="catalog__title">Каталог товаров</h1>
       <ul class="catalog__list">
-        <li class="catalog__item">
-          <a href="product-desc.html" class="catalog__img-link">
-        	<img class="catalog__img" src="http://placehold.it/200x100" width="200" height="100" alt="Зайчик-попрыгайчик">
+        <li class="catalog-item">
+          <a href="product-desc.html" class="catalog-item__img-link">
+        	  <img class="catalog-item__img" src="http://placehold.it/200x100" width="200" height="100" alt="Зайчик-попрыгайчик">
           </a>
-          <a href="product-desc.html" class="catalog__title-link">Зайчик-попрыгайчик</a>  
-          <p class="catalog__param">Рост 30 см, вес 200 г</p>
-          <div class="catalog__buy-block">
-            <span class="price">1200 руб.</span>
-            <a href="cart.html" class="bth-open-modal-order">Заказать</a>
+          <a href="product-desc.html" class="catalog-item__title-link">Зайчик-попрыгайчик</a>
+          <p class="catalog-item__param">Рост 30 см, вес 200 г</p>
+          <div class="catalog-item__buy">
+            <span class="catalog-item__price">1200 руб.</span>
+            <a href="cart.html" class="btn btn--catalog-item">Заказать</a>
           </div>
         </li>
-        <li class="catalog__item">
-          <a href="product-desc.html" class="catalog__img-link">
-        	<img class="catalog__img" src="http://placehold.it/200x100" width="200" height="100" alt="Корзинка для белья">
+        <li class="catalog-item">
+          <a href="product-desc.html" class="catalog-item__img-link">
+        	  <img class="catalog-item__img" src="http://placehold.it/200x100" width="200" height="100" alt="Корзинка для белья">
           </a>
-          <a href="product-desc.html" class="catalog__title-link">Корзинка для белья</a>
-          <p class="catalog__param">Диаметр 15 см, высота 10 см</p>
-          <div class="catalog__buy-block">
-            <span class="price">690 руб.</span>
-            <a href="cart.html" class="bth-open-modal-order">Заказать</a>
+          <a href="product-desc.html" class="catalog-item__title-link">Корзинка для белья</a>
+          <p class="catalog-item__param">Диаметр 15 см, высота 10 см</p>
+          <div class="catalog-item__buy">
+            <span class="catalog-item__price">690 руб.</span>
+            <a href="cart.html" class="btn btn--catalog-item">Заказать</a>
           </div>
         </li>
-        <li class="catalog__item">
-          <a href="product-desc.html" class="catalog__img-link">
-        	<img class="catalog__img" src="http://placehold.it/200x100" width="200" height="100" alt="Большая корзинка для игрушек">
+        <li class="catalog-item">
+          <a href="product-desc.html" class="catalog-item__img-link">
+        	  <img class="catalog-item__img" src="http://placehold.it/200x100" width="200" height="100" alt="Большая корзинка для игрушек">
           </a>
-          <a href="product-desc.html" class="catalog__title-link">Большая корзинка для игрушек</a>
-          <p class="catalog__param">Диаметр 30 см, высота 30 см</p> 
-          <div class="catalog__buy-block">
-            <span class="price">1500 руб.</span>
-            <a href="cart.html" class="bth-open-modal-order">Заказать</a>
+          <a href="product-desc.html" class="catalog-item__title-link">Большая корзинка для игрушек</a>
+          <p class="catalog-item__param">Диаметр 30 см, высота 30 см</p>
+          <div class="catalog-item__buy">
+            <span class="catalog-item__price">1500 руб.</span>
+            <a href="cart.html" class="btn btn--catalog-item">Заказать</a>
           </div>
         </li>
       </ul>
-      <div class="video-block">
-      	<p class="video-block__title">Процесс производства</p>
-      	<div class="video-block__video-container">
-      	  <video width="200" height="150" controls preload="metadata" poster="http://placehold.it/200x100"></video>
+      <div class="video-container">
+      	<p class="video-container__title">Процесс производства</p>
+      	<div class="video-container__content">
+      	  <video class="video" width="200" height="150" controls preload="metadata" poster="http://placehold.it/200x100"></video>
       	</div>
-      	<p class="video-block__desc">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-      	<a href="cart.html" class="bth-open-modal-order">СДЕЛАТЬ ЗАКАЗ</a>
+      	<p class="video-container__desc">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+      	<a href="cart.html" class="bth btn--video-order">СДЕЛАТЬ ЗАКАЗ</a>
       </div>
     </section>
 
     <footer class="page-footer">
-      <div class="logo" hidden>MISHKA</div>
-      <div class="page-footer__social-links">
-        <a href="https://www.instagram.com/htmlacademy" class="social‐link social‐link‐‐in">Мы в Инстаграме</a>
-        <a href="https://www.facebook.com/htmlacademy" class="social‐link social‐link‐‐fb">Мы в Фейсбуке</a>
-        <a href="https://www.twitter.com/htmlacademy_ru" class="social‐link social‐link‐‐vk">Мы в Твиттере</a> 
+      <div class="logo" hidden>
+        <a class="logo__link" href="index.html">MISHKA</a>
       </div>
-      <div class="page‐footer__copyright">
-        Разработано: <a href="https://www.htmlacademy.ru/intensive/adaptive" class="btn page‐footer__copyright‐link">Продвинутый HTML и CSS</a>     -->
+      <div class="social">
+        <a href="https://www.instagram.com/htmlacademy" class="social__link social__link‐‐in">Мы в Инстаграме</a>
+        <a href="https://www.facebook.com/htmlacademy" class="social__link social__link‐‐fb">Мы в Фейсбуке</a>
+        <a href="https://www.twitter.com/htmlacademy_ru" class="social__link social__link‐‐vk">Мы в Твиттере</a> 
+      </div>
+      <div class="page‐footer__copyright-container">
+        <span class="page-footer__copyright-text">Разработано:</span>
+        <a href="https://www.htmlacademy.ru/intensive/adaptive" class="page‐footer__copyright‐link">Продвинутый HTML и CSS</a>
       </div>
     </footer>
 
-    <div class="modal-content-order modal-content-show">
-      <form action="https://echo.htmlacademy.ru/" method="post">
-        <fieldset class="order-form__fieldset order-form__fieldset-user">
-          <legend class="order-form__legend order-form__legend-user">ФИО</legend>
+    <div class="modal-container">
+      <button type="button" class="btn btn--modal-close">Закрыть</button>
+      <div class="order">
+        <h1 class="order__title">Ваш заказ</h1>
+        <div class="order__product-desc">
+          <img class="order__product-img" src="http://placehold.it/200x100" width="200" height="100" alt="Зайчик-попрыгайчик">
+          <p class="order__product-name">Вязаные корзинки</p>
+          <p class="order__product-param">Диаметр 25 см, высота 15 см</p>
+          <p class="order__product-price">990 руб.</p>
+        </div>
+        <form class="form" action="https://echo.htmlacademy.ru/" method="post">
+          <fieldset class="fieldset">
+            <legend class="legend">Выберите цвет*</legend>
 
-          <label for="user-first-name">Имя:</label>
-          <input type="text" name="user-first-name" id="user-first-name" placeholder="Введите ваше имя*" required>
+            <input id="checkbox-white" type="checkbox" name="color" value="white" class="checkbox-input">
+            <label for="checkbox-white" class="label">Белый</label>
 
-          <label for="user-last-name">Фамилия:</label>
-          <input type="text" name="user-last-name" id="user-last-name" placeholder="Укажите фамилию*" required>
+            <input id="checkbox-gray" type="checkbox" name="color" value="gray" class="checkbox-input" checked>
+            <label for="checkbox-gray" class="label">Серый</label>
 
-          <label for="user-patronymic-name">Отчество:</label>
-          <input type="text" name="user-patronymic-name" id="user-patronymic-name" placeholder="Отчество, если желаете">
-        </fieldset>
+            <input id="checkbox-tiffany" type="checkbox" name="color" value="tiffany" class="checkbox-input" checked>
+            <label for="checkbox-tiffany" class="label">&quot;Тиффани&quot;</label>
 
-        <fieldset class="order-form__fieldset order-form__fieldset-tel">
-          <legend class="order-form__legend order-form__legend-user">ТЕЛ</legend>
-          <input type="tel" name="tel" pattern="\+7\-[0-9]{3}\-[0-9]{3}\-[0-9]{2}\-[0-9]{2}" placeholder="+7 XXX XXX XX XX*" required>
-        </fieldset>
+            <input id="checkbox-black" type="checkbox" name="color" value="black" class="checkbox-input">
+            <label for="checkbox-black" class="">Чёрный</label>
 
-        <fieldset class="order-form__fieldset order-form__fieldset-email">
-          <legend class="order-form__legend order-form__legend-emal">E-MAIL</legend>
-          <input type="email" name="email" placeholder="Ваш Email*" required>
-        </fieldset>
+            <input id="checkbox-pink" type="checkbox" name="color" value="pink" class="checkbox-input">
+            <label for="checkbox-pink" class="label">Розовый</label>
 
-        <fieldset class="order-form__fieldset order-form__fieldset-text">
-          <legend class="order-form__legend order-form__legend-text">ДОП</legend>
-          <textarea name="letter" rows="4" placeholder="Опишите все ваши пожелания к заказу"></textarea>
-        </fieldset>
+            <input id="checkbox-orange" type="checkbox" name="color" value="orange" class="checkbox-input">
+            <label for="checkbox-orange" class="label">Оранжевый</label>
+          </fieldset>
+          <fieldset class="fieldset">
+            <label for="product-num" class="label">Укажите количество*</label>
+            <input id="product-num" type="number" name="ticketNum" class="num-input" value="1">
+            <p class="order__all-price-text">Общая сумма заказа:
+              <span class="order__all-price-sum">990 руб.</span>
+            </p>
+          </fieldset>
+          <fieldset class="fieldset">
+            <legend class="legend">ФИО</legend>
 
-        <span>*Поля обязательные для заполнения</span>
+            <label for="user-first-name" class="label">Имя:</label>
+            <input id="user-first-name" type="text" name="user-first-name" class="text-input" placeholder="Введите ваше имя*" required>
 
-        <button type="submit" class="btn bth-send-order">ОТПРАВИТЬ ЗАКАЗ</button>
-        <button type="button" class="modal-close-btn" title="Close">Закрыть окно</button>
-      </form>
+            <label for="user-last-name" class="label">Фамилия:</label>
+            <input id="user-last-name" type="text" name="user-last-name" class="text-input" placeholder="Укажите фамилию*" required>
+
+            <label for="user-patronymic-name" class="label">Отчество:</label>
+            <input id="user-patronymic-name"type="text" name="user-patronymic-name" class="text-input" placeholder="Отчество, если желаете">
+          </fieldset>
+
+          <fieldset class="fieldset">
+            <legend class="legend">ТЕЛ</legend>
+            <input type="tel" name="tel" class="tel-input" pattern="\+7\-[0-9]{3}\-[0-9]{3}\-[0-9]{2}\-[0-9]{2}" placeholder="+7 XXX XXX XX XX*" required>
+          </fieldset>
+
+          <fieldset class="fieldset">
+            <legend class="legend">E-MAIL</legend>
+            <input type="email" name="email" class="email-input" placeholder="Ваш Email*" required>
+          </fieldset>
+
+          <fieldset class="fieldset">
+            <legend class="legend">ДОП</legend>
+            <textarea name="textarea" rows="4" class="textarea" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          </fieldset>
+
+          <span class="note">*Поля обязательные для заполнения</span>
+
+          <button type="submit" class="btn btn--send-order">ОТПРАВИТЬ ЗАКАЗ</button>
+        </form>
+      </div>
     </div>
 
   </body>
