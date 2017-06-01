@@ -35,7 +35,7 @@
       <div class="catalog__container">
         <div class="catalog-item">
           <a href="/product-info" class="catalog-item__link">
-            <figure>
+            <figure class="catalog-item__link-inner">
               <img class="catalog-item__img" src="http://placehold.it/200x100" width="200" height="100" alt="Зайчик-попрыгайчик">
               <figcaption class="catalog-item__name">Зайчик-попрыгайчик</figcaption>
             </figure>
@@ -109,60 +109,60 @@
           <p class="order__product-price">990 руб.</p>
         </div>
         <form class="form" action="https://echo.htmlacademy.ru/" method="post">
-          <fieldset class="fieldset">
-            <legend class="legend">Выберите цвет*</legend>
+          <fieldset class="form__fieldset">
+            <legend class="form__legend">Выберите цвет*</legend>
 
-            <input id="checkbox-white" type="checkbox" name="color" value="white" class="checkbox-input">
-            <label for="checkbox-white" class="label">Белый</label>
+            <input id="checkbox-white" type="checkbox" name="color" value="white" class="form__checkbox-input">
+            <label for="checkbox-white" class="form__label">Белый</label>
 
-            <input id="checkbox-gray" type="checkbox" name="color" value="gray" class="checkbox-input" checked>
-            <label for="checkbox-gray" class="label">Серый</label>
+            <input id="checkbox-gray" type="checkbox" name="color" value="gray" class="form__checkbox-input" checked>
+            <label for="checkbox-gray" class="form__label">Серый</label>
 
-            <input id="checkbox-tiffany" type="checkbox" name="color" value="tiffany" class="checkbox-input" checked>
-            <label for="checkbox-tiffany" class="label">&quot;Тиффани&quot;</label>
+            <input id="checkbox-tiffany" type="checkbox" name="color" value="tiffany" class="form__checkbox-input" checked>
+            <label for="checkbox-tiffany" class="form__label">&quot;Тиффани&quot;</label>
 
-            <input id="checkbox-black" type="checkbox" name="color" value="black" class="checkbox-input">
-            <label for="checkbox-black" class="">Чёрный</label>
+            <input id="checkbox-black" type="checkbox" name="color" value="black" class="form__checkbox-input">
+            <label for="checkbox-black" class="form__label">Чёрный</label>
 
-            <input id="checkbox-pink" type="checkbox" name="color" value="pink" class="checkbox-input">
-            <label for="checkbox-pink" class="label">Розовый</label>
+            <input id="checkbox-pink" type="checkbox" name="color" value="pink" class="form__checkbox-input">
+            <label for="checkbox-pink" class="form__label">Розовый</label>
 
-            <input id="checkbox-orange" type="checkbox" name="color" value="orange" class="checkbox-input">
-            <label for="checkbox-orange" class="label">Оранжевый</label>
+            <input id="checkbox-orange" type="checkbox" name="color" value="orange" class="form__checkbox-input">
+            <label for="checkbox-orange" class="form__label">Оранжевый</label>
           </fieldset>
-          <fieldset class="fieldset">
-            <label for="product-num" class="label">Укажите количество*</label>
-            <input id="product-num" type="number" name="ticketNum" class="num-input" value="1">
+          <fieldset class="form__fieldset">
+            <label for="product-num" class="form__label">Укажите количество*</label>
+            <input id="product-num" type="number" name="ticketNum" class="form__num-input" value="1">
             <p class="order__all-price-text">Общая сумма заказа:
               <span class="order__all-price-sum">990 руб.</span>
             </p>
           </fieldset>
-          <fieldset class="fieldset">
-            <legend class="legend">ФИО</legend>
+          <fieldset class="form__fieldset">
+            <legend class="form__legend">ФИО</legend>
 
-            <label for="user-first-name" class="label">Имя:</label>
-            <input id="user-first-name" type="text" name="user-first-name" class="text-input" placeholder="Введите ваше имя*" required>
+            <label for="user-first-name" class="form__label">Имя:</label>
+            <input id="user-first-name" type="text" name="user-first-name" class="form__text-input" placeholder="Введите ваше имя*" required>
 
-            <label for="user-last-name" class="label">Фамилия:</label>
-            <input id="user-last-name" type="text" name="user-last-name" class="text-input" placeholder="Укажите фамилию*" required>
+            <label for="user-last-name" class="form__label">Фамилия:</label>
+            <input id="user-last-name" type="text" name="user-last-name" class="form__text-input" placeholder="Укажите фамилию*" required>
 
-            <label for="user-patronymic-name" class="label">Отчество:</label>
-            <input id="user-patronymic-name"type="text" name="user-patronymic-name" class="text-input" placeholder="Отчество, если желаете">
+            <label for="user-patronymic-name" class="form__label">Отчество:</label>
+            <input id="user-patronymic-name"type="text" name="user-patronymic-name" class="form__text-input" placeholder="Отчество, если желаете">
           </fieldset>
 
-          <fieldset class="fieldset">
-            <legend class="legend">ТЕЛ</legend>
-            <input type="tel" name="tel" class="tel-input" pattern="\+7\-[0-9]{3}\-[0-9]{3}\-[0-9]{2}\-[0-9]{2}" placeholder="+7 XXX XXX XX XX*" required>
+          <fieldset class="form__fieldset">
+            <legend class="form__legend">ТЕЛ</legend>
+            <input type="tel" name="tel" class="form__tel-input" pattern="\+7\-[0-9]{3}\-[0-9]{3}\-[0-9]{2}\-[0-9]{2}" placeholder="+7 XXX XXX XX XX*" required>
           </fieldset>
 
-          <fieldset class="fieldset">
-            <legend class="legend">E-MAIL</legend>
-            <input type="email" name="email" class="email-input" placeholder="Ваш Email*" required>
+          <fieldset class="form__fieldset">
+            <legend class="form__legend">E-MAIL</legend>
+            <input type="email" name="email" class="form__email-input" placeholder="Ваш Email*" required>
           </fieldset>
 
-          <fieldset class="fieldset">
-            <legend class="legend">ДОП</legend>
-            <textarea name="textarea" rows="4" class="textarea" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          <fieldset class="form__fieldset">
+            <legend class="form__legend">ДОП</legend>
+            <textarea name="textarea" rows="4" class="form__textarea" placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </fieldset>
 
           <span class="note">*Поля обязательные для заполнения</span>
