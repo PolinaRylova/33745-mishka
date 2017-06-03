@@ -1,13 +1,15 @@
 @import "normalize.less";
 
-@import "variables.less";
-
 @import "fonts.less";
 
+@import "grid.less";
+
+@import "variables.less";
+
+@import "mixins.less";
+
 @import "blocks/page-header/page-header.less";
-@import "blocks/logo/logo.less";
 @import "blocks/main-nav/main-nav.less";
-@import "blocks/product/product.less";
 @import "blocks/categories-list/categories-list.less";
 @import "blocks/popular-product/popular-product.less";
 @import "blocks/about-us/about-us.less";
@@ -29,5 +31,9 @@
 @import "global-blocks/popular-flag/popular-flag.less";
 @import "global-blocks/modal-container/modal-container.less";
 
+body {
+  font-family: "Open Sans", "Arial", sans-serif;
+  color: @font-color;
+}
 
 

@@ -8,36 +8,39 @@
   <body>
 
     <header class="page-header">
-    <div class="logo">
-      <a class="logo__link" href="index.html">MISHKA</a>
-    </div>
-    <nav class="main-nav">
-      <span class="main-nav__toggle">Open menu</span>
-      <ul class="main-nav__list">
-        <li class="main-nav__item">
-          <a class="main-nav__link main-nav__link--big">Каталог товаров</a>
-        </li>
-        <li class="main-nav__item">
-          <a href="form.html" class="main-nav__link main-nav__link--big">Вязание на заказ</a>
-        </li>
-        <li class="main-nav__item">
-          <a href="search.html" class="main-nav__link main-nav__link--big main-nav__link--src">Поиск по сайту</a>
-        </li>
-        <li class="main-nav__item">
-          <a href="cart.html" class="main-nav__link main-nav__link--big main-nav__link--cart">Корзина: пока пуста</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+      <nav class="main-nav">
+        <div class="main-nav__logo">
+          <a class="main-nav__logo-link" href="/index">MISHKA</a>
+        </div>
+        <div class="main-nav__toggle">Open menu</div>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--big">Каталог товаров</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="form.html" class="main-nav__link main-nav__link--big">Вязание на заказ</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__item-logo-link" href="index.html">MISHKA</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="/search" class="main-nav__link main-nav__link--big main-nav__link--src">Поиск по сайту</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="/cart" class="main-nav__link main-nav__link--big main-nav__link--cart">Корзина: пока пуста</a>
+          </li>
+        </ul>
+      </nav>
+      <h1 class="page-header__title">Вязание на заказ</h1>
+    </header>
 
     <section class="order">
-      <h1 class="order__title">Вязание на заказ</h1>
       <p class="order__desc">
         Мы будем рады воплотить в жизнь ваши пожелания!
         Заполните простую форму заказа, и мы свяжемся с вами, чтобы уточнить детали.
       </p>
       <form class="form" action="https://echo.htmlacademy.ru/" method="post">
-      	<fieldset class="form__fieldset">
+        <fieldset class="form__fieldset">
           <legend class="form__legend">ТИП</legend>
 
           <input type="radio" name="type" value="interior" class="form__radio-input" id="radio-interior" checked>
@@ -56,7 +59,7 @@
           <label for="checkbox-gray" class="form__label">Серый</label>
 
           <input type="checkbox" name="color" value="tiffany" class="form__checkbox-input" id="checkbox-tiffany">
-          <label for="checkbox-tiffany" class="form__label">&quot;Тиффани&quot;</label>
+          <label for="checkbox-tiffany" class="form__label">&#171;Тиффани&#187;</label>
 
           <input type="checkbox" name="color" value="black" class="form__checkbox-input" id="checkbox-black">
           <label for="checkbox-black" class="form__label">Чёрный</label>
@@ -72,18 +75,22 @@
           <legend class="form__legend">ФИО</legend>
 
           <label for="user-first-name" class="form__label">Имя:</label>
-          <input type="text" name="user-first-name" class="form__text-input" id="user-first-name" placeholder="Введите ваше имя*" required>
+          <input type="text" name="user-first-name" class="form__text-input" id="user-first-name"
+                 placeholder="Введите ваше имя*" required>
 
           <label for="user-last-name" class="form__label">Фамилия:</label>
-          <input type="text" name="user-last-name" class="form__text-input" id="user-last-name" placeholder="Укажите фамилию*" required>
+          <input type="text" name="user-last-name" class="form__text-input" id="user-last-name"
+                 placeholder="Укажите фамилию*" required>
 
           <label for="user-patronymic-name" class="form__label">Отчество:</label>
-          <input type="text" name="user-patronymic-name" class="form__text-input" id="user-patronymic-name" placeholder="Отчество, если желаете">
+          <input type="text" name="user-patronymic-name" class="form__text-input" id="user-patronymic-name"
+                 placeholder="Отчество, если желаете">
         </fieldset>
 
         <fieldset class="form__fieldset">
           <legend class="form__legend">ТЕЛ</legend>
-          <input type="tel" name="tel" class="form__tel-input" pattern="\+7\-[0-9]{3}\-[0-9]{3}\-[0-9]{2}\-[0-9]{2}" placeholder="+7 XXX XXX XX XX*" required>
+          <input type="tel" name="tel" class="form__tel-input" pattern="\+7\-[0-9]{3}\-[0-9]{3}\-[0-9]{2}\-[0-9]{2}"
+                 placeholder="+7 XXX XXX XX XX*" required>
         </fieldset>
 
         <fieldset class="form__fieldset">
@@ -93,7 +100,8 @@
 
         <fieldset class="form__fieldset">
           <legend class="form__legend">ДОП</legend>
-          <textarea name="textarea" rows="4" class="form__textarea" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          <textarea name="textarea" rows="4" class="form__textarea"
+                    placeholder="Опишите все ваши пожелания к заказу"></textarea>
         </fieldset>
 
         <span class="note">*Поля обязательные для заполнения</span>
@@ -113,7 +121,8 @@
       </div>
       <div class="page‐footer__copyright-container">
         <span class="page-footer__copyright-text">Разработано:</span>
-        <a href="https://www.htmlacademy.ru/intensive/adaptive" class="page‐footer__copyright‐link">Продвинутый HTML и CSS</a>
+        <a href="https://www.htmlacademy.ru/intensive/adaptive" class="page‐footer__copyright‐link">Продвинутый HTML и
+          CSS</a>
       </div>
     </footer>
 

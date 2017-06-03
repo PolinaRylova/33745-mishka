@@ -8,11 +8,11 @@
   <body>
 
     <header class="page-header">
-      <div class="logo">
-        <a class="logo__link" href="index.html">MISHKA</a>
-      </div>
       <nav class="main-nav">
-        <span class="main-nav__toggle">Open menu</span>
+        <div class="main-nav__logo">
+          <a class="main-nav__logo-link" href="index.html">MISHKA</a>
+        </div>
+        <div class="main-nav__toggle">Open menu</div>
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a class="main-nav__link main-nav__link--big">Каталог товаров</a>
@@ -21,18 +21,21 @@
             <a href="form.html" class="main-nav__link main-nav__link--big">Вязание на заказ</a>
           </li>
           <li class="main-nav__item">
-            <a href="search.html" class="main-nav__link main-nav__link--big main-nav__link--src">Поиск по сайту</a>
+            <a class="main-nav__item-logo-link" href="/index">MISHKA</a>
           </li>
           <li class="main-nav__item">
-            <a href="cart.html" class="main-nav__link main-nav__link--big main-nav__link--cart">Корзина: пока пуста</a>
+            <a href="/search" class="main-nav__link main-nav__link--big main-nav__link--src">Поиск по сайту</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="/cart" class="main-nav__link main-nav__link--big main-nav__link--cart">Корзина: пока пуста</a>
           </li>
         </ul>
       </nav>
+      <h1 class="page-header__title">Каталог товаров</h1>
     </header>
 
     <section class="catalog">
-      <h1 class="catalog__title">Каталог товаров</h1>
-      <div class="catalog__container">
+      <div class="catalog__list">
         <div class="catalog-item">
           <a href="/product-info" class="catalog-item__link">
             <figure class="catalog-item__link-inner">
@@ -101,7 +104,6 @@
     <div class="modal-container">
       <button type="button" class="btn btn--modal-close">Закрыть</button>
       <div class="order">
-        <h1 class="order__title">Ваш заказ</h1>
         <div class="order__product-desc">
           <img class="order__product-img" src="http://placehold.it/200x100" width="200" height="100" alt="Зайчик-попрыгайчик">
           <p class="order__product-name">Вязаные корзинки</p>
@@ -119,7 +121,7 @@
             <label for="checkbox-gray" class="form__label">Серый</label>
 
             <input id="checkbox-tiffany" type="checkbox" name="color" value="tiffany" class="form__checkbox-input" checked>
-            <label for="checkbox-tiffany" class="form__label">&quot;Тиффани&quot;</label>
+            <label for="checkbox-tiffany" class="form__label">&#171;Тиффани&#187;</label>
 
             <input id="checkbox-black" type="checkbox" name="color" value="black" class="form__checkbox-input">
             <label for="checkbox-black" class="form__label">Чёрный</label>
