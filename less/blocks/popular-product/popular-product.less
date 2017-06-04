@@ -1,16 +1,20 @@
 .popular-product {
-  padding: 30px;
+  padding: 28px 30px;
 
   &__title {
+    margin: 0;
+    padding-bottom: 5px;
     .font-param(25px; 30px; bold; #000000);
   }
 
   &__desc {
+    margin: 24px 0 15px;
     .font-param(15px; 24px; normal; @second-font-color);
   }
 
   &__definition-container {
     margin: 0;
+    margin-bottom: 28px;
     display: table;
     border-collapse: collapse;
   }
@@ -24,15 +28,20 @@
   &__def-value {
     display: table-cell;
     text-align: left;
-    padding: 10px 28px 10px 0;
+    padding: 10px 29px 10px 0;
     .font-param(15px; 20px; normal; @second-font-color);
+  }
 
+  &__def-value {
+    padding-right: 0;
   }
 
   &__img {
+    margin-bottom: 20px;
   }
 
   &__price {
+    margin-bottom: 25px;
     text-align: center;
     .font-param(17px; 24px; bold; @second-font-color);
 
