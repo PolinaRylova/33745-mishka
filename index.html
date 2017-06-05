@@ -13,8 +13,10 @@
           <a class="main-nav__link main-nav__link--logo">MISHKA</a>
         </div>
         <div class="main-nav__item main-nav__item--toggle">
-          <a class="main-nav__link main-nav__link--toggle">Выпадающее меню</a>
+          <!-- При развернутом меню добавить класс opened, который сменит вид переключателя -->
+          <a class="main-nav__link main-nav__link--toggle">Развернуть/свернуть меню</a>
         </div>
+        <!-- Чтобы отобразить выпадающее меню, закомментируй свойство display: none у селектора &__item--toggle ~ .main-nav__item -->
         <div class="main-nav__item main-nav__item--catalog">
           <a href="/catalog.html" class="main-nav__link main-nav__link--big">Каталог товаров</a>
         </div>
@@ -27,6 +29,7 @@
         <div class="main-nav__item main-nav__item--cart">
           <a href="/cart.html" class="main-nav__link main-nav__link--big main-nav__link--cart">Корзина: пока пуста</a>
         </div>
+        <!-- СКрыты. Не стилизованы. Доделаю при работе над версиями tablet и desktop -->
         <div class="main-nav__item main-nav__item--new">
           <a href="/new.html" class="main-nav__link main-nav__link--new">Новые поступления</a>
         </div>

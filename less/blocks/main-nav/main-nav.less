@@ -1,23 +1,27 @@
 .main-nav {
-  position: absolute;
+  position: fixed;
   top: 0;
-  left: 0;
+  left: 50%;
+  z-index: 50;
+  padding: 0 30px;
   .container();
-  padding: 22px 30px;
+  margin-left: @width / 2 * -1;
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  align-content: center;
   flex-wrap: wrap;
-  border-bottom: 1px solid @border-color;
   background-color: @main-color;
+  border-bottom: 1px solid @border-color;
 
   &__item {
-    display: none;
   }
 
   &__item--logo {
     display: block;
-    margin-right: 68px;
+    flex-grow: 1;
+    padding: 22px;
+    padding-left: 40px;
   }
 
   &__item--toggle {
@@ -26,12 +30,22 @@
 
   &__item--toggle ~ .main-nav__item {
     display: none;
-    flex-grow: 3;
+    flex-grow: 1;
+    padding-top: 25px;
+  }
+
+  &__item--catalog,
+  &__item--knitting,
+  &__item--src,
+  &__item--cart {
+    border-top: 1px solid @border-color;
   }
 
   &__item--catalog {}
 
   &__item--knitting {}
+
+  &__item--cart {}
 
   &__item--cart ~ .main-nav__item {
     display: none;
@@ -47,12 +61,12 @@
     .font-param(17px; 24px; bold; @font-color);
     .unstyled-link();
     display: block;
-    height: 79px;
+    height: 53px;
     text-align: center;
-    border-bottom: 1px solid @border-color;/*уточнить*/
   }
 
   &__link--logo {
+    margin: auto;
     width: 86px;
     height: 35px;
     font-size: 0;
@@ -64,6 +78,10 @@
     height: 20px;
     font-size: 0;
     background: url("/img/icon-menu-open.svg") no-repeat center center;
+
+    &.opened {
+      background: url("/img/icon-menu-close.svg") no-repeat center center;
+    }
   }
 
   &__link--big {}
@@ -76,10 +94,11 @@
     position: relative;
     &::before {
       content: "";
-      width: 20px;/*уточнить*/
-      height: 20px;/*уточнить*/
+      width: 20px;
+      height: 20px;
       position: absolute;
-      left: -20px;/*уточнить*/
+      top: 4px;
+      left: 0;
       background: url("/img/icon-search.svg") no-repeat 50% 50%;
     }
   }
@@ -91,7 +110,8 @@
       width: 20px;/*уточнить*/
       height: 20px;/*уточнить*/
       position: absolute;
-      left: -20px;/*уточнить*/
+      top: 4px;
+      left: 0;/*уточнить*/
       background: url("/img/icon-cart.svg") no-repeat 50% 50%;
     }
   }
