@@ -1,0 +1,77 @@
+.btn {
+  display: block;
+  padding: 15px 0 14px;
+  text-align: center;
+  .uppercase();
+  .unstyled-link();
+  .font-param(17px; 20px; bold; @second-font-color);
+
+  &--review {
+    border: 2px solid @second-font-color;
+  }
+
+  &--write-us {
+    margin: 0 auto;
+    width: 256px;
+    border: 2px solid @second-font-color;
+  }
+
+  &--add-to-cart {
+    margin: 0 30px;
+    display: block;
+    padding: 18px 0;
+    background-color: @accent-color;
+    .uppercase();
+    .font-param(17px; 16px; bold; @main-color);
+  }
+
+  &--popular-order {
+    border: 2px solid @second-font-color;
+  }
+
+  &--catalog-order {
+    font-size: 0;
+    position: relative;
+    &::before {
+      content: "";
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: url("/img/icon-cart.svg") no-repeat 50% 50%;
+      border: none;
+    }
+  }
+
+  &--video-order {
+    margin-top: 25px;
+    padding: 15px 15px 17px;
+    display: block;
+    text-align: center;
+    border: 2px solid @second-font-color;
+    .font-param(17px; 16px; bold; @font-color);
+    .unstyled-link();
+  }
+
+  &--send-order {
+    margin-bottom: 17px;
+    padding-top: 13px;
+    border: 2px solid @font-color;
+    background: transparent;
+    width: 260px;
+    box-sizing: border-box;
+  }
+
+  &--modal-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 5px;
+    padding: 10px;
+    width: 10px;
+    height: 10px;
+    background: url("/img/icon-menu-close.svg") no-repeat center center;
+    font-size: 0;
+  }
+}

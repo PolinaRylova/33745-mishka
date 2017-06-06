@@ -1,0 +1,56 @@
+.contacts {
+  margin-bottom: 38px;
+
+  &__title {
+    margin: 0;
+    padding: 25px 30px 27px;
+    .font-param(18px; 30px; bold; @font-color);
+  }
+
+  &__container {
+    margin: 0 auto 40px;
+    display: table;
+    width: 260px;
+    border-collapse: collapse;
+  }
+
+  &__row {
+    display: table-row;
+  }
+
+  &__row>div {
+    display: table-cell;
+    vertical-align: top;
+    .font-param(15px; 30px; normal; @second-font-color);
+  }
+
+  &__email-label,
+  &__location-label {
+    width: 77px;
+    height: 60px;
+    margin-bottom: 40px;
+  }
+
+  &__email-addres {
+    position: relative;
+  }
+
+  &__email-link {
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background: #62d1ba;
+    }
+    .unstyled-link();
+    .font-param(15px; 30px; normal; @second-font-color);
+  }
+
+  &__location-label {}
+
+  &__location-address {}
+}

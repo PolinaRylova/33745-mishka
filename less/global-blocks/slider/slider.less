@@ -1,0 +1,42 @@
+.slider {
+  margin-bottom: 38px;
+
+  &__slides-list {
+    .unstyled-list();
+    margin-bottom: 33px;
+  }
+
+  &__slide {}
+
+  &__controls {
+    margin-bottom: 33px;
+    font-size: 0;
+  }
+
+  &__arrow {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    height: 50px;
+    box-sizing: border-box;
+    font-size: 0;
+    border: 1px solid @border-color;
+
+    &::after {
+      content: "";
+      width: 51px;
+      height: 26px;
+      position: absolute;
+      top: 12px;
+      left: 38px;
+    }
+
+    &--prev::after {
+      background: url("/img/icon-left-arrow.svg") no-repeat 50% 50%;
+    }
+    &--next::after {
+      background: url("/img/icon-right-arrow.svg") no-repeat 50% 50%;
+    }
+  }
+}

@@ -1,0 +1,128 @@
+.form {
+  padding: 15px 0;
+
+  &__fieldset {
+    position: relative;
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 0;
+    border: none;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 8px;
+      left: 62px;
+      display: block;
+      height: 1px;
+      width: 198px;
+      background-color: @accent-color;
+      z-index: 1;
+    }
+  }
+
+  &__fieldset--name {
+    margin-bottom: 10px;
+  }
+
+  &__legend {
+    margin-bottom: 35px;
+    .uppercase();
+    .font-param(17px; 16px; bold; @accent-color);
+  }
+
+  &__fieldset--name .form__legend {
+    margin-bottom: 27px;
+  }
+
+  &__fieldset--tel .form__legend,
+  &__fieldset--email .form__legend {
+    margin-bottom: 20px;
+  }
+
+  &__fieldset--extra .form__legend {
+    margin-bottom: 24px;
+  }
+
+  &__label,
+  &__radio-label,
+  &__checkbox-label {
+    display: block;
+    .font-param(17px; 18px; bold; @font-color);
+  }
+
+  &__radio-label,
+  &__checkbox-label {
+    position: relative;
+    padding-left: 62px;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -10px;
+      left: 0;
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      border: 2px solid @second-font-color;
+    }
+  }
+
+  &__checkbox-label {
+    margin-bottom: 33px;
+
+    &:last-child {
+      margin-bottom: 15px;
+    }
+    &::before {
+      border-radius: 0;
+    }
+  }
+
+  &__radio-input {
+    display: none;
+  }
+
+  /* Добавить стилизацию radio-button и checkbox */
+
+  &__checkbox-input {
+    display: none;
+  }
+
+  &__text-input,
+  &__email-input,
+  &__tel-input {
+    width: 100%;
+    padding: 15px 0;
+    margin-bottom: 21px;
+    border: none;
+    border-bottom: 2px solid @font-color;
+  }
+
+  &__email-input,
+  &__tel-input {
+    padding: 0 0 15px;
+    margin-bottom: 13px;
+  }
+
+  &__email-input {
+    margin-bottom: 12px;
+    /* Добавить иконку icon-mail */
+  }
+
+  &__tel-input {
+  /* Добавить иконку icon-phone */
+  }
+
+  &__textarea {
+    padding: 15px;
+    border: 2px solid @font-color;
+    width: 260px;
+    box-sizing: border-box;
+  }
+
+  &__fieldset--extra {
+    margin-bottom: 10px;
+  }
+}

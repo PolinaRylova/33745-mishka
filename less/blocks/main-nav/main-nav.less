@@ -1,0 +1,126 @@
+.main-nav {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  z-index: 50;
+  padding: 0 30px;
+  .container();
+  margin-left: @width / 2 * -1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  background-color: @main-color;
+  border: 1px solid @border-color;
+
+  &__item {
+  }
+
+  &__item--logo {
+    display: block;
+    flex-grow: 1;
+    padding: 21px;
+    padding-left: 39px;
+  }
+
+  &__item--toggle {
+    display: block;
+  }
+
+  &__item--toggle ~ .main-nav__item {
+    display: none;
+    flex-grow: 1;
+    padding-top: 24px;
+  }
+
+  &__item--catalog,
+  &__item--knitting,
+  &__item--src,
+  &__item--cart {
+    border-top: 1px solid @border-color;
+  }
+
+  &__item--catalog {}
+
+  &__item--knitting {}
+
+  &__item--cart {}
+
+  &__item--cart ~ .main-nav__item {
+    display: none;
+  }
+
+  &__item--new {}
+
+  &__item--sale {}
+
+  &__item--delivery {}
+
+  &__link {
+    .font-param(17px; 24px; bold; @font-color);
+    .unstyled-link();
+    display: block;
+    height: 53px;
+    text-align: center;
+  }
+
+  &__link--logo {
+    margin: auto;
+    width: 86px;
+    height: 35px;
+    font-size: 0;
+    background: url("/img/logo-mobile.svg") no-repeat bottom center;
+  }
+
+  &__link--toggle {
+    width: 20px;
+    height: 20px;
+    font-size: 0;
+    background: url("/img/icon-menu-open.svg") no-repeat center center;
+
+    /*Убрать позже*/
+    &.opened {
+      background: url("/img/icon-menu-close.svg") no-repeat center center;
+    }
+  }
+
+  &__link--big {}
+
+  &__link--catalog {}
+
+  &__link--knitting {}
+
+  &__link--src {
+    position: relative;
+    &::before {
+      content: "";
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      top: 3px;
+      left: 0;
+      background: url("/img/icon-search.svg") no-repeat 50% 50%;
+    }
+  }
+
+  &__link--cart {
+    position: relative;
+    &::before {
+      content: "";
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      top: 3px;
+      left: 0;
+      background: url("/img/icon-cart.svg") no-repeat 50% 50%;
+    }
+  }
+
+  &__link--new {}
+
+  &__link--sale {}
+
+  &__link--delivery {}
+}
+

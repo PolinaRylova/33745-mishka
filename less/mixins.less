@@ -1,0 +1,46 @@
+.container() {
+  width: 320px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  @width: 320px;
+
+  /*@media @tablet-width {
+    width: 640px;
+    @width: 640px;
+  }
+
+  @media @desktop-width {
+    width: 960px;
+    @width: 960px;
+  }*/
+}
+
+.font-param(@size; @height; @weight; @color) {
+  font-size: @size;
+  line-height: @height;
+  font-weight: @weight;
+  color: @color;
+}
+
+.unstyled-list() {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.unstyled-link() {
+  text-decoration: none;
+}
+
+.uppercase() {
+  text-transform: uppercase;
+}
+
+.modal-content(@width; @height) {
+  width: @width;
+  height: @height;
+  margin-left: @width / 2 * -1;
+  margin-top: @height / 2 * -1;
+}
+
+

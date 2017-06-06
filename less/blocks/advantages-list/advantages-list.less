@@ -1,0 +1,51 @@
+.advantages-list {
+  .unstyled-list;
+
+  &__item {
+    position: relative;
+    margin: 15px 0 53px;
+    padding-top: 30px;
+    .font-param(17px; 20px; bold; @font-color);
+
+    &::before {
+      content: "";
+      width: 50px;
+      height: 37px;
+      position: absolute;
+      top: -21px;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+    }
+
+    &--eco::before {
+      background-image: url("/img/icon-feature-1copy.svg");
+    }
+
+    &--style::before {
+      height: 27px;
+      background-image: url("/img/icon-feature-3copy.svg");
+    }
+
+    &--likes::before {
+      top: -16px;
+      height: 28px;
+      background-image: url("/img/icon-feature-5copy.svg");
+    }
+
+    &--handmade::before {
+      height: 34px;
+      background-image: url("/img/icon-feature-2copy.svg");
+    }
+
+    &--native::before {
+      height: 25px;
+      background-image: url("/img/icon-feature-4copy.svg");
+    }
+
+    &--gift::before {
+      height: 33px;
+      background-image: url("/img/icon-feature-6copy.svg");
+
+    }
+  }
+}
