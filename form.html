@@ -7,71 +7,80 @@
   </head>
   <body>
 
-    <header class="page-header">
-      <nav class="main-nav">
-        <div class="main-nav__logo">
-          <a class="main-nav__logo-link" href="/index">MISHKA</a>
-        </div>
-        <div class="main-nav__toggle">Open menu</div>
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--big">Каталог товаров</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="form.html" class="main-nav__link main-nav__link--big">Вязание на заказ</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__item-logo-link" href="index.html">MISHKA</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="/search" class="main-nav__link main-nav__link--big main-nav__link--src">Поиск по сайту</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="/cart" class="main-nav__link main-nav__link--big main-nav__link--cart">Корзина: пока пуста</a>
-          </li>
-        </ul>
-      </nav>
-      <h1 class="page-header__title">Вязание на заказ</h1>
+    <header class="page-header page-header--form">
+    <nav class="main-nav">
+      <div class="main-nav__item main-nav__item--logo">
+        <a href="/index.html" class="main-nav__link main-nav__link--logo">MISHKA</a>
+      </div>
+      <div class="main-nav__item main-nav__item--toggle">
+        <!-- При развернутом меню добавить класс opened, который сменит вид переключателя -->
+        <a class="main-nav__link main-nav__link--toggle">Развернуть/свернуть меню</a>
+      </div>
+      <!-- Чтобы отобразить выпадающее меню, закомментируй свойство display: none у селектора &__item--toggle ~ .main-nav__item -->
+      <div class="main-nav__item main-nav__item--catalog">
+        <a href="/catalog.html" class="main-nav__link main-nav__link--big">Каталог товаров</a>
+      </div>
+      <div class="main-nav__item main-nav__item--knitting">
+        <a class="main-nav__link main-nav__link--big">Вязание на заказ</a>
+      </div>
+      <div class="main-nav__item main-nav__item--src">
+        <a href="/search.html" class="main-nav__link main-nav__link--big main-nav__link--src">Поиск по сайту</a>
+      </div>
+      <div class="main-nav__item main-nav__item--cart">
+        <a href="/cart.html" class="main-nav__link main-nav__link--big main-nav__link--cart">Корзина: пока пуста</a>
+      </div>
+      <!-- СКрыты. Не стилизованы. Доделаю при работе над версиями tablet и desktop -->
+      <div class="main-nav__item main-nav__item--new">
+        <a href="/new.html" class="main-nav__link main-nav__link--new">Новые поступления</a>
+      </div>
+      <div class="main-nav__item main-nav__item--sale">
+        <a href="/sale.html" class="main-nav__link main-nav__link--sale">Распродажа</a>
+      </div>
+      <div class="main-nav__item main-nav__item--delivery">
+        <a href="/delivery.html" class="main-nav__link main-nav__link--delivery">Бесплатная доставка по России</a>
+      </div>
+    </nav>
+    <h1 class="page-header__title page-header__title--form">Вязание на заказ</h1>
     </header>
 
     <section class="order">
-      <p class="order__desc">
+      <div class="order__desc">
         Мы будем рады воплотить в жизнь ваши пожелания!
         Заполните простую форму заказа, и мы свяжемся с вами, чтобы уточнить детали.
-      </p>
+      </div>
       <form class="form" action="https://echo.htmlacademy.ru/" method="post">
-        <fieldset class="form__fieldset">
+        <fieldset class="form__fieldset form__fieldset--type">
           <legend class="form__legend">ТИП</legend>
 
           <input type="radio" name="type" value="interior" class="form__radio-input" id="radio-interior" checked>
-          <label for="radio-interior" class="form__label">Аксессуар для интерьера</label>
+          <label for="radio-interior" class="form__radio-label">Аксессуар для интерьера</label>
 
           <input type="radio" name="type" value="toy" class="form__radio-input" id="radio-toy">
-          <label for="radio-toy" class="form__label">Детская игрушка</label>
+          <label for="radio-toy" class="form__radio-label">Детская игрушка</label>
         </fieldset>
-        <fieldset class="form__fieldset">
+        <fieldset class="form__fieldset form__fieldset--color">
           <legend class="form__legend">ЦВЕТ</legend>
 
           <input type="checkbox" name="color" value="white" class="form__checkbox-input" id="checkbox-white" checked>
-          <label for="checkbox-white" class="form__label">Белый</label>
+          <label for="checkbox-white" class="form__checkbox-label">Белый</label>
 
           <input type="checkbox" name="color" value="gray" class="form__checkbox-input" id="checkbox-gray" checked>
-          <label for="checkbox-gray" class="form__label">Серый</label>
+          <label for="checkbox-gray" class="form__checkbox-label">Серый</label>
 
           <input type="checkbox" name="color" value="tiffany" class="form__checkbox-input" id="checkbox-tiffany">
-          <label for="checkbox-tiffany" class="form__label">&#171;Тиффани&#187;</label>
+          <label for="checkbox-tiffany" class="form__checkbox-label">&#171;Тиффани&#187;</label>
 
           <input type="checkbox" name="color" value="black" class="form__checkbox-input" id="checkbox-black">
-          <label for="checkbox-black" class="form__label">Чёрный</label>
+          <label for="checkbox-black" class="form__checkbox-label">Чёрный</label>
 
           <input type="checkbox" name="color" value="pink" class="form__checkbox-input" id="checkbox-pink">
-          <label for="checkbox-pink" class="form__label">Розовый</label>
+          <label for="checkbox-pink" class="form__checkbox-label">Розовый</label>
 
           <input type="checkbox" name="color" value="orange" class="form__checkbox-input" id="checkbox-orange">
-          <label for="checkbox-orange" class="form__label">Оранжевый</label>
+          <label for="checkbox-orange" class="form__checkbox-label">Оранжевый</label>
         </fieldset>
 
-        <fieldset class="form__fieldset">
+        <fieldset class="form__fieldset form__fieldset--name">
           <legend class="form__legend">ФИО</legend>
 
           <label for="user-first-name" class="form__label">Имя:</label>
@@ -87,42 +96,47 @@
                  placeholder="Отчество, если желаете">
         </fieldset>
 
-        <fieldset class="form__fieldset">
-          <legend class="form__legend">ТЕЛ</legend>
+        <fieldset class="form__fieldset form__fieldset--tel">
+          <legend class="form__legend form__legend--tel">ТЕЛ</legend>
           <input type="tel" name="tel" class="form__tel-input" pattern="\+7\-[0-9]{3}\-[0-9]{3}\-[0-9]{2}\-[0-9]{2}"
                  placeholder="+7 XXX XXX XX XX*" required>
         </fieldset>
 
-        <fieldset class="form__fieldset">
+        <fieldset class="form__fieldset form__fieldset--email">
           <legend class="form__legend">E-MAIL</legend>
           <input type="email" name="email" class="form__email-input" placeholder="Ваш Email*" required>
         </fieldset>
 
-        <fieldset class="form__fieldset">
+        <fieldset class="form__fieldset form__fieldset--extra">
           <legend class="form__legend">ДОП</legend>
-          <textarea name="textarea" rows="4" class="form__textarea"
+          <textarea name="textarea" rows="5" class="form__textarea"
                     placeholder="Опишите все ваши пожелания к заказу"></textarea>
         </fieldset>
 
-        <span class="note">*Поля обязательные для заполнения</span>
+        <div class="note">*Поля обязательные для заполнения</div>
 
         <button type="submit" class="btn btn--send-order">ОТПРАВИТЬ ЗАКАЗ</button>
       </form>
     </section>
 
     <footer class="page-footer">
-      <div class="logo" hidden>
-        <a class="logo__link" href="index.html">MISHKA</a>
-      </div>
+      <div class="logo" hidden>MISHKA</div>
       <div class="social">
-        <a href="https://www.instagram.com/htmlacademy" class="social__link social__link‐‐in">Мы в Инстаграме</a>
-        <a href="https://www.facebook.com/htmlacademy" class="social__link social__link‐‐fb">Мы в Фейсбуке</a>
-        <a href="https://www.twitter.com/htmlacademy_ru" class="social__link social__link‐‐vk">Мы в Твиттере</a> 
+        <a href="https://www.instagram.com/htmlacademy" class="social__link social__link--in">
+          <img src="img/icon-insta.svg" width="22" height="21" alt="Мы в Инстаграме">
+        </a>
+        <a href="https://www.facebook.com/htmlacademy" class="social__link social__link--fb">
+          <img src="img/icon-fb.svg" width="15" height="29" alt="Мы в Фейсбуке">
+        </a>
+        <a href="https://www.twitter.com/htmlacademy_ru" class="social__link social__link--vk">
+          <img src="img/icon-twitter.svg" width="24" height="20" alt="Мы в Твиттере">
+        </a> 
       </div>
-      <div class="page‐footer__copyright-container">
-        <span class="page-footer__copyright-text">Разработано:</span>
-        <a href="https://www.htmlacademy.ru/intensive/adaptive" class="page‐footer__copyright‐link">Продвинутый HTML и
-          CSS</a>
+      <div class="page-footer__copyright-container">
+        <span class="page-footer__copyright-text">Разработано</span>
+        <a href="https://www.htmlacademy.ru/intensive/adaptive" class="page-footer__copyright-link">
+          <img src="img/htmlacademy-copy.svg" width="27" height="35" alt="Продвинутый HTML и CSS">
+        </a>
       </div>
     </footer>
 

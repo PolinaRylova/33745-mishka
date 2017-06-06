@@ -7,8 +7,8 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="page-header">
-      <nav class="main-nav"><!-- Позже переверстать! -->
+    <header class="page-header page-header--main">
+      <nav class="main-nav">
         <div class="main-nav__item main-nav__item--logo">
           <a class="main-nav__link main-nav__link--logo">MISHKA</a>
         </div>
@@ -41,7 +41,7 @@
         </div>
       </nav>
       <h1 class="page-header__title">Милые штуки ручной работы для дома</h1>
-      <ul class="categories-list">
+      <ul class="categories-list"><!-- Позже переделать, чтобы ссылкой было всё пространство кнопки, а не только текст -->
         <li class="categories-list__item categories-list__item--interior">
           <a href="catalog-interior.html" class="categories-list__link">Предметы интерьера</a>
         </li>
@@ -73,6 +73,7 @@
       <img class="popular-product__img" src="/img/triple-set-mobile@1x.jpg" width="260" height="315"
            alt="Вязаные корзинки">
       <div class="popular-product__price">Цена: <span>990</span> руб.</div>
+      <!-- Кнопка вызова модального окна. Реализовать на JS -->
       <a href="cart.html" class="btn btn--popular-order">Заказать</a>
     </section>
 
@@ -129,6 +130,7 @@
           </div>
         </div>
       </div>
+      <!-- Не забыть, что карта должна подстраиваться под ширину вьюпорта -->
       <div class="map-container" id="yandex-map"></div>
       <a href="feedback.html" class="btn btn--write-us">Напишите нам</a>
     </section>

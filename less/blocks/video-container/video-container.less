@@ -1,8 +1,46 @@
 .video-container {
+  box-sizing: border-box;
 
-  &__title {}
+  &__title {
+    position: relative;
+    padding: 24px 33px 24px 90px;
+    .font-param(17px; 24px; bold; @font-color);
+    border: 1px solid @border-color;
 
-  &__content {}
+    &::before {
+      content: "";
+      width: 32px;
+      height: 22px;
+      position: absolute;
+      top: 35px;
+      left: 33px;
+      background: url("/img/icon-video-copy.svg") no-repeat 50% 50%;
+    }
+  }
 
-  &__desc {}
+  &__content {
+    margin: 0;
+    position: relative;
+    &::after {
+      content: "";
+      width: 100px;
+      height: 78px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-left: -50px;
+      margin-top: -39px;
+      background: url("/img/icon-play.svg") no-repeat 50% 50%;
+    }
+
+    video {
+      vertical-align: middle;
+    }
+  }
+
+  &__desc {
+    padding: 25px 33px 32px;
+    border: 1px solid @border-color;
+    .font-param(13px; 24px; normal; @second-font-color);
+  }
 }

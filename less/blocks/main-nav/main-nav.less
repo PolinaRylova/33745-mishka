@@ -12,7 +12,7 @@
   align-content: center;
   flex-wrap: wrap;
   background-color: @main-color;
-  border-bottom: 1px solid @border-color;
+  border: 1px solid @border-color;
 
   &__item {
   }
@@ -20,8 +20,8 @@
   &__item--logo {
     display: block;
     flex-grow: 1;
-    padding: 22px;
-    padding-left: 40px;
+    padding: 21px;
+    padding-left: 39px;
   }
 
   &__item--toggle {
@@ -31,7 +31,7 @@
   &__item--toggle ~ .main-nav__item {
     display: none;
     flex-grow: 1;
-    padding-top: 25px;
+    padding-top: 24px;
   }
 
   &__item--catalog,
@@ -79,6 +79,7 @@
     font-size: 0;
     background: url("/img/icon-menu-open.svg") no-repeat center center;
 
+    /*Убрать позже*/
     &.opened {
       background: url("/img/icon-menu-close.svg") no-repeat center center;
     }
@@ -97,7 +98,7 @@
       width: 20px;
       height: 20px;
       position: absolute;
-      top: 4px;
+      top: 3px;
       left: 0;
       background: url("/img/icon-search.svg") no-repeat 50% 50%;
     }
@@ -107,11 +108,11 @@
     position: relative;
     &::before {
       content: "";
-      width: 20px;/*уточнить*/
-      height: 20px;/*уточнить*/
+      width: 20px;
+      height: 20px;
       position: absolute;
-      top: 4px;
-      left: 0;/*уточнить*/
+      top: 3px;
+      left: 0;
       background: url("/img/icon-cart.svg") no-repeat 50% 50%;
     }
   }

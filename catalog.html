@@ -7,171 +7,129 @@
   </head>
   <body>
 
-    <header class="page-header">
+    <header class="page-header page-header--catalog">
       <nav class="main-nav">
-        <div class="main-nav__logo">
-          <a class="main-nav__logo-link" href="index.html">MISHKA</a>
+        <div class="main-nav__item main-nav__item--logo">
+          <a href="/index.html" class="main-nav__link main-nav__link--logo">MISHKA</a>
         </div>
-        <div class="main-nav__toggle">Open menu</div>
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--big">Каталог товаров</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="form.html" class="main-nav__link main-nav__link--big">Вязание на заказ</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__item-logo-link" href="/index">MISHKA</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="/search" class="main-nav__link main-nav__link--big main-nav__link--src">Поиск по сайту</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="/cart" class="main-nav__link main-nav__link--big main-nav__link--cart">Корзина: пока пуста</a>
-          </li>
-        </ul>
+        <div class="main-nav__item main-nav__item--toggle">
+          <!-- При развернутом меню добавить класс opened, который сменит вид переключателя -->
+          <a class="main-nav__link main-nav__link--toggle">Развернуть/свернуть меню</a>
+        </div>
+        <!-- Чтобы отобразить выпадающее меню, закомментируй свойство display: none у селектора &__item--toggle ~ .main-nav__item -->
+        <div class="main-nav__item main-nav__item--catalog">
+          <a class="main-nav__link main-nav__link--big">Каталог товаров</a>
+        </div>
+        <div class="main-nav__item main-nav__item--knitting">
+          <a href="/form.html" class="main-nav__link main-nav__link--big">Вязание на заказ</a>
+        </div>
+        <div class="main-nav__item main-nav__item--src">
+          <a href="/search.html" class="main-nav__link main-nav__link--big main-nav__link--src">Поиск по сайту</a>
+        </div>
+        <div class="main-nav__item main-nav__item--cart">
+          <a href="/cart.html" class="main-nav__link main-nav__link--big main-nav__link--cart">Корзина: пока пуста</a>
+        </div>
+        <!-- СКрыты. Не стилизованы. Доделаю при работе над версиями tablet и desktop -->
+        <div class="main-nav__item main-nav__item--new">
+          <a href="/new.html" class="main-nav__link main-nav__link--new">Новые поступления</a>
+        </div>
+        <div class="main-nav__item main-nav__item--sale">
+          <a href="/sale.html" class="main-nav__link main-nav__link--sale">Распродажа</a>
+        </div>
+        <div class="main-nav__item main-nav__item--delivery">
+          <a href="/delivery.html" class="main-nav__link main-nav__link--delivery">Бесплатная доставка по России</a>
+        </div>
       </nav>
-      <h1 class="page-header__title">Каталог товаров</h1>
+      <h1 class="page-header__title page-header__title--catalog">Каталог товаров</h1>
     </header>
 
-    <section class="catalog">
-      <div class="catalog__list">
-        <div class="catalog-item">
-          <a href="/product-info" class="catalog-item__link">
-            <figure class="catalog-item__link-inner">
-              <img class="catalog-item__img" src="http://placehold.it/200x100" width="200" height="100" alt="Зайчик-попрыгайчик">
-              <figcaption class="catalog-item__name">Зайчик-попрыгайчик</figcaption>
-            </figure>
-          </a>
-          <p class="catalog-item__param">Рост 30 см, вес 200 г</p>
+    <section class="catalog-list">
+      <div class="catalog-item">
+        <a href="/product-info.html" class="catalog-item__img-link">
+          <img class="catalog-item__img" src="img/photo-1-mobile@1x.jpg" width="260" height="195"
+               alt="Зайчик-попрыгайчик">
+        </a>
+        <div class="catalog-item__definition">
+          <a href="/product-info.html" class="catalog-item__name-link">Зайчик-попрыгайчик</a>
+          <div class="catalog-item__param">Рост 30 см, вес 200 г</div>
           <div class="catalog-item__buy">
-            <span class="catalog-item__price">1200 руб.</span>
-            <a href="/cart" class="btn btn--catalog-order">Заказать</a>
+            <div class="catalog-item__price">1200 руб.</div>
+            <a href="/cart.html" class="btn btn--catalog-order">Заказать</a>
           </div>
         </div>
-        <div class="catalog-item">
-          <a href="/product-info" class="catalog-item__link">
-            <figure>
-              <img class="catalog-item__img" src="http://placehold.it/200x100" width="200" height="100" alt="Корзинка для белья">
-              <figcaption class="catalog-item__name">Корзинка для белья</figcaption>
-            </figure>
-          </a>
-          <p class="catalog-item__param">Диаметр 15 см, высота 10 см</p>
+      </div>
+      <div class="catalog-item">
+        <a href="/product-info.html" class="catalog-item__img-link">
+          <img class="catalog-item__img" src="img/photo-2-mobile@1x.jpg" width="260" height="195"
+                 alt="Корзинка для белья">
+        </a>
+        <div class="catalog-item__definition">
+          <a href="/product-info.html" class="catalog-item__name-link">Корзинка для белья</a>
+          <div class="catalog-item__param">Диаметр 15 см, высота 10 см</div>
           <div class="catalog-item__buy">
-            <span class="catalog-item__price">690 руб.</span>
-            <a href="/cart" class="btn btn--catalog-order">Заказать</a>
+            <div class="catalog-item__price">690 руб.</div>
+            <a href="/cart.html" class="btn btn--catalog-order">Заказать</a>
           </div>
         </div>
-        <div class="catalog-item">
-          <a href="/product-info" class="catalog-item__link">
-            <figure>
-              <img class="catalog-item__img" src="http://placehold.it/200x100" width="200" height="100" alt="Большая корзинка для игрушек">
-              <figcaption class="catalog-item__name">Большая корзинка для игрушек</figcaption>
-            </figure>
-          </a>
-          <p class="catalog-item__param">Диаметр 30 см, высота 30 см</p>
+      </div>
+      <div class="catalog-item">
+        <a href="/product-info.html" class="catalog-item__img-link">
+          <img class="catalog-item__img" src="img/photo-3-mobile@1x.jpg" width="260" height="195"
+                 alt="Большая корзинка для игрушек">
+        </a>
+        <div class="catalog-item__definition">
+          <a href="/product-info.html" class="catalog-item__name-link">Большая корзинка для игрушек</a>
+          <div class="catalog-item__param">Диаметр 30 см, высота 30 см</div>
           <div class="catalog-item__buy">
-            <span class="catalog-item__price">1500 руб.</span>
-            <a href="/cart" class="btn btn--catalog-order">Заказать</a>
+            <div class="catalog-item__price">1500 руб.</div>
+            <a href="/cart.html" class="btn btn--catalog-order">Заказать</a>
           </div>
         </div>
       </div>
       <div class="video-container">
-      	<p class="video-container__title">Процесс производства</p>
-      	<div class="video-container__content">
-      	  <video class="video" width="200" height="150" controls preload="metadata" poster="http://placehold.it/200x100"></video>
-      	</div>
-      	<p class="video-container__desc">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-      	<a href="cart.html" class="bth btn--video-order">СДЕЛАТЬ ЗАКАЗ</a>
+        <div class="video-container__title">Процесс производства</div>
+        <div class="video-container__content">
+          <video class="video" width="260" height="150" preload="metadata"
+                 poster="img/video-mobile@1x.jpg"></video>
+        </div>
+        <div class="video-container__desc">По просьбам наших любимых фолловеров мы
+          сняли для вас подробное видео о том, как появляются наши товары.
+          <a href="cart.html" class="bth btn--video-order">СДЕЛАТЬ ЗАКАЗ</a>
+        </div>
       </div>
     </section>
 
     <footer class="page-footer">
-      <div class="logo" hidden>
-        <a class="logo__link" href="index.html">MISHKA</a>
-      </div>
+      <div class="logo" hidden>MISHKA</div>
       <div class="social">
-        <a href="https://www.instagram.com/htmlacademy" class="social__link social__link‐‐in">Мы в Инстаграме</a>
-        <a href="https://www.facebook.com/htmlacademy" class="social__link social__link‐‐fb">Мы в Фейсбуке</a>
-        <a href="https://www.twitter.com/htmlacademy_ru" class="social__link social__link‐‐vk">Мы в Твиттере</a> 
+        <a href="https://www.instagram.com/htmlacademy" class="social__link social__link--in">
+          <img src="img/icon-insta.svg" width="22" height="21" alt="Мы в Инстаграме">
+        </a>
+        <a href="https://www.facebook.com/htmlacademy" class="social__link social__link--fb">
+          <img src="img/icon-fb.svg" width="15" height="29" alt="Мы в Фейсбуке">
+        </a>
+        <a href="https://www.twitter.com/htmlacademy_ru" class="social__link social__link--vk">
+          <img src="img/icon-twitter.svg" width="24" height="20" alt="Мы в Твиттере">
+        </a> 
       </div>
-      <div class="page‐footer__copyright-container">
-        <span class="page-footer__copyright-text">Разработано:</span>
-        <a href="https://www.htmlacademy.ru/intensive/adaptive" class="page‐footer__copyright‐link">Продвинутый HTML и CSS</a>
+      <div class="page-footer__copyright-container">
+        <span class="page-footer__copyright-text">Разработано</span>
+        <a href="https://www.htmlacademy.ru/intensive/adaptive" class="page-footer__copyright-link">
+          <img src="img/htmlacademy-copy.svg" width="27" height="35" alt="Продвинутый HTML и CSS">
+        </a>
       </div>
     </footer>
 
-    <div class="modal-container">
+    <div class="add-to-cart"><!-- скрыто свойством display:none в less-файле -->
       <button type="button" class="btn btn--modal-close">Закрыть</button>
-      <div class="order">
-        <div class="order__product-desc">
-          <img class="order__product-img" src="http://placehold.it/200x100" width="200" height="100" alt="Зайчик-попрыгайчик">
-          <p class="order__product-name">Вязаные корзинки</p>
-          <p class="order__product-param">Диаметр 25 см, высота 15 см</p>
-          <p class="order__product-price">990 руб.</p>
-        </div>
-        <form class="form" action="https://echo.htmlacademy.ru/" method="post">
-          <fieldset class="form__fieldset">
-            <legend class="form__legend">Выберите цвет*</legend>
-
-            <input id="checkbox-white" type="checkbox" name="color" value="white" class="form__checkbox-input">
-            <label for="checkbox-white" class="form__label">Белый</label>
-
-            <input id="checkbox-gray" type="checkbox" name="color" value="gray" class="form__checkbox-input" checked>
-            <label for="checkbox-gray" class="form__label">Серый</label>
-
-            <input id="checkbox-tiffany" type="checkbox" name="color" value="tiffany" class="form__checkbox-input" checked>
-            <label for="checkbox-tiffany" class="form__label">&#171;Тиффани&#187;</label>
-
-            <input id="checkbox-black" type="checkbox" name="color" value="black" class="form__checkbox-input">
-            <label for="checkbox-black" class="form__label">Чёрный</label>
-
-            <input id="checkbox-pink" type="checkbox" name="color" value="pink" class="form__checkbox-input">
-            <label for="checkbox-pink" class="form__label">Розовый</label>
-
-            <input id="checkbox-orange" type="checkbox" name="color" value="orange" class="form__checkbox-input">
-            <label for="checkbox-orange" class="form__label">Оранжевый</label>
-          </fieldset>
-          <fieldset class="form__fieldset">
-            <label for="product-num" class="form__label">Укажите количество*</label>
-            <input id="product-num" type="number" name="ticketNum" class="form__num-input" value="1">
-            <p class="order__all-price-text">Общая сумма заказа:
-              <span class="order__all-price-sum">990 руб.</span>
-            </p>
-          </fieldset>
-          <fieldset class="form__fieldset">
-            <legend class="form__legend">ФИО</legend>
-
-            <label for="user-first-name" class="form__label">Имя:</label>
-            <input id="user-first-name" type="text" name="user-first-name" class="form__text-input" placeholder="Введите ваше имя*" required>
-
-            <label for="user-last-name" class="form__label">Фамилия:</label>
-            <input id="user-last-name" type="text" name="user-last-name" class="form__text-input" placeholder="Укажите фамилию*" required>
-
-            <label for="user-patronymic-name" class="form__label">Отчество:</label>
-            <input id="user-patronymic-name"type="text" name="user-patronymic-name" class="form__text-input" placeholder="Отчество, если желаете">
-          </fieldset>
-
-          <fieldset class="form__fieldset">
-            <legend class="form__legend">ТЕЛ</legend>
-            <input type="tel" name="tel" class="form__tel-input" pattern="\+7\-[0-9]{3}\-[0-9]{3}\-[0-9]{2}\-[0-9]{2}" placeholder="+7 XXX XXX XX XX*" required>
-          </fieldset>
-
-          <fieldset class="form__fieldset">
-            <legend class="form__legend">E-MAIL</legend>
-            <input type="email" name="email" class="form__email-input" placeholder="Ваш Email*" required>
-          </fieldset>
-
-          <fieldset class="form__fieldset">
-            <legend class="form__legend">ДОП</legend>
-            <textarea name="textarea" rows="4" class="form__textarea" placeholder="Опишите все ваши пожелания к заказу"></textarea>
-          </fieldset>
-
-          <span class="note">*Поля обязательные для заполнения</span>
-
-          <button type="submit" class="btn btn--send-order">ОТПРАВИТЬ ЗАКАЗ</button>
-        </form>
+      <h1 class="add-to-cart__title">Добавить в корзину</h1>
+      <p class="add-to-cart__desc">Выберите размер:</p>
+      <div class="add-to-cart__sizes">
+        <a class="add-to-cart__size">S</a>
+        <a class="add-to-cart__size">M</a>
+        <a class="add-to-cart__size">L</a>
       </div>
+      <a class="btn btn--add-to-cart" href="cart.html">Добавить</a>
     </div>
 
   </body>
