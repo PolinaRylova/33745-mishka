@@ -3,21 +3,26 @@
 
   &__title {
     margin: 0;
-    padding-top: 4px;
+    padding: 4px 0 15px;
     .font-param(25px; 30px; bold; @font-color);
   }
 
   &__text {
-    margin-bottom: 20px;
+    margin: 0;
     padding: 10px 0;
     .font-param(15px; 30px; normal; @second-font-color);
   }
 
   &__author {
+    display: block;
+    padding-top: 29px;
     .font-param(17px; 24px; bold; @font-color);
+    font-style: normal;
   }
 
   &__author-link {
+    display: block;
+    padding-top: 2px;
     .unstyled-link();
     .font-param(17px; 30px; normal; @second-font-color);
   }
