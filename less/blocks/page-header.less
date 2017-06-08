@@ -1,10 +1,17 @@
 .page-header {
   position: relative;
-  padding-top: 80px;
   background: @default-bg;
 
+  &.menu--opened {
+    margin-top: 396px;
+  }
+
+  &.menu--closed {
+    margin-top: 80px;
+  }
+
   &--main {
-    background: @default-bg url("/img/hero-mobile@1x.jpg") no-repeat 50% 32%;
+    background: @default-bg url("/img/hero-mobile@1x.jpg") no-repeat 50% -14%;
   }
 
   &__title {
@@ -12,6 +19,11 @@
     padding: 70px 30px 123px;
     text-align: center;
     .font-param(27px; 30px; bold; @font-color);
+
+    /*@media @tablet-width {
+      font-size: 43px;
+      line-height: 50px;
+    }*/
 
     &--catalog,
     &--form {
