@@ -3,16 +3,14 @@
 
   &__item {
     position: relative;
-    padding: 25px 30px 30px;
-    background-color: @accent-color;
-
-    &--toys {
-      background-color: #56c3b2;
-    }
+    display: inline-block;
+    font-size: 0;
   }
 
   &__link {
-    padding-right: 100px;
+    display: block;
+    padding: 25px 120px 30px 30px;
+    background-color: @accent-color;
     .font-param(19px; 24px; bold; @main-color);
     .unstyled-link();
 
@@ -37,11 +35,14 @@
     }
   }
 
-  &__item--toys a::after {
-    width: 61px;
-    height: 61px;
-    top: 19px;
-    right: 27px;
-    background: url("/img/icon-toy-copy.svg") no-repeat 50% 50%;
+  &__item--toys a {
+    background-color: #56c3b2;
+    &::after {
+      width: 61px;
+      height: 61px;
+      top: 19px;
+      right: 27px;
+      background: url("/img/icon-toy-copy.svg") no-repeat 50% 50%;
+    }
   }
 }
