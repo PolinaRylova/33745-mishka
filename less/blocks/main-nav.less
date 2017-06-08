@@ -3,71 +3,60 @@
   top: 0;
   left: 50%;
   z-index: 50;
-  padding: 0 30px;
   .container();
   margin-left: @width / 2 * -1;
+
   display: flex;
-  justify-content: flex-end;
+  justify-content: stretch;
   align-items: center;
-  align-content: center;
+  align-content: stretch;
   flex-wrap: wrap;
-  background-color: @main-color;
-  border: 1px solid @border-color;
 
   &__item {
+    height: 79px;
+    flex-grow: 1;
+    border-bottom: 1px solid @border-color;
   }
 
   &__item--logo {
-    display: block;
-    flex-grow: 1;
-    padding: 21px;
-    padding-left: 39px;
+    flex-basis: 86px;
+    padding-top: 22px;
+    height: 57px;
+    padding-left: 50px;
   }
 
   &__item--toggle {
-    display: block;
-  }
+    flex-basis: 51px;
+    flex-grow: 0;
+    padding-top: 29px;
+    height: 50px;
 
-  &__item--toggle ~ .main-nav__item {
-    display: none;
-    flex-grow: 1;
-    padding-top: 24px;
+    &-open a {
+      background: url("/img/icon-menu-open.svg") no-repeat center center;
+    }
+
+    &-close a {
+      background: url("/img/icon-menu-close.svg") no-repeat center center;
+    }
   }
 
   &__item--catalog,
   &__item--knitting,
   &__item--src,
   &__item--cart {
-    border-top: 1px solid @border-color;
+    padding-top: 26px;
+    padding-left: 75px;
+    height: 52px;
+    width: 245px;
   }
-
-  &__item--catalog {}
-
-  &__item--knitting {}
-
-  &__item--cart {}
-
-  &__item--cart ~ .main-nav__item {
-    display: none;
-  }
-
-  &__item--new {}
-
-  &__item--sale {}
-
-  &__item--delivery {}
 
   &__link {
     .font-param(17px; 24px; bold; @font-color);
     .unstyled-link();
     display: block;
-    height: 53px;
-    text-align: center;
   }
 
   &__link--logo {
-    margin: auto;
-    width: 86px;
     height: 35px;
     font-size: 0;
     background: url("/img/logo-mobile.svg") no-repeat bottom center;
@@ -77,19 +66,7 @@
     width: 20px;
     height: 20px;
     font-size: 0;
-    background: url("/img/icon-menu-open.svg") no-repeat center center;
-
-    /*Убрать позже*/
-    &.opened {
-      background: url("/img/icon-menu-close.svg") no-repeat center center;
-    }
   }
-
-  &__link--big {}
-
-  &__link--catalog {}
-
-  &__link--knitting {}
 
   &__link--src {
     position: relative;
@@ -99,7 +76,7 @@
       height: 20px;
       position: absolute;
       top: 3px;
-      left: 0;
+      left: -45px;
       background: url("/img/icon-search.svg") no-repeat 50% 50%;
     }
   }
@@ -112,15 +89,21 @@
       height: 20px;
       position: absolute;
       top: 3px;
-      left: 0;
+      left: -45px;
       background: url("/img/icon-cart.svg") no-repeat 50% 50%;
     }
   }
 
-  &__link--new {}
+  &.--opened {
+    &__item {
+      display: block;
+    }
+  }
 
-  &__link--sale {}
-
-  &__link--delivery {}
+  &.--closed {
+    &__item--toggle ~ .main-nav__item {
+      display: none;
+    }
+  }
 }
 
