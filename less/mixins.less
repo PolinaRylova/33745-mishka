@@ -58,4 +58,19 @@
   overflow: hidden;
 }
 
+.decor-wave {//для блоков с декором в виде волны
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    height: 8px;
+    width: 100%;
+    background: url("/img/decor-wave.png") repeat-x 0% 50%;
+    z-index: 1;
+  }
+}
+
 
