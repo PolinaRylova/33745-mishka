@@ -1,6 +1,8 @@
 .contacts {
   margin-bottom: 38px;
   .decor-wave();
+  display: flex;
+  flex-wrap: wrap;
 
   &__title {
     margin: 0;
@@ -9,35 +11,35 @@
   }
 
   &__container {
-    margin: 0 auto 40px;
-    display: table;
+    margin: 0 auto;
+    padding-bottom: 38px;
     width: 260px;
-    border-collapse: collapse;
-  }
-
-  &__row {
-    display: table-row;
-  }
-
-  &__row>div {
-    display: table-cell;
-    vertical-align: top;
+    display: flex;
+    flex-wrap: wrap;
     .font-param(15px; 30px; normal; @second-font-color);
   }
 
-  &__email-label,
-  &__location-label {
+  &__label {
     width: 77px;
     height: 60px;
-    margin-bottom: 40px;
+    flex-shrink: 0;
+    font: inherit;
   }
 
-  &__email-addres {
-    position: relative;
+  &__address {
+    width: 180px;
+    font: inherit;
+  }
+
+  &__address--location {
+    width: 155px;
   }
 
   &__email-link {
+    .unstyled-link();
+    .font-param(15px; 30px; normal; @second-font-color);
     position: relative;
+
     &::after {
       content: "";
       position: absolute;
@@ -47,11 +49,5 @@
       height: 1px;
       background: #62d1ba;
     }
-    .unstyled-link();
-    .font-param(15px; 30px; normal; @second-font-color);
   }
-
-  &__location-label {}
-
-  &__location-address {}
 }

@@ -1,15 +1,18 @@
 .page-footer {
-  padding-top: 25px;
   background-color: @default-bg;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: stretch;
 
   &__logo {
     display: none;
   }
 
   &__copyright-container {
-    .container();
-    padding: 9px 0 20px;
-    text-align: center;
+    height: 80px;
+    margin: auto;
   }
 
   &__copyright-text {

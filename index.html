@@ -7,39 +7,35 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="page-header menu--opened page-header--main">
-      <nav class="main-nav main-nav--opened">
+    <header class="page-header page-header--main page-header--menu-opened page-header--no-js">
+      <nav class="main-nav">
         <div class="main-nav__item main-nav__item--logo">
           <a class="main-nav__link main-nav__link--logo">MISHKA</a>
         </div>
         <div class="main-nav__item main-nav__item--toggle main-nav__item--toggle-close">
-          <a class="main-nav__link main-nav__link--toggle">Меню</a>
+          <a href class="main-nav__link main-nav__link--toggle">Меню</a>
         </div>
         <div class="main-nav__item main-nav__item--catalog">
-          <a href="/catalog.html" class="main-nav__link main-nav__link--big">Каталог товаров</a>
+          <a href="/catalog.html" class="main-nav__link">Каталог товаров</a>
         </div>
         <div class="main-nav__item main-nav__item--knitting">
-          <a href="/form.html" class="main-nav__link main-nav__link--big">Вязание на заказ</a>
+          <a href="/form.html" class="main-nav__link">Вязание на заказ</a>
         </div>
         <div class="main-nav__item main-nav__item--src">
-          <a href="/search.html" class="main-nav__link main-nav__link--big main-nav__link--src">Поиск по сайту</a>
+          <a href="/search.html" class="main-nav__link main-nav__link--src">Поиск по сайту</a>
         </div>
         <div class="main-nav__item main-nav__item--cart">
-          <a href="/cart.html" class="main-nav__link main-nav__link--big main-nav__link--cart">Корзина: пока пуста</a>
+          <a href="/cart.html" class="main-nav__link main-nav__link--cart">Корзина: пока пуста</a>
         </div>
-        <!-- СКрыты. Не стилизованы. Доделаю при работе над версиями tablet и desktop
-        <div class="main-nav__item main-nav__item--new">
-          <a href="/new.html" class="main-nav__link main-nav__link--new">Новые поступления</a>
+        <!-- Cтилизовать на версиях tablet и desktop -->
+        <div class="main-nav__item main-nav__item--mobile-hidden">
+            <a href="/new.html" class="main-nav__link main-nav__link--new main-nav__link--only-desktop">Новые поступления</a>
+            <a href="/sale.html" class="main-nav__link main-nav__link--sale main-nav__link--only-desktop">Распродажа</a>
+            <a href="/delivery.html" class="main-nav__link main-nav__link--delivery">Бесплатная доставка по России</a>
         </div>
-        <div class="main-nav__item main-nav__item--sale">
-          <a href="/sale.html" class="main-nav__link main-nav__link--sale">Распродажа</a>
-        </div>
-        <div class="main-nav__item main-nav__item--delivery">
-          <a href="/delivery.html" class="main-nav__link main-nav__link--delivery">Бесплатная доставка по России</a>
-        </div>-->
       </nav>
       <h1 class="page-header__title">Милые штуки ручной работы для дома</h1>
-      <ul class="categories-list"><!-- Позже переделать, чтобы ссылкой было всё пространство кнопки, а не только текст -->
+      <ul class="categories-list">
         <li class="categories-list__item categories-list__item--interior">
           <a href="catalog-interior.html" class="categories-list__link">Предметы интерьера</a>
         </li>
@@ -88,7 +84,9 @@
       <div class="reviews">
         <h2 class="reviews__title">Отзывы</h2>
         <div class="slider">
-          <ul class="slider__slides-list">
+          <input type="radio" name="slider__input" value="prev-arrow" class="slider__radio-btn" id="radio-prev">
+          <input type="radio" name="slider__input" value="next-arrow" class="slider__radio-btn" id="radio-next">
+          <ul class="slider__list">
             <li class="slider__slide">
               <blockquote class="reviews__text">
                 Я молодая мама, но всё равно фотографии не набирали и близко
@@ -103,30 +101,27 @@
             <li></li>
           </ul>
           <div class="slider__controls">
-            <a class="slider__arrow slider__arrow--prev">Prev</a>
-            <a class="slider__arrow slider__arrow--next">Next</a>
+            <label for="radio-prev"><a href class="slider__arrow slider__arrow--prev">Prev</a></label>
+            <label for="radio-next"><a href class="slider__arrow slider__arrow--next">Next</a></label>
           </div>
         </div>
         <a href="reviews.html" class="btn btn--review">Написать</a>
-      </div>
+        </div>
+
     </section>
 
     <section class="contacts">
       <h2 class="contacts__title">Контакты</h2>
       <div class="contacts__container">
-        <div class="contacts__row">
-          <div class="contacts__email-label">e-mail:</div>
-          <div class="contacts__email-address">
-            <a href="mailto:info@mimimishkashop.ru" class="contacts__email-link">info@mimimishkashop.ru</a>
-          </div>
+        <div class="contacts__label contacts__label--email">e-mail:</div>
+        <div class="contacts__address contacts__address--email">
+          <a href="mailto:info@mimimishkashop.ru" class="contacts__email-link">info@mimimishkashop.ru</a>
         </div>
-        <div class="contacts__row">
-          <div class="contacts__location-label">адрес:</div>
-          <div class="contacts__location-address">
-            г. Санкт-Петербург,<br>
-            ул. Большая Конюшенная,<br>
-            д. 19/8, офис 101
-          </div>
+        <div class="contacts__label contacts__label--location">адрес:</div>
+        <div class="contacts__address contacts__address--location">
+          г. Санкт-Петербург,
+          ул.&nbsp;Большая Конюшенная,
+          д.&nbsp;19/8, офис 101
         </div>
       </div>
       <!-- Не забыть, что карта должна подстраиваться под ширину вьюпорта -->
@@ -167,6 +162,7 @@
       <a class="btn btn--add-to-cart" href="cart.html">Добавить</a>
     </div>
 
+    <script type="text/javascript" src="js/page-header.js"></script>
     <script type="text/javascript" charset="utf-8" async
             src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac0454e273c88c90af7b3b7f59387aa0c7c083850389827b5b2c79f7c7bb3ade3&amp;width=100%25&amp;height=457&amp;id=yandex-map&amp;lang=ru_RU&amp;scroll=true"></script>
   </body>

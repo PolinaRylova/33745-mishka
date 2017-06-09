@@ -1,12 +1,20 @@
 .slider {
-  margin-bottom: 38px;
 
-  &__slides-list {
+  &__radio-btn {
+    display: none;
+  }
+
+  &__list {
+    display: flex;
     .unstyled-list();
     margin-bottom: 21px;
   }
 
-  &__slide {}
+  &__slide {
+    flex-basis: 260px;
+    flex-shrink: 0;
+    flex-grow: 1;
+  }
 
   &__controls {
     margin-bottom: 33px;
