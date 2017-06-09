@@ -11,6 +11,10 @@
   .container();
   .modal-content(@width; 338px);
 
+  &.modal-content-show {
+    display: block;
+  }
+
   &__title {
     width: 150px;
     margin: 0 auto;
@@ -32,6 +36,14 @@
     justify-content: space-between;
     align-items: center;
     padding: 3px 30px 30px;
+  }
+
+  &__input {
+    display: none;
+
+    &:checked + label>a {
+      border-color: @accent-color;
+    }
   }
 
   &__size {

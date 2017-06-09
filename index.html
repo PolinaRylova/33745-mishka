@@ -67,8 +67,7 @@
       <img class="popular-product__img" src="/img/triple-set-mobile@1x.jpg" width="260" height="315"
            alt="Вязаные корзинки">
       <div class="popular-product__price">Цена: <span>990</span> руб.</div>
-      <!-- Кнопка вызова модального окна. Реализовать на JS -->
-      <a href="cart.html" class="btn btn--popular-order">Заказать</a>
+      <a href="/cart.html" class="btn btn--popular-order">Заказать</a>
     </section>
 
     <section class="about-us">
@@ -150,18 +149,22 @@
       </div>
     </footer>
 
-    <div class="add-to-cart"><!-- скрыто свойством display:none в less-файле -->
+    <div class="add-to-cart">
       <button type="button" class="btn btn--modal-close">Закрыть</button>
       <h1 class="add-to-cart__title">Добавить в корзину</h1>
       <p class="add-to-cart__desc">Выберите размер:</p>
       <div class="add-to-cart__sizes">
-        <a class="add-to-cart__size">S</a>
-        <a class="add-to-cart__size">M</a>
-        <a class="add-to-cart__size">L</a>
+        <input type="radio" name="size" class="add-to-cart__input" id="s-size">
+        <label for="s-size"><a class="add-to-cart__size">S</a></label>
+        <input type="radio" name="size" class="add-to-cart__input" id="m-size">
+        <label for="m-size"><a class="add-to-cart__size">M</a></label>
+        <input type="radio" name="size" class="add-to-cart__input" id="l-size">
+        <label for="l-size"><a class="add-to-cart__size">L</a></label>
       </div>
-      <a class="btn btn--add-to-cart" href="cart.html">Добавить</a>
+      <a class="btn btn--add-to-cart" href="/cart.html">Добавить</a>
     </div>
 
+    <script type="text/javascript" src="js/popular-product.js"></script>
     <script type="text/javascript" src="js/page-header.js"></script>
     <script type="text/javascript" charset="utf-8" async
             src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac0454e273c88c90af7b3b7f59387aa0c7c083850389827b5b2c79f7c7bb3ade3&amp;width=100%25&amp;height=457&amp;id=yandex-map&amp;lang=ru_RU&amp;scroll=true"></script>
