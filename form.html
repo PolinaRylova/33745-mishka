@@ -7,40 +7,34 @@
   </head>
   <body>
 
-    <header class="page-header page-header--form">
-    <nav class="main-nav">
-      <div class="main-nav__item main-nav__item--logo">
-        <a href="/index.html" class="main-nav__link main-nav__link--logo">MISHKA</a>
-      </div>
-      <div class="main-nav__item main-nav__item--toggle">
-        <!-- При развернутом меню добавить класс opened, который сменит вид переключателя -->
-        <a class="main-nav__link main-nav__link--toggle">Развернуть/свернуть меню</a>
-      </div>
-      <!-- Чтобы отобразить выпадающее меню, закомментируй свойство display: none у селектора &__item--toggle ~ .main-nav__item -->
-      <div class="main-nav__item main-nav__item--catalog">
-        <a href="/catalog.html" class="main-nav__link main-nav__link--big">Каталог товаров</a>
-      </div>
-      <div class="main-nav__item main-nav__item--knitting">
-        <a class="main-nav__link main-nav__link--big">Вязание на заказ</a>
-      </div>
-      <div class="main-nav__item main-nav__item--src">
-        <a href="/search.html" class="main-nav__link main-nav__link--big main-nav__link--src">Поиск по сайту</a>
-      </div>
-      <div class="main-nav__item main-nav__item--cart">
-        <a href="/cart.html" class="main-nav__link main-nav__link--big main-nav__link--cart">Корзина: пока пуста</a>
-      </div>
-      <!-- СКрыты. Не стилизованы. Доделаю при работе над версиями tablet и desktop -->
-      <div class="main-nav__item main-nav__item--new">
-        <a href="/new.html" class="main-nav__link main-nav__link--new">Новые поступления</a>
-      </div>
-      <div class="main-nav__item main-nav__item--sale">
-        <a href="/sale.html" class="main-nav__link main-nav__link--sale">Распродажа</a>
-      </div>
-      <div class="main-nav__item main-nav__item--delivery">
-        <a href="/delivery.html" class="main-nav__link main-nav__link--delivery">Бесплатная доставка по России</a>
-      </div>
-    </nav>
-    <h1 class="page-header__title page-header__title--form">Вязание на заказ</h1>
+    <header class="page-header page-header--form page-header--menu-opened page-header--no-js">
+      <nav class="main-nav">
+        <div class="main-nav__item main-nav__item--logo">
+          <a href="/index.html" class="main-nav__link main-nav__link--logo">MISHKA</a>
+        </div>
+        <div class="main-nav__item main-nav__item--toggle main-nav__item--toggle-close">
+          <a href class="main-nav__link main-nav__link--toggle">Меню</a>
+        </div>
+        <div class="main-nav__item main-nav__item--catalog">
+          <a href="/catalog.html" class="main-nav__link">Каталог товаров</a>
+        </div>
+        <div class="main-nav__item main-nav__item--knitting">
+          <a class="main-nav__link">Вязание на заказ</a>
+        </div>
+        <div class="main-nav__item main-nav__item--src">
+          <a href="/search.html" class="main-nav__link main-nav__link--src">Поиск по сайту</a>
+        </div>
+        <div class="main-nav__item main-nav__item--cart">
+          <a href="/cart.html" class="main-nav__link main-nav__link--cart">Корзина: пока пуста</a>
+        </div>
+        <!-- Cтилизовать на версиях tablet и desktop -->
+        <div class="main-nav__item main-nav__item--mobile-hidden">
+          <a href="/new.html" class="main-nav__link main-nav__link--new main-nav__link--only-desktop">Новые поступления</a>
+          <a href="/sale.html" class="main-nav__link main-nav__link--sale main-nav__link--only-desktop">Распродажа</a>
+          <a href="/delivery.html" class="main-nav__link main-nav__link--delivery">Бесплатная доставка по России</a>
+        </div>
+      </nav>
+      <h1 class="page-header__title page-header__title--form">Вязание на заказ</h1>
     </header>
 
     <section class="order">
@@ -141,5 +135,6 @@
       </div>
     </footer>
 
+    <script type="text/javascript" src="js/page-header.js"></script>
   </body>
 </html>
