@@ -2,13 +2,18 @@
   position: relative;
   background: @default-bg;
   .container();
+  margin-top: 80px;
 
   &--menu-opened {
     margin-top: 396px;
   }
 
-  &--menu-closed {
-    margin-top: 80px;
+  @media@tablet-width {
+    margin-top: 89px;
+
+    &--menu-opened {
+      margin-top: 89px;
+    }
   }
 
   &--main {
@@ -21,7 +26,7 @@
     text-align: center;
     .font-param(27px; 30px; bold; @font-color);
 
-    /*@media @tablet-width {
+    /*@media@tablet-width {
       font-size: 43px;
       line-height: 50px;
     }*/
