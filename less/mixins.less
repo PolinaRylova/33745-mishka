@@ -55,17 +55,17 @@
   overflow: hidden;
 }
 
-.decor-wave {//для блоков с декором в виде волны
+.decor-wave(@top-position) {//для блоков с декором в виде волны
   position: relative;
   &::before {
     content: "";
     position: absolute;
-    top: 0;
+    top: @top-position;
     left: 0;
     display: block;
-    height: 8px;
+    height: 7px;
     width: 100%;
-    background: url("/img/decor-wave.png") repeat-x 0% 50%;
+    background: url("/img/decor-wave.svg") repeat-x 0% 50%;
     z-index: 1;
   }
 }
