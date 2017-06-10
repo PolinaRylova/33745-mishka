@@ -3,16 +3,29 @@
   justify-content: center;
   align-items: center;
   margin: auto;
-  padding-top: 9px;
+  padding-top: 18px;
   width: 260px;
-  height: 80px;
+  height: 62px;
   font-size: 0;
   border-bottom: 1px solid #e5e5e5;
 
 
   &__link {
-    padding: 0 20px;
+    display: block;
+    padding: 0 23px 0 17px;
     font-size: 0;
     .unstyled-link();
+
+    &:hover svg {
+      fill: #46c1ae;
+    }
+
+    &:active {
+      opacity: 0.3;
+      svg {
+        fill: #46c1ae;
+      }
+    }
   }
+
 }

@@ -69,6 +69,46 @@
     height: 52px;
     width: 245px;
     background-color: @main-color;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  &__link--src,
+  &__link--cart  {
+    display: block;
+    svg {
+      margin-right: 23px;
+      margin-bottom: -5px;
+      margin-left: -43px;
+      fill: @font-color;
+      opacity: 0.2;
+    }
+
+    &:hover {
+      svg {
+        fill: @accent-color;
+        opacity: 1;
+      }
+    }
+
+    &:active {
+      svg {
+        fill: @accent-color;
+        opacity: 0.3;
+      }
+    }
+  }
+
+  &__link--cart {
+    svg {
+      margin-right: 20px;
+    }
   }
 
   &__item--mobile-hidden {
@@ -101,32 +141,6 @@
     width: 20px;
     height: 20px;
     font-size: 0;
-  }
-
-  &__link--src {
-    position: relative;
-    &::before {
-      content: "";
-      width: 20px;
-      height: 20px;
-      position: absolute;
-      top: 3px;
-      left: -45px;
-      background: url("/img/icon-search.svg") no-repeat 50% 50%;
-    }
-  }
-
-  &__link--cart {
-    position: relative;
-    &::before {
-      content: "";
-      width: 20px;
-      height: 20px;
-      position: absolute;
-      top: 3px;
-      left: -45px;
-      background: url("/img/icon-cart.svg") no-repeat 50% 50%;
-    }
   }
 }
 
