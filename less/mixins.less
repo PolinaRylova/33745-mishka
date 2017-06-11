@@ -55,7 +55,8 @@
   overflow: hidden;
 }
 
-.decor-wave(@top-position) {//для блоков с декором в виде волны
+.decor-wave(@top-position; @name; @height) {//для блоков с декором в виде волны
+  @pic-name: @name;
   position: relative;
   &::before {
     content: "";
@@ -63,9 +64,9 @@
     top: @top-position;
     left: 0;
     display: block;
-    height: 7px;
+    height: @height;
     width: 100%;
-    background: url("/img/decor-wave.svg") repeat-x 0% 50%;
+    background: url("/img/@{pic-name}.png") repeat-x 0% 50%;
     z-index: 1;
   }
 }
