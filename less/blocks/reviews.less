@@ -2,20 +2,36 @@
   margin-bottom: 30px;
 
   @media@tablet-width {
+    margin-left: -30px;
     display: flex;
     flex-wrap: wrap;
+    height: 460px;
+    background: url("/img/review@1x.jpg") no-repeat 0% 0%;
   }
 
   &__title {
     margin: 0;
     padding: 4px 0 14px;
     .font-param(25px; 30px; bold; @font-color);
+
+    @media@tablet-width {
+      font-size: 43px;
+      line-height: 50px;
+      margin-top: 74px;
+      margin-left: 45px;
+      order: -2;
+    }
   }
 
   &__text {
     margin: 0;
     padding: 10px 0;
     .font-param(15px; 30px; normal; @second-font-color);
+
+    @media@tablet-width {
+      font-size: 17px;
+      line-height: 30px;
+    }
   }
 
   &__author {
@@ -23,6 +39,11 @@
     padding-top: 27px;
     .font-param(17px; 24px; bold; @font-color);
     font-style: normal;
+
+    @media@tablet-width {
+      padding-top: 56px;
+      font-size: 18px;
+    }
   }
 
   &__author-link {
@@ -30,5 +51,9 @@
     padding-top: 3px;
     .unstyled-link();
     .font-param(17px; 30px; normal; @second-font-color);
+
+    @media@tablet-width {
+      padding-top: 4px;
+    }
   }
 }
