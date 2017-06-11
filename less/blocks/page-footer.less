@@ -8,11 +8,31 @@
 
   &__logo {
     display: none;
+
+    @media@tablet-width {
+      display: block;
+      margin-top: -5px;
+      margin-left: 50px;
+    }
+  }
+
+  &__logo-link {
+    display: block;
+    font-size: 0;
+    width: 102px;
+    height: 34px;
+    background: url("/img/logo-footer.png") no-repeat center center;
   }
 
   &__copyright-container {
     height: 80px;
     margin: auto;
+
+    @media@tablet-width {
+      margin-top: 35px;
+      margin-right: 50px;
+      margin-left: 20px;
+    }
   }
 
   &__copyright-link {
