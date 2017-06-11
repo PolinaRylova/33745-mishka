@@ -1,8 +1,11 @@
 .categories-list {
   .unstyled-list();
-  margin: 0 auto;
-  width: 668px;
   font-size: 0;
+
+  @media@tablet-width {
+    margin: 0 auto;
+    width: 668px;
+  }
 
   &__item {
     position: relative;
@@ -18,7 +21,7 @@
 
   &__link {
     display: block;
-    padding: 25px 120px 30px 30px;
+    padding: 26px 120px 29px 29px;
     background-color: @accent-color;
     .font-param(19px; 24px; bold; @main-color);
     .unstyled-link();

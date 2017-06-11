@@ -7,7 +7,7 @@
   .font-param(17px; 20px; bold; @second-font-color);
 
   &--review {
-    margin-top: 38px;
+    margin-top: 39px;
     border: 2px solid @second-font-color;
 
     &:hover {
@@ -26,7 +26,6 @@
     margin: 0 auto;
     width: 256px;
     border: 2px solid @second-font-color;
-    padding-bottom: 16px;
 
     &:hover {
       color: @main-color;
@@ -58,7 +57,12 @@
   }
 
   &--popular-order {
+    padding: 14px 0;
     border: 2px solid @second-font-color;
+
+    @media@tablet-width {
+      margin-left: 18px;
+    }
 
     &:hover {
       color: @main-color;
