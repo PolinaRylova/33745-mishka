@@ -1,8 +1,16 @@
 .contacts {
   margin-bottom: 38px;
-  .decor-wave(0px);
+  .decor-wave(0px; "wave-mobile"; 7px);
   display: flex;
   flex-wrap: wrap;
+
+  @media@tablet-width {
+    .decor-wave(0px; "wave-tablet"; 17px);
+  }
+
+  @media@desktop-width {
+    .decor-wave(0px; "wave-desktop"; 24px);
+  }
 
   &__title {
     margin: 0;
@@ -12,7 +20,7 @@
 
   &__container {
     margin: 0 auto;
-    padding-bottom: 38px;
+    padding-bottom: 36px;
     width: 260px;
     display: flex;
     flex-wrap: wrap;
@@ -43,7 +51,7 @@
     &::after {
       content: "";
       position: absolute;
-      bottom: -5px;
+      bottom: -4px;
       left: 0;
       right: 0;
       height: 1px;

@@ -1,11 +1,19 @@
 .about-us {
   padding: 25px 30px 14px;
-  .decor-wave(0px);
+  .decor-wave(0px; "wave-mobile"; 7px);
+
+  @media@tablet-width {
+    .decor-wave(0px; "wave-tablet"; 17px);
+  }
+
+  @media@desktop-width {
+    .decor-wave(0px; "wave-desktop"; 24px);
+  }
 
   &__title {
     margin: 0;
     margin-bottom: 54px;
-    padding-top: 12px;
+    padding-top: 11px;
     .font-param(25px; 30px; bold; @font-color);
   }
 }
