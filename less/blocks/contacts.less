@@ -9,6 +9,10 @@
   }
 
   @media@desktop-width {
+    margin-bottom: 107px;
+    height: 552px;
+    flex-direction: column-reverse;
+    align-content: flex-end;
     .decor-wave(0px; "wave-desktop"; 24px);
   }
 
@@ -36,6 +40,20 @@
         background: url("/img/icon-flag.svg") no-repeat center center;
       }
     }
+
+    @media@desktop-width {
+      width: 380px;
+      font-size: 53px;
+      line-height: 57px;
+      text-align: center;
+
+      &::after {
+        top: 34px;
+        right: auto;
+        left: -24px;
+
+      }
+    }
   }
 
   &__container {
@@ -53,6 +71,15 @@
       font-size: 17px;
       flex-wrap: nowrap;
       width: 670px;
+    }
+
+    @media@desktop-width {
+      width: 350px;
+      margin: 0;
+      margin-left: 105px;
+      padding-bottom: 78px;
+      flex-wrap: wrap;
+      order: -1;
     }
   }
 
