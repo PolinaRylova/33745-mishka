@@ -1,11 +1,29 @@
 .video-container {
   box-sizing: border-box;
 
+  @media@tablet-width {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media@desktop-width {
+    flex-direction: row;
+    width: 1046px;
+    box-sizing: border-box;
+  }
+
   &__title {
     position: relative;
     padding: 24px 33px 24px 90px;
     .font-param(17px; 24px; bold; @font-color);
     border: 1px solid @border-color;
+
+    @media@tablet-width {
+      font-size: 20px;
+      padding: 38px 33px 24px 105px;
+      border-top: 0;
+      border-bottom: 0;
+    }
 
     &::before {
       content: "";
@@ -15,12 +33,22 @@
       top: 35px;
       left: 33px;
       background: url("/img/icon-video-copy.svg") no-repeat 50% 50%;
+
+      @media@tablet-width {
+        top: 38px;
+        left: 41px;
+      }
     }
   }
 
   &__content {
     margin: 0;
     position: relative;
+
+    @media@tablet-width {
+      order: -1;
+    }
+
     &::after {
       content: "";
       width: 100px;
@@ -35,6 +63,13 @@
 
     video {
       vertical-align: middle;
+      width: 260px;
+      height: 150px;
+
+      @media@tablet-width {
+        height: 100%;
+        width: 668px;
+      }
     }
   }
 
@@ -42,5 +77,12 @@
     padding: 25px 33px 32px;
     border: 1px solid @border-color;
     .font-param(13px; 24px; normal; @second-font-color);
+
+    @media@tablet-width {
+      padding: 8px 39px 32px;
+      font-size: 15px;
+      line-height: 30px;
+      border-top: 0;
+    }
   }
 }

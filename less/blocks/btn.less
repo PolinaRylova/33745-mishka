@@ -107,6 +107,7 @@
 
   &--catalog-order {
     font-size: 0;
+    padding-bottom: 17px;
     position: relative;
     &::before {
       content: "";
@@ -117,6 +118,10 @@
       right: 0;
       background: url("/img/icon-cart.svg") no-repeat 50% 50%;
       border: none;
+
+      @media@tablet-width {
+        margin-right: 4px;
+      }
     }
   }
 
@@ -128,6 +133,10 @@
     border: 2px solid @second-font-color;
     .font-param(17px; 16px; bold; @font-color);
     .unstyled-link();
+
+    @media@tablet-width {
+      margin: 35px 2px 13px;
+    }
   }
 
   &--send-order {
