@@ -22,12 +22,13 @@
     &:hover {
       color: @main-color;
       background-color: @second-font-color;
+      border: 2px solid @second-font-color;
     }
 
     &:active {
-      opacity: 0.3;
-      color: @main-color;
+      color: #8d8d8d;
       background-color: @second-font-color;
+      border: 2px solid @second-font-color;
     }
   }
 
@@ -50,12 +51,13 @@
     &:hover {
       color: @main-color;
       background-color: @second-font-color;
+      border: 2px solid @second-font-color;
     }
 
     &:active {
-      opacity: 0.3;
-      color: @main-color;
+      color: #8d8d8d;
       background-color: @second-font-color;
+      border: 2px solid @second-font-color;
     }
   }
 
@@ -96,32 +98,44 @@
     &:hover {
       color: @main-color;
       background-color: @second-font-color;
+      border: 2px solid @second-font-color;
     }
 
     &:active {
-      opacity: 0.3;
-      color: @main-color;
+      color: #8d8d8d;
       background-color: @second-font-color;
+      border: 2px solid @second-font-color;
     }
   }
 
   &--catalog-order {
     font-size: 0;
-    padding-bottom: 17px;
-    position: relative;
-    &::before {
-      content: "";
-      width: 20px;
-      height: 20px;
-      position: absolute;
-      top: 0;
-      right: 0;
-      background: url("/img/icon-cart.svg") no-repeat 50% 50%;
-      border: none;
+    padding: 1px 0 29px;
+    width: 20px;
+    height: 20px;
+    border: none;
 
-      @media@tablet-width {
-        margin-right: 4px;
+    svg {
+      fill: @font-color;
+      opacity: 0.2;
+    }
+
+    &:hover {
+      svg {
+        fill: @accent-color;
+        opacity: 1;
       }
+    }
+
+    &:active {
+      svg {
+        fill: @accent-color;
+        opacity: 0.3;
+      }
+    }
+
+    @media@tablet-width {
+      margin-right: 4px;
     }
   }
 
@@ -142,6 +156,18 @@
       margin-top: 46px;
       width: 196px;
     }
+
+    &:hover {
+      color: @main-color;
+      background-color: @second-font-color;
+      border: 2px solid @second-font-color;
+    }
+
+    &:active {
+      color: #8d8d8d;
+      background-color: @second-font-color;
+      border: 2px solid @second-font-color;
+    }
   }
 
   &--send-order {
@@ -151,6 +177,18 @@
     background: transparent;
     width: 260px;
     box-sizing: border-box;
+
+    &:hover {
+      color: @main-color;
+      background-color: @second-font-color;
+      border: 2px solid @second-font-color;
+    }
+
+    &:active {
+      color: #8d8d8d;
+      background-color: @second-font-color;
+      border: 2px solid @second-font-color;
+    }
   }
 
   &--modal-close {

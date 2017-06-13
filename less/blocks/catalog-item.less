@@ -68,6 +68,22 @@
     }
   }
 
+  &__img-link:hover + .catalog-item__definition {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  &__definition:hover {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  &__img-link:active + .catalog-item__definition {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  &__definition:active {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+  }
+
   &__definition {
     padding: 20px 28px 1px;
     border: 1px solid @border-color;
