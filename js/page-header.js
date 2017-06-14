@@ -24,4 +24,3 @@ linkToggle.addEventListener('click', function(event) {
     pageHeader.classList.remove('page-header--menu-opened');
   }
 });
-
