@@ -1,0 +1,50 @@
+.page {
+
+  &--index {}
+
+  &--catalog,
+  &--form {
+    @media@desktop-width {
+      header,
+      section,
+      footer {
+        width: 1150px;
+      }
+
+      .main-nav {
+        width: 1150px;
+        margin-left: 1150px / 2 * -1;
+      }
+
+      //Уменьшаю отступы на 50px с каждой стороны меню для более узких страниц
+      .main-nav__item--catalog {
+        padding-left: 48px;
+      }
+      .main-nav__item--cart {
+        padding-right: 51px;
+      }
+
+      //Уменьшаю отступы для дополнительной навигации
+      .main-nav__link--new {
+        margin-left: 50px;
+      }
+
+      .main-nav__link--sale {
+        margin-left: 62px;
+      }
+
+      .main-nav__link--delivery {
+        margin-right: 50px;
+      }
+
+      //Меняю отступы для элементов футера
+      .page-footer__logo {
+        margin-left: 51px;
+      }
+
+      .page-footer__copyright-container {
+        margin-right: 49px;
+      }
+    }
+  }
+}
