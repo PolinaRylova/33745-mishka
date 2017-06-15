@@ -32,6 +32,9 @@
     .font-param(19px; 24px; bold; @main-color);
     .unstyled-link();
 
+    transition-property: all;
+    transition-duration: 0.7s;
+
     @media@tablet-width {
       padding: 28px 0 30px 35px;
       .font-param(20px; 30px; bold; @main-color);
@@ -62,6 +65,9 @@
       opacity: 0.5;
       background: url("/img/icon-interior-copy.svg") no-repeat 50% 50%;
 
+      transition-property: all;
+      transition-duration: 0.7s;
+
       @media@tablet-width {
         top: 28px;
       }
@@ -79,6 +85,7 @@
 
   &__item--toys a {
     background-color: #56c3b2;
+
     &::after {
       width: 61px;
       height: 61px;
