@@ -2,7 +2,6 @@
   .unstyled-list();
   font-size: 0;
 
-
   @media@tablet-width {
     margin: 0 auto;
     width: 668px;
@@ -32,7 +31,7 @@
     .font-param(19px; 24px; bold; @main-color);
     .unstyled-link();
 
-    transition-property: all;
+    transition-property: padding;
     transition-duration: 0.7s;
 
     @media@tablet-width {
@@ -76,6 +75,10 @@
     &:hover::after {
       top: 18px;
       opacity: 0.7;
+
+      @media@tablet-width {
+        top: 23px;
+      }
     }
 
     &:active::after {
