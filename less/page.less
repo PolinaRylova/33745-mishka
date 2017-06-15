@@ -1,9 +1,20 @@
 .page {
 
-  &--index {}
-
   &--catalog,
   &--form {
+
+    @media@tablet-width {
+
+      .main-nav__item--cart {
+        width: 189px;
+        padding-right: 50px;
+
+        svg {
+          margin-right: 31px;
+        }
+      }
+    }
+
     @media@desktop-width {
       header,
       section,
@@ -13,15 +24,20 @@
 
       .main-nav {
         width: 1150px;
-        margin-left: 1150px / 2 * -1;
+        //margin-left: 1150px / 2 * -1;
       }
 
-      //Уменьшаю отступы на 50px с каждой стороны меню для более узких страниц
-      .main-nav__item--catalog {
-        padding-left: 48px;
+      //Меняю отступы у элементов меню для более узких страниц
+      .main-nav__item--logo {
+        padding: 8px 100px 13px 63px;
       }
+
+      .main-nav__item--catalog {
+        padding-left: 49px;
+      }
+
       .main-nav__item--cart {
-        padding-right: 51px;
+        padding-right: 53px;
       }
 
       //Уменьшаю отступы для дополнительной навигации
@@ -43,8 +59,30 @@
       }
 
       .page-footer__copyright-container {
-        margin-right: 49px;
+        margin-right: 51px;
       }
     }
   }
+
+  &--form {
+
+    @media @tablet-width {
+
+      .main-nav__item--cart {
+
+        svg {
+          margin-right: 27px;
+        }
+      }
+    }
+
+    @media@desktop-width {
+
+      .page-footer__copyright-container {
+        margin-top: 32px;
+      }
+    }
+  }
+
+
 }
