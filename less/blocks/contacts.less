@@ -1,0 +1,145 @@
+.contacts {
+  margin-bottom: 39px;
+  .decor-wave(0px; "wave-mobile"; 7px);
+  display: flex;
+  flex-wrap: wrap;
+
+  @media@tablet-width {
+    margin-bottom: 38px;
+    .decor-wave(0px; "wave-tablet"; 17px);
+  }
+
+  @media@desktop-width {
+    margin-bottom: 104px;
+    height: 552px;
+    flex-direction: column-reverse;
+    align-content: flex-end;
+    .decor-wave(0px; "wave-desktop"; 24px);
+  }
+
+  &__title {
+    margin: 0;
+    padding: 42px 30px 27px;
+    .font-param(18px; 30px; bold; @font-color);
+
+    @media@tablet-width {
+      position: relative;
+      font-size: 43px;
+      line-height: 50px;
+      margin-top: 36px;
+      margin-left: 16px;
+      margin-bottom: 23px;
+      width: 670px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 27px;
+        right: 28px;
+        height: 82px;
+        width: 51px;
+        background: url("/img/icon-flag.svg") no-repeat center center;
+      }
+    }
+
+    @media@desktop-width {
+      margin-bottom: 22px;
+      width: 380px;
+      font-size: 53px;
+      line-height: 57px;
+      text-align: center;
+
+      &::after {
+        top: 34px;
+        right: auto;
+        left: -24px;
+
+      }
+    }
+  }
+
+  &__container {
+    margin: 0 auto;
+    padding-bottom: 36px;
+    width: 260px;
+    display: flex;
+    flex-wrap: wrap;
+    .font-param(15px; 30px; normal; @second-font-color);
+
+    @media@tablet-width {
+      margin-right: auto;
+      padding-bottom: 55px;
+      margin-left: 50px;
+      font-size: 17px;
+      flex-wrap: nowrap;
+      width: 670px;
+    }
+
+    @media@desktop-width {
+      width: 350px;
+      margin: 0;
+      margin-left: 105px;
+      padding-bottom: 79px;
+      flex-wrap: wrap;
+      order: -1;
+    }
+  }
+
+  &__label {
+    width: 77px;
+    height: 60px;
+    flex-shrink: 0;
+    font: inherit;
+  }
+
+  &__address {
+    width: 180px;
+    font: inherit;
+
+    @media@tablet-width {
+      margin-right: 75px;
+    }
+
+  }
+
+  &__address--location {
+    width: 155px;
+
+    @media@tablet-width {
+      margin-right: 0;
+      width: 230px;
+    }
+  }
+
+  &__email-link {
+    .unstyled-link();
+    .font-param(15px; 30px; normal; @second-font-color);
+    position: relative;
+
+    transition-property: all;
+    transition-duration: 0.7s;
+
+    @media@tablet-width {
+      font: inherit;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background: #62d1ba;
+    }
+
+    &:hover {
+      color: @accent-color;
+    }
+
+    &:active {
+      opacity: 0.3;
+      color: @accent-color;
+    }
+  }
+}

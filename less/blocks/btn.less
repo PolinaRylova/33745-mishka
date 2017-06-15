@@ -1,0 +1,237 @@
+.btn {
+  display: block;
+  padding: 13px 0 15px;
+  text-align: center;
+  .uppercase();
+  .unstyled-link();
+  .font-param(17px; 20px; bold; @second-font-color);
+
+  &--review {
+    margin-top: 39px;
+    border: 2px solid @second-font-color;
+
+    transition-property: all;
+    transition-duration: 0.7s;
+
+    @media@tablet-width {
+      order: -1;
+      width: 171px;
+      height: 20px;
+      margin-top: 79px;
+      margin-right: 20px;
+      margin-left: auto;
+    }
+
+    &:hover {
+      color: @main-color;
+      background-color: @second-font-color;
+      border: 2px solid @second-font-color;
+    }
+
+    &:active {
+      color: #8d8d8d;
+      background-color: @second-font-color;
+      border: 2px solid @second-font-color;
+    }
+  }
+
+  &--write-us {
+    margin: 0 auto;
+    width: 256px;
+    border: 2px solid @second-font-color;
+
+    transition-property: all;
+    transition-duration: 0.7s;
+
+    @media@tablet-width {
+      width: 226px;
+      margin-bottom: 19px;
+    }
+
+    @media@desktop-width {
+      order: -2;
+      margin-left: 106px;
+      margin-bottom: 1px;
+    }
+
+    &:hover {
+      color: @main-color;
+      background-color: @second-font-color;
+      border: 2px solid @second-font-color;
+    }
+
+    &:active {
+      color: #8d8d8d;
+      background-color: @second-font-color;
+      border: 2px solid @second-font-color;
+    }
+  }
+
+  &--add-to-cart {
+    margin: 0 30px;
+    display: block;
+    padding: 18px 0;
+    background-color: @accent-color;
+    .uppercase();
+    .font-param(17px; 16px; bold; @main-color);
+
+    transition-property: all;
+    transition-duration: 0.7s;
+
+    @media@tablet-width {
+      margin: 0 108px;
+    }
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  &--popular-order {
+    padding: 14px 0;
+    border: 2px solid @second-font-color;
+
+    transition-property: all;
+    transition-duration: 0.7s;
+
+    @media@tablet-width {
+      margin-left: 18px;
+    }
+
+    @media@desktop-width {
+      margin-left: 0;
+      width: 288px;
+    }
+
+    &:hover {
+      color: @main-color;
+      background-color: @second-font-color;
+      border: 2px solid @second-font-color;
+    }
+
+    &:active {
+      color: #8d8d8d;
+      background-color: @second-font-color;
+      border: 2px solid @second-font-color;
+    }
+  }
+
+  &--catalog-order {
+    font-size: 0;
+    padding: 1px 0 29px;
+    width: 20px;
+    height: 20px;
+    border: none;
+
+    svg {
+      fill: @font-color;
+      opacity: 0.2;
+
+      transition-property: all;
+      transition-duration: 0.7s;
+    }
+
+    &:hover {
+      svg {
+        fill: @accent-color;
+        opacity: 1;
+      }
+    }
+
+    &:active {
+      svg {
+        fill: @accent-color;
+        opacity: 0.3;
+      }
+    }
+
+    @media@tablet-width {
+      margin-right: 4px;
+    }
+  }
+
+  &--video-order {
+    margin-top: 25px;
+    padding: 15px 15px 17px;
+    display: block;
+    text-align: center;
+    border: 2px solid @second-font-color;
+    .font-param(17px; 16px; bold; @font-color);
+    .unstyled-link();
+
+    transition-property: all;
+    transition-duration: 0.7s;
+
+    @media@tablet-width {
+      margin: 35px 2px 13px;
+    }
+
+    @media@desktop-width {
+      margin-top: 46px;
+      width: 196px;
+    }
+
+    &:hover {
+      color: @main-color;
+      background-color: @second-font-color;
+      border: 2px solid @second-font-color;
+    }
+
+    &:active {
+      color: #8d8d8d;
+      background-color: @second-font-color;
+      border: 2px solid @second-font-color;
+    }
+  }
+
+  &--send-order {
+    margin-bottom: 18px;
+    padding: 14px 0;
+    width: 260px;
+    box-sizing: border-box;
+    border: 2px solid @font-color;
+    background: transparent;
+
+    transition-property: all;
+    transition-duration: 0.7s;
+
+    @media@tablet-width {
+      margin-left: 50px;
+      padding: 15px 0 13px;
+      width: 230px;
+    }
+
+    @media@desktop-width {
+      margin-left: 226px;
+    }
+
+    &:hover {
+      color: @main-color;
+      background-color: @second-font-color;
+      border: 2px solid @second-font-color;
+    }
+
+    &:active {
+      color: #8d8d8d;
+      background-color: @second-font-color;
+      border: 2px solid @second-font-color;
+    }
+  }
+
+  &--modal-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 5px;
+    padding: 10px;
+    width: 10px;
+    height: 10px;
+    background: url("/img/icon-modal-close.svg") no-repeat center center;
+    font-size: 0;
+    border: none;
+  }
+}

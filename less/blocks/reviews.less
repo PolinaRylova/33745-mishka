@@ -1,0 +1,93 @@
+.reviews {
+  margin-bottom: 30px;
+
+  @media@tablet-width {
+    margin-left: -30px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 460px;
+    background: url("/img/review@1x.jpg") no-repeat 0% 0%;
+  }
+
+  @media@desktop-width {
+    margin: 0 50px 0 70px;
+  }
+
+  &__title {
+    margin: 0;
+    padding: 4px 0 14px;
+    .font-param(25px; 30px; bold; @font-color);
+
+    @media@tablet-width {
+      font-size: 43px;
+      line-height: 50px;
+      margin-top: 74px;
+      margin-left: 45px;
+      order: -2;
+    }
+
+    @media@desktop-width {
+      font-size: 53px;
+      line-height: 57px;
+      margin-top: 66px;
+      margin-left: 171px;
+      padding-bottom: 0;
+    }
+  }
+
+  &__text {
+    margin: 0;
+    padding: 10px 0;
+    .font-param(15px; 30px; normal; @second-font-color);
+
+    @media@tablet-width {
+      font-size: 17px;
+      line-height: 30px;
+    }
+
+    @media@desktop-width {
+      margin-left: 127px;
+      margin-right: 65px;
+    }
+  }
+
+  &__author {
+    display: block;
+    padding-top: 27px;
+    .font-param(17px; 24px; bold; @font-color);
+    font-style: normal;
+
+    @media@tablet-width {
+      padding-top: 56px;
+      font-size: 18px;
+    }
+
+    @media@desktop-width {
+      padding-top: 40px;
+      padding-bottom: 34px;
+    }
+  }
+
+  &__author-link {
+    display: block;
+    padding-top: 3px;
+    .unstyled-link();
+    .font-param(17px; 30px; normal; @second-font-color);
+
+    transition-property: all;
+    transition-duration: 0.7s;
+
+    &:hover {
+      color: @accent-color;
+    }
+
+    &:active {
+      opacity: 0.3;
+      color: @accent-color;
+    }
+
+    @media@tablet-width {
+      padding-top: 4px;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+.about-us {
+  padding: 25px 30px 14px;
+  .decor-wave(0px; "wave-mobile"; 7px);
+
+  @media@tablet-width {
+    .decor-wave(0px; "wave-tablet"; 17px);
+    padding-bottom: 35px;
+  }
+
+  @media@desktop-width {
+    .decor-wave(0px; "wave-desktop"; 24px);
+    padding-bottom: 63px;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 54px;
+    padding-top: 11px;
+    .font-param(25px; 30px; bold; @font-color);
+
+    @media@tablet-width {
+      font-size: 43px;
+      line-height: 50px;
+      margin-left: 16px;
+      margin-bottom: 55px;
+      padding-top: 41px;
+    }
+
+    @media@desktop-width {
+      margin-top: 16px;
+      margin-left: 241px;
+      font-size: 53px;
+      line-height: 57px;
+    }
+  }
+}

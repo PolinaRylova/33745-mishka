@@ -1,0 +1,38 @@
+body {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 17px;
+  font-weight: normal;
+  line-height: 30px;
+  font-style: normal;
+  color: @font-color;
+  background-color: @main-color;
+}
+
+a:active,
+a:hover {
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+input, textarea {outline:none;}
+input:active, textarea:active {outline:none;}
+:focus {outline:none;}
+textarea {resize:none;}
+textarea {resize:vertical;}
+textarea {resize:horizontal;}
+
+section,
+footer {
+  .container();
+}
+
+.page-header--main .main-nav__link--logo:hover,
+.page-header--main .main-nav__link--logo:active,
+.page-header--catalog .main-nav__item--catalog a:hover,
+.page-header--catalog .main-nav__item--catalog a:active {
+  opacity: 1;
+}

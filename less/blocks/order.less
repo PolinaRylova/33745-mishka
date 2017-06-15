@@ -1,0 +1,30 @@
+.order {
+  padding: 23px 30px 22px;
+
+  @media@tablet-width {
+    padding: 75px 0 23px;
+    .decor-wave(-12px; "wave-white-tablet"; 25px);
+  }
+
+  @media@desktop-width {
+    .decor-wave(-22px; "wave-white-tablet"; 35px);
+  }
+
+  &__desc {
+    padding-bottom: 8px;
+    .font-param(13px; 24px; normal; @second-font-color);
+
+    @media@tablet-width {
+      font-size: 17px;
+      line-height: 30px;
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+
+    @media@desktop-width {
+      margin: 0 auto;
+      width: 698px;
+      padding-top: 45px;
+    }
+  }
+}

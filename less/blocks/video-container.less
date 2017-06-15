@@ -1,0 +1,148 @@
+.video-container {
+  box-sizing: border-box;
+
+  transition-property: all;
+  transition-duration: 0.7s;
+
+  &:hover {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  @media@tablet-width {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media@desktop-width {
+    flex-wrap: wrap;
+    width: 1048px;
+    height: 455px;
+  }
+
+  &__title {
+    position: relative;
+    padding: 24px 33px 24px 90px;
+    .font-param(17px; 24px; bold; @font-color);
+    border: 1px solid @border-color;
+
+    @media@tablet-width {
+      font-size: 20px;
+      padding: 38px 33px 24px 105px;
+      border-top: 0;
+      border-bottom: 0;
+    }
+
+    @media@desktop-width {
+      width: 239px;
+      padding: 95px 50px 24px 77px;
+      border-top: 1px solid @border-color;
+      border-left: 0;
+    }
+
+    &::before {
+      content: "";
+      width: 32px;
+      height: 22px;
+      position: absolute;
+      top: 35px;
+      left: 33px;
+      background: url("/img/icon-video-copy.svg") no-repeat 50% 50%;
+
+      @media@tablet-width {
+        top: 38px;
+        left: 41px;
+      }
+
+      @media@desktop-width {
+        top: 47px;
+        left: 79px;
+      }
+    }
+  }
+
+  &__content {
+    margin: 0;
+    position: relative;
+    width: 260px;
+    height: 150px;
+    overflow: hidden;
+
+    @media@tablet-width {
+      order: -1;
+      width: 668px;
+      height: 455px;
+      background-color: @border-color;
+    }
+
+    @media@desktop-width {
+      width: 682px;
+    }
+
+    video {
+      vertical-align: middle;
+      height: auto;
+      width: 100%;
+
+      @media@tablet-width {
+        height: 100%;
+        width: auto;
+      }
+    }
+  }
+
+  &__play-btn {
+    position: absolute;
+    width: 100px;
+    height: 78px;
+    top: 50%;
+    left: 50%;
+    margin-left: -50px;
+    margin-top: -39px;
+
+    transition-property: all;
+    transition-duration: 0.7s;
+
+    svg {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__play-btn:hover {
+    width: 120px;
+    height: 94px;
+    margin-left: -60px;
+    margin-top: -47px;
+  }
+
+  &__play-btn:active {
+    width: 80px;
+    height: 62px;
+    margin-left: -40px;
+    margin-top: -31px;
+    opacity: 0.7;
+  }
+
+  &__desc {
+    padding: 25px 33px 32px;
+    border: 1px solid @border-color;
+    .font-param(13px; 24px; normal; @second-font-color);
+
+    @media@tablet-width {
+      padding: 8px 39px 32px;
+      font-size: 15px;
+      line-height: 30px;
+      border-top: 0;
+    }
+
+    @media@desktop-width {
+      padding: 9px 50px 46px 77px;
+      width: 239px;
+      border-left: 0;
+    }
+  }
+}

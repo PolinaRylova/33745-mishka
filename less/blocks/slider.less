@@ -1,0 +1,86 @@
+.slider {
+
+  @media@tablet-width {
+    position: relative;
+    padding-top: 5px;
+    padding-left: 48px;
+    padding-right: 30px;
+  }
+
+  @media@desktop-width {
+    padding-top: 0px;
+  }
+
+  &__radio-btn {
+    display: none;
+  }
+
+  &__list {
+    display: flex;
+    .unstyled-list();
+    margin-bottom: 19px;
+  }
+
+  &__slide {
+    flex-basis: 260px;
+    flex-shrink: 0;
+    flex-grow: 1;
+  }
+
+  &__controls {
+    font-size: 0;
+
+    @media@tablet-width {
+      position: absolute;
+      bottom: 53px;
+      right: 44px;
+      width: 170px;
+    }
+
+    @media@desktop-width {
+      bottom: 103px;
+    }
+  }
+
+  &__arrow {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    height: 50px;
+    box-sizing: border-box;
+    font-size: 0;
+    border: 1px solid @border-color;
+
+    @media@tablet-width {
+      border: none;
+    }
+
+    &::after {
+      content: "";
+      width: 51px;
+      height: 26px;
+      position: absolute;
+      top: 12px;
+      left: 38px;
+
+      transition-property: all;
+      transition-duration: 0.7s;
+    }
+
+    &--prev::after {
+      background: url("/img/icon-left-arrow.svg") no-repeat 50% 50%;
+    }
+    &--next::after {
+      background: url("/img/icon-right-arrow.svg") no-repeat 50% 50%;
+    }
+
+    &:hover::after {
+      opacity: 0.6;
+    }
+
+    &:active::after {
+      opacity: 0.3;
+    }
+  }
+}

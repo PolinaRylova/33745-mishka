@@ -1,18 +1,16 @@
 .container() {
+  min-width: 320px; //чтобы не выпадали фоны при меньшем размере вьюпорта
   width: 320px;
   margin: 0 auto;
   box-sizing: border-box;
-  @width: 320px;
 
-  /*@media @tablet-width {
-    width: 640px;
-    @width: 640px;
+  @media@tablet-width {
+    width: 768px;
   }
 
-  @media @desktop-width {
-    width: 960px;
-    @width: 960px;
-  }*/
+  @media@desktop-width {
+    width: 1250px;
+  }
 }
 
 .font-param(@size; @height; @weight; @color) {
@@ -43,4 +41,32 @@
   margin-top: @height / 2 * -1;
 }
 
+.visually-hidden {
+  position: absolute;
 
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+
+  border: 0;
+
+  clip: rect(0000);
+  overflow: hidden;
+}
+
+.decor-wave(@top-position; @name; @height) {//для блоков с декором в виде волны
+  @pic-name: @name;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: @top-position;
+    left: 0;
+    display: block;
+    height: @height;
+    width: 100%;
+    background: url("/img/@{pic-name}.png") repeat-x 0% 50%;
+    z-index: 1;
+  }
+}
