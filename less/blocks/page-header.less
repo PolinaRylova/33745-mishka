@@ -2,7 +2,6 @@
   position: relative;
   background: @default-bg;
   .container();
-
   /*Стили для фиксированного меню
 
   margin-top: 80px;
@@ -23,8 +22,10 @@
 
   &--main {
 
+    height: 568px;
+
     @media@mobile-width-only {
-      background: @default-bg url("/img/hero-mobile@1x.jpg") no-repeat 50% 74%;
+      background: @default-bg url("/img/hero-mobile@1x.jpg") no-repeat 50% 100%;
 
       &.page-header--menu-closed {
         background: @default-bg url("/img/hero-mobile@1x.jpg") no-repeat 50% 32%;
@@ -32,6 +33,7 @@
     }
 
     @media@tablet-width {
+      height: 833px;
       background: @default-bg url("/img/hero-tablet@1x.jpg") no-repeat 50% 101%;
     }
 
@@ -42,7 +44,8 @@
 
   &__title {
     margin: 0;
-    padding: 70px 30px 122px;
+    padding: 70px 30px 117px;
+    margin-bottom: 5px;
     text-align: center;
     .font-param(27px; 30px; bold; @font-color);
 
@@ -51,15 +54,15 @@
       line-height: 50px;
       width: 500px;
       padding-top: 66px;
-      padding-bottom: 372px;
-      margin: 0 auto;
+      padding-bottom: 367px;
+      margin: 0 auto 5px;
     }
 
     @media@desktop-width {
       font-size: 53px;
       line-height: 57px;
       width: 650px;
-      padding-bottom: 358px;
+      padding-bottom: 353px;
     }
 
     &--catalog,

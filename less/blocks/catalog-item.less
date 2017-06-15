@@ -15,11 +15,11 @@
   @media@desktop-width {
     flex-direction: column;
     margin-bottom: 57px;
+    flex-basis: 315px;
   }
 
   &__img-link {
     display: block;
-    vertical-align: middle;
 
     transition-property: all;
     transition-duration: 0.7s;
@@ -29,9 +29,10 @@
     width: 334px;
     height: 195px;
     vertical-align: middle;
+    margin: 0;
 
     @media@tablet-width {
-      display: block;
+      display: inline-block;
       box-sizing: border-box;
       width: 334px;
       height: 334px;
@@ -40,8 +41,6 @@
     }
 
     @media@desktop-width {
-      display: block;
-      box-sizing: border-box;
       width: 316px;
       height: 462px;
       background: url("/img/photo-1-desktop@1x.jpg") no-repeat;
@@ -71,7 +70,9 @@
     }
   }
 
-  &__img-link:hover + .catalog-item__definition {
+  &__img-link:hover + .catalog-item__definition,
+  &__img-link:focus + .catalog-item__definition
+  {
     box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
   }
 
