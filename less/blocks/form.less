@@ -3,9 +3,16 @@
 
   @media@tablet-width {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
+    padding-top: 50px;
     padding-bottom: 9px;
   }
+
+  @media@desktop-width {
+    padding-top: 38px;
+  }
+
 
   &__fieldset {
     position: relative;
@@ -16,18 +23,16 @@
 
     @media@tablet-width {
       display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-      justify-content: center;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
       width: 668px;
-      height: 196px;
-      padding: 15px 50px 0;
+      padding: 3px 50px 23px;
       margin-bottom: 0;
     }
 
     @media@desktop-width {
       width: 1150px;
-      align-content: flex-start;
     }
 
     &::after {
@@ -50,12 +55,13 @@
     width: 260px;
 
     @media@tablet-width {
-      width: 502px;
+      width: 503px;
     }
 
     &--color {
       @media@tablet-width {
         display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
       }
 
@@ -67,8 +73,7 @@
     &--name {
 
       @media@tablet-width {
-        padding-top: 33px;
-        height: 225px;
+        padding-top: 34px;
         display: flex;
         align-content: flex-start;
         flex-wrap: wrap;
@@ -94,8 +99,7 @@
     }
 
     @media@desktop-width {
-      padding: 15px 113px 0;
-      height: 195px;
+      padding: 15px 113px 20px;
     }
   }
 
@@ -105,12 +109,12 @@
     @media@tablet-width {
       margin-bottom: 0;
       padding-top: 45px;
-      padding-bottom: 63px;
+      padding-bottom: 31px;
       background-color: @default-bg;
     }
 
     @media@desktop-width  {
-      padding: 23px 109px 9px;
+      padding: 45px 109px 31px;
     }
   }
 
@@ -119,11 +123,12 @@
 
     @media@tablet-width {
       margin-bottom: 0;
-      height: 289px;
+      padding-top: 30px;
+      padding-bottom: 12px;
     }
 
     @media@desktop-width {
-      padding: 15px 110px 0;
+      padding: 30px 110px 12px;
     }
   }
 
@@ -132,14 +137,19 @@
     position: relative;
 
     @media@tablet-width {
-      height: 99px;
       background-color: @default-bg;
     }
   }
 
   &__fieldset--tel {
+
+    @media@tablet-width {
+      padding-top: 15px;
+      padding-bottom: 21px;
+    }
+
     @media@desktop-width {
-      padding: 15px 112px 0;
+      padding: 15px 112px 21px;
     }
   }
 
@@ -149,11 +159,11 @@
     @media@tablet-width {
       margin-bottom: 0;
       padding-top: 0;
-      padding-bottom: 15px;
+      padding-bottom: 37px;
     }
 
     @media@desktop-width {
-      padding: 0 110px 15px;
+      padding: 0 110px 37px;
     }
 
     &::after {
@@ -166,12 +176,12 @@
     margin-bottom: 7px;
 
     @media@tablet-width {
-      margin-bottom: 10px;
-      height: 220px;
+      margin-bottom: 21px;
+      padding-top: 50px;
     }
 
     @media@desktop-width {
-      margin-bottom: 6px;
+      margin-bottom: 17px;
       padding-left: 112px;
       padding-right: 112px;
     }
@@ -184,9 +194,9 @@
 
     @media@tablet-width {
       width: 165px;
-      padding-left: 2px;
       margin-bottom: 0;
-      height: 125px;
+      padding-top: 12px;
+      padding-left: 2px;
     }
 
     @media@desktop-width {
@@ -194,24 +204,18 @@
     }
   }
 
-  &__legend--type {
-
-    @media@tablet-width {
-      height: 125px;
-    }
-  }
+  &__legend--type {}
 
   &__legend--color {
     margin-bottom: 36px;
 
     @media @tablet-width {
-      margin-bottom: 0;
-      height: 150px;
+      padding-top: 23px;
     }
 
     @media@desktop-width {
       width: 115px;
-      padding-top: 42px;
+      padding-top: 22px;
     }
   }
 
@@ -219,8 +223,7 @@
     margin-bottom: 29px;
 
     @media@tablet-width {
-      margin-bottom: 0;
-      height: 184px;
+      padding-top: 37px;
     }
 
     @media@desktop-width {
@@ -233,9 +236,7 @@
     margin-bottom: 17px;
 
     @media@tablet-width {
-      margin-bottom: 0;
-      height: 0;
-      padding-top: 6px;
+      padding-top: 52px;
     }
 
     @media@desktop-width {
@@ -246,13 +247,11 @@
   &__legend--email {
 
     @media@tablet-width {
-      padding-top: 10px;
-      height: 40px;
-      padding-bottom: 10px;
+      padding-top: 7px;
     }
 
     @media@desktop-width {
-      padding-top: 12px;
+      padding-top: 9px;
       width: 114px;
     }
   }
@@ -261,8 +260,7 @@
     margin-bottom: 25px;
 
     @media@tablet-width {
-      margin-bottom: 0;
-      height: 115px;
+      padding-top: 17px;
     }
 
     @media@desktop-width {
@@ -280,7 +278,7 @@
       }
 
       &:last-of-type {
-        margin-right: 28px;
+        margin-right: 27px;
       }
     }
 
@@ -616,7 +614,7 @@
 
     @media@tablet-width {
       right: 72px;
-      top: 23px;
+      top: 1px;
     }
 
     @media@desktop-width {
