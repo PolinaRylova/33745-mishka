@@ -1,11 +1,13 @@
 .main-nav {
-  .container();
-
   display: flex;
-  justify-content: stretch;
+  justify-content: center;
   align-items: center;
   align-content: stretch;
   flex-wrap: wrap;
+
+  @media@desktop-width {
+    justify-content: flex-start;
+  }
 
   &__item {
     height: 79px;
@@ -44,9 +46,13 @@
       background: url("/img/logo-tablet.png") no-repeat bottom center;
     }
 
+    @media(min-width: 800px) {
+      background-position: bottom left;
+    }
+
     @media@desktop-width {
       height: 72px;
-      background: url("/img/logo-desktop.png") no-repeat bottom center;;
+      background: url("/img/logo-desktop.png") no-repeat bottom center;
     }
   }
 
@@ -135,15 +141,28 @@
     padding-top: 22px;
     height: 57px;
     padding-left: 49px;
-    background-color: @main-color;
+
+    @media(min-width: 580px) {
+      padding-left: 60px;
+      flex-basis: 300px;
+    }
 
     @media@tablet-width {
+      flex-grow: 0;
       flex-basis: 113px;
       width: 370px;
       height: 66px;
-      margin-right: auto;
-      padding-left: 47px;
-      padding-right: 209px;
+      margin-right: 0;
+      padding-left: 48px;
+      padding-right: 171px;
+    }
+
+    @media(min-width: 800px) {
+      flex-grow: 1;
+    }
+
+    @media(min-width: 980px) {
+      flex-basis: 250px;
     }
 
     @media@desktop-width {
@@ -160,7 +179,6 @@
     flex-grow: 0;
     padding-top: 29px;
     height: 50px;
-    background-color: @main-color;
 
     a {
       transition-property: all;
@@ -211,9 +229,17 @@
     width: 245px;
     background-color: @main-color;
 
+    @media(min-width: 350px) {
+      padding-right: 75px;
+      text-align: center;
+    }
+
     @media@tablet-width {
+      padding-right: 0;
+      text-align: left;
       height: 62px;
       display: block;
+      background-color: transparent;
     }
 
     @media@desktop-width {
@@ -229,7 +255,6 @@
       padding-top: 10px;
       padding-left: 0;
       width: 167px;
-      background-color: transparent;
       border: none;
       order: 1;
 
@@ -241,7 +266,6 @@
     @media@desktop-width {
       padding-top: 30px;
       padding-left: 70px;
-      background-color: @main-color;
 
       a {
         font-size: 17px;
@@ -258,7 +282,7 @@
     @media@desktop-width {
       margin-left: 0;
       padding-right: 17px;
-      padding-left: 100px;
+      padding-left: 50px;
       order: -1;
       border-right: 1px solid @border-color;
       border-bottom: 1px solid @border-color;
@@ -287,8 +311,16 @@
       border: 1px solid @border-color;
       border-top: 0;
     }
+
+    @media(min-width: 980px) {
+      width: 70px;
+      padding-left: 53px;
+    }
+
     @media@desktop-width {
       margin: 0;
+      width: 50px;
+      padding-left: 32px;
     }
   }
 
@@ -301,7 +333,8 @@
       height: 57px;
       margin-left: auto;
       padding-top: 31px;
-      padding-right: 51px;
+      padding-right: 50px;
+      padding-left: 0;
 
       svg {
         margin-right: 26px;
@@ -312,10 +345,36 @@
       }
     }
 
+    @media(min-width: 800px) {
+      padding-left: 95px;
+    }
+
+    @media(min-width: 920px) {
+      svg {
+        margin-right: 28px;
+        margin-left: -46px;
+      }
+    }
+
+    @media(min-width: 970px) {
+      padding-left: 120px;
+
+      svg {
+        margin-right: 32px;
+        margin-left: -50px;
+      }
+    }
+
     @media@desktop-width {
       margin: 0;
-      padding-right: 103px;
+      padding-left: 74px;
+      padding-right: 45px;
       border-bottom: 1px solid @border-color;
+
+      svg {
+        margin-right: 26px;
+        margin-left: -44px;
+      }
     }
   }
 
@@ -342,7 +401,7 @@
   &__link--sale {
     @media@desktop-width {
       margin-top: 17px;
-      margin-left: 100px;
+      margin-left: 50px;
     }
   }
 
@@ -361,7 +420,7 @@
     }
 
     @media@desktop-width {
-      margin-right: 102px;
+      margin-right: 51px;
     }
 
   }

@@ -4,18 +4,32 @@
   align-items: center;
   margin: auto;
   padding-top: 17px;
-  width: 260px;
+  flex-basis: 200px;
   height: 62px;
   font-size: 0;
   border-bottom: 1px solid #e5e5e5;
 
+  @media(min-width: 459px) {
+    margin: auto 55px;
+    flex-grow: 1;
+  }
+
+  @media(min-width: 568px) {
+    margin-right: auto;
+    margin-left: 0;
+    flex-grow: 0;
+  }
+
   @media@tablet-width {
-    margin: 32px 0 30px auto;
+    margin: 32px auto 30px auto;
     border: none;
+    flex-basis: 180px;
+    flex-grow: 1;
   }
 
   @media@desktop-width {
-    margin: 31px 0;
+    margin: 31px 51px 31px 0;
+    //margin: 31px 0;
   }
 
   &__link {

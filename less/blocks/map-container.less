@@ -1,12 +1,13 @@
 .map-container {
+  flex-grow: 1;
   height: 457px;
   background: @default-bg url("/img/map-mobile@1x.jpg") no-repeat center center;
   background-size: cover;
-  .container();
   margin: 0 0 39px;
 
   @media@tablet-width {
     margin-bottom: 55px;
+    width: 100%;
     background: @default-bg url("/img/map-tablet@1x.jpg") no-repeat center center;
   }
 
@@ -14,7 +15,8 @@
     width: 525px;
     margin-bottom: 0;
     margin-top: 95px;
-    margin-right: 100px;
+    margin-right: 49px;
+    //margin-right: 100px;
     background: @default-bg url("/img/map-desktop@1x.jpg") no-repeat center center;
   }
 }

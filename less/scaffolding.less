@@ -6,6 +6,12 @@ body {
   font-style: normal;
   color: @font-color;
   background-color: @main-color;
+  position: relative;
+  padding-top: 79px;
+
+  @media@tablet-width {
+    padding-top: 88px;
+  }
 }
 
 a:active,
@@ -14,7 +20,7 @@ a:hover {
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -25,9 +31,10 @@ textarea {resize:none;}
 textarea {resize:vertical;}
 textarea {resize:horizontal;}
 
+header,
 section,
 footer {
-  .container();
+  width: 100%;
 }
 
 .page-header--main .main-nav__link--logo:hover,

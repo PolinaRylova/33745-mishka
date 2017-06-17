@@ -2,7 +2,7 @@
 
   @media@tablet-width {
     position: relative;
-    padding: 25px 30px 20px 50px;
+    padding: 25px 30px 17px 50px;
   }
 
   @media@desktop-width {
@@ -27,13 +27,17 @@
   }
 
   &__controls {
-    font-size: 0;
+    position: relative;
+    display: flex;
+    flex-basis: 260px;
+    flex-direction: row;
+    justify-content: center;
 
     @media@tablet-width {
       position: absolute;
-      bottom: 53px;
-      right: 44px;
-      width: 170px;
+      bottom: 51px;
+      right: 8px;
+      width: 199px;
     }
 
     @media@desktop-width {
@@ -42,10 +46,8 @@
   }
 
   &__arrow {
-    position: relative;
-    display: inline-block;
-    vertical-align: top;
-    width: 50%;
+    flex-basis: 130px;
+    flex-grow: 1;
     height: 52px;
     box-sizing: border-box;
     font-size: 0;
@@ -60,27 +62,27 @@
       width: 51px;
       height: 26px;
       position: absolute;
-      top: 12px;
-      left: 38px;
+      top: 13px;
 
       transition-property: all;
       transition-duration: 0.7s;
 
       @media@tablet-width {
-        top: 14px;
-        left: 37px;
+        top: 15px;
       }
 
       @media@desktop-width {
-        top: 18px;
+        top: 19px;
       }
     }
 
     &--prev::after {
-      background: url("/img/icon-left-arrow.svg") no-repeat 50% 50%;
+      left: 15%;
+      background: url("/img/icon-left-arrow.svg") no-repeat 0% 50%;
     }
     &--next::after {
-      background: url("/img/icon-right-arrow.svg") no-repeat 50% 50%;
+      right: 16%;
+      background: url("/img/icon-right-arrow.svg") no-repeat 100% 50%;
     }
 
     &:hover::after {

@@ -1,10 +1,15 @@
 .page-footer {
   background-color: @default-bg;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  align-content: stretch;
+
+  &__wrapper {
+    .container();
+    .max-width-container();
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: stretch;
+  }
 
   &__logo {
     display: none;
@@ -13,10 +18,12 @@
       display: block;
       margin-top: -6px;
       margin-left: 50px;
+      flex-basis: 183px;
     }
 
     @media@desktop-width {
-      margin: -6px 101px 0;
+      margin: -6px 52px 0;
+      //margin: -6px 101px 0;
     }
   }
 
@@ -44,14 +51,20 @@
     height: 80px;
     margin: auto;
 
+    @media(min-width: 568px) {
+      margin-left: auto;
+      margin-right: 28px;
+
+    }
+
     @media@tablet-width {
       margin-top: 35px;
       margin-right: 50px;
-      margin-left: 20px;
     }
 
     @media@desktop-width {
-      margin-right: 101px;
+      margin-right: 51px;
+      //margin-right: 101px;
       margin-top: 35px;
     }
   }

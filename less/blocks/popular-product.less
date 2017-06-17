@@ -1,17 +1,22 @@
 .popular-product {
-  padding: 28px 30px 34px;
 
-  @media@tablet-width {
-    display: flex;
-    flex-direction: row-reverse;
-    flex-wrap: wrap;
-    padding-bottom: 49px;
-    .decor-wave(-12px; "wave-white-tablet"; 25px);
-  }
+  &__wrapper {
+    .container();
+    .max-width-container();
+    padding: 28px 30px 34px;
 
-  @media@desktop-width {
-    padding-top: 43px;
-    .decor-wave(-17px; "wave-white-desktop"; 35px);
+    @media@tablet-width {
+      display: flex;
+      flex-direction: row-reverse;
+      flex-wrap: wrap;
+      padding-bottom: 49px;
+      .decor-wave(-12px; "wave-white-tablet"; 25px);
+    }
+
+    @media@desktop-width {
+      padding-top: 43px;
+      .decor-wave(-17px; "wave-white-desktop"; 35px);
+    }
   }
 
   &__title {
@@ -40,18 +45,21 @@
       position: relative;
       flex-wrap: wrap;
       min-height: 415px;
-      flex-basis: 708px;
+      min-width: 708px;
       margin-top: 21px;
       margin-right: auto;
     }
 
     @media@desktop-width {
       align-content: flex-end;
-      margin-right: 70px;
+      margin-right: 19px;
       flex-basis: 1050px;
       margin-bottom: 24px;
     }
 
+    @media(min-width: 1250px) {
+      margin-right: 70px;
+    }
   }
 
   &__desc {
@@ -59,12 +67,13 @@
     .font-param(15px; 24px; normal; @second-font-color);
 
     @media@tablet-width {
-      margin: 0 auto 17px 20px;
-      width: 290px;
+      margin: 0 400px 17px 20px;
+      min-width: 290px;
       .font-param(17px; 30px; normal; @second-font-color);
     }
 
     @media@desktop-width {
+      width: 290px;
       margin-left: 175px;
     }
   }
@@ -76,12 +85,12 @@
     border-collapse: collapse;
 
     @media@tablet-width {
-      margin: 19px auto 56px 20px;
-
-      width: 290px;
+      margin: 19px 400px 56px 20px;
+      min-width: 290px;
     }
 
     @media@desktop-width {
+      width: 290px;
       margin: 33px auto 109px 175px;
     }
   }
@@ -99,7 +108,7 @@
     .font-param(15px; 20px; normal; @second-font-color);
 
     @media@tablet-width {
-      padding: 9px 0px 10px 0;
+      padding: 9px 29px 10px 0;
     }
 
     @media@desktop-width {
@@ -109,6 +118,18 @@
 
   &__def-value {
     padding-right: 0;
+    width: 100%;
+
+    @media(min-width: 800px) {
+      padding-right: 70px;
+      text-align: center;
+    }
+
+    @media@desktop-width {
+      text-align: left;
+      padding-left: 29px;
+      padding-right: 0;
+    }
   }
 
   &__img {
@@ -138,12 +159,14 @@
 
     @media@tablet-width {
       font-size: 20px;
-      margin-left: 17px;
+      margin-right: 400px;
       margin-bottom: 34px;
-      width: 292px;
+      margin-left: 17px;
+      min-width: 292px;
     }
 
     @media@desktop-width {
+      width: 292px;
       margin: 0 12px 33px 175px;
     }
   }
