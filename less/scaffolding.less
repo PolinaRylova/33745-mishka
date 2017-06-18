@@ -52,8 +52,19 @@ footer {
   opacity: 1;
 }
 
-.page-header--main .main-nav__item--cart svg {
+.page-header--main .main-nav__item--cart svg,
+.page-header--catalog .main-nav__item--cart svg {
   @media (min-width: 768px) {
     margin-right: 29px;
+  }
+}
+
+.page-header--catalog .main-nav__item--cart {
+
+  @media (min-width: 1150px) {
+    padding-left: 77px;
+    svg {
+      margin-left: -45px;
+    }
   }
 }

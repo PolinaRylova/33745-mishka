@@ -1,6 +1,9 @@
 .video-container {
+  margin: 0;
+  width: 260px;
   box-sizing: border-box;
   border: 1px solid @border-color;
+  overflow: hidden;
 
   transition-property: all;
   transition-duration: 0.7s;
@@ -13,9 +16,14 @@
     box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
   }
 
+  @media(min-width: 600px) {
+    margin: 0 auto;
+  }
+
   @media@tablet-width {
     display: flex;
     flex-direction: column;
+    width: 668px;
   }
 
   @media@desktop-width {
@@ -27,18 +35,30 @@
 
   &__title {
     position: relative;
-    padding: 24px 33px 24px 90px;
+    box-sizing: border-box;
+    width: 260px;
+    padding: 24px 34px 24px 89px;
     .font-param(17px; 24px; bold; @font-color);
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
 
     @media@tablet-width {
       font-size: 20px;
-      padding: 38px 33px 24px 105px;
+      padding: 37px 33px 24px 105px;
+      width: 668px;
     }
 
     @media@desktop-width {
-      width: 239px;
+      width: 368px;
       margin-left: auto;
-      padding: 95px 50px 24px 77px;
+      padding: 95px 52px 24px 80px;
     }
 
     &::before {
@@ -51,7 +71,7 @@
       background: url("/img/icon-video-copy.svg") no-repeat 50% 50%;
 
       @media@tablet-width {
-        top: 38px;
+        top: 37px;
         left: 41px;
       }
 
@@ -63,15 +83,16 @@
   }
 
   &__content {
-    margin: 0;
     position: relative;
+    margin: 0;
     width: 260px;
     height: 150px;
+    box-sizing: border-box;
     overflow: hidden;
 
     @media@tablet-width {
       order: -1;
-      width: 668px;
+      width: 666px;
       height: 455px;
       background-color: @border-color;
     }
@@ -80,18 +101,10 @@
       position: absolute;
       width: 682px;
     }
+  }
 
-    video {
-      vertical-align: middle;
-      height: auto;
-      width: 100%;
-      cursor: pointer;
-
-      @media@tablet-width {
-        height: 100%;
-        width: auto;
-      }
-    }
+  &__img {
+    cursor: pointer;
   }
 
   &__play-btn {
@@ -129,10 +142,14 @@
   }
 
   &__desc {
-    padding: 27px 34px 32px;
+    box-sizing: border-box;
+    padding: 8px 50px 46px 80px;
+    width: 260px;
     .font-param(13px; 24px; normal; @second-font-color);
+    cursor: pointer;
 
     @media@tablet-width {
+      width: 668px;
       padding: 8px 39px 32px;
       font-size: 15px;
       line-height: 30px;
@@ -141,7 +158,7 @@
     @media@desktop-width {
       margin-left: auto;
       padding: 9px 50px 46px 77px;
-      width: 239px;
+      width: 368px;
     }
   }
 }
