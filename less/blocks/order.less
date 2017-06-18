@@ -2,11 +2,28 @@
   background-color: @main-color;
 
   @media@tablet-width {
-    //.decor-wave(-17px; "wave-white-tablet"; 25px);
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -16px;
+      left: 0;
+      display: block;
+      height: 24px;
+      width: 100%;
+      background: url("/img/bg-zigzag-fill-tablet.svg") repeat-x 0% 0%;
+      z-index: 1;
+    }
   }
 
   @media@desktop-width {
-    //.decor-wave(-24px; "wave-white-desktop"; 35px);
+
+    &::before {
+      top: -22px;
+      height: 34px;
+      background: url("/img/bg-zigzag-fill-desktop.svg") repeat-x 1% 0%;
+    }
   }
 
   &__wrapper {
