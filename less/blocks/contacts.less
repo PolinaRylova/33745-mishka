@@ -1,12 +1,17 @@
 .contacts {
-  .decor-wave(0px; "wave-mobile"; 7px);
+  background-image: url("/img/bg-zigzag-line.svg");
+  background-repeat: repeat-x;
+  background-position: 8px 0;
+  background-size: 320px 7px;
 
   @media@tablet-width {
-    .decor-wave(0px; "wave-tablet"; 17px);
+    background-position: 19px 0;
+    background-size: 768px 17px;
   }
 
   @media@desktop-width {
-    .decor-wave(0px; "wave-desktop"; 24px);
+    background-position: 20px 0;
+    background-size: 1150px 23px;
   }
 
   &__wrapper {
@@ -16,17 +21,15 @@
     margin-bottom: 39px;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: column;
 
     @media@tablet-width {
       margin-bottom: 38px;
     }
 
     @media@desktop-width {
+      position: relative;
       margin-bottom: 104px;
-      height: 552px;
-      flex-direction: column-reverse;
-      align-content: flex-end;
     }
   }
 
@@ -50,7 +53,7 @@
         content: "";
         position: absolute;
         top: 27px;
-        right: 51px;
+        right: 27px;
         height: 82px;
         width: 51px;
         background: url("/img/icon-flag.svg") no-repeat center center;
@@ -60,17 +63,15 @@
     @media@desktop-width {
       margin-top: 50px;
       margin-bottom: 0;
-      padding: 114px 29px 0;
-      width: 380px;
+      padding: 114px 0 49px 150px;
+      width: 381px;
       font-size: 53px;
       line-height: 57px;
       text-align: center;
 
       &::after {
         top: 106px;
-        right: auto;
-        left: -26px;
-
+        left: 95px;
       }
     }
   }
@@ -78,12 +79,11 @@
   &__container {
     margin: 0 auto 0 29px;
     padding-bottom: 37px;
-    flex-basis: 260px;
+    min-width: 260px;
     display: flex;
     flex-wrap: wrap;
     flex-grow: 1;
     .font-param(15px; 30px; normal; @second-font-color);
-
 
     @media@tablet-width {
       margin-right: auto;
@@ -91,23 +91,21 @@
       margin-left: 50px;
       font-size: 17px;
       flex-wrap: nowrap;
-      width: 670px;
+      min-width: 670px;
     }
 
     @media@desktop-width {
-      width: 350px;
-      margin: 0;
-      margin-left: 103px;
-      padding-bottom: 79px;
       flex-wrap: wrap;
-      flex-basis: 100px;
-      order: -1;
+      min-width: 280px;
+      max-width: 335px;
+      margin-left: 224px;
+      padding-bottom: 79px;
     }
   }
 
   &__label {
     width: 77px;
-    height: 60px;
+    padding-bottom: 30px;
     flex-shrink: 0;
     font: inherit;
   }
@@ -152,9 +150,12 @@
     }
 
     @media@tablet-width {
-      margin-right: 52px;
+      margin-right: 45px;
       flex-grow: 1;
-      //width: 230px;
+    }
+
+    @media@tablet-width {
+      margin-right: 35px;
     }
   }
 

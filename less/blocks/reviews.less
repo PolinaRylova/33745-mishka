@@ -7,13 +7,18 @@
     margin-left: -30px;
     display: flex;
     flex-wrap: wrap;
-    background: url("/img/review@1x.jpg") no-repeat 0% 50%;
+    background-image: url("/img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 0% 50%;
     background-size: contain;
-  }
+
+      @media(min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background-image: url("/img/review@2x.jpg");
+      }
+    }
 
   @media@desktop-width {
-    margin: 0 28px 0 51px;
-    //margin: 0 50px 0 70px;
+    margin: 0 29px 0 50px;
   }
 
   &__title {
@@ -49,7 +54,7 @@
     }
 
     @media@desktop-width {
-      margin-left: 127px;
+      margin-left: 125px;
       margin-right: 65px;
     }
   }

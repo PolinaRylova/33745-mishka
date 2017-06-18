@@ -34,7 +34,15 @@ textarea {resize:horizontal;}
 header,
 section,
 footer {
-  width: 100%;
+  min-width: 320px;
+
+  @media@tablet-width {
+    min-width: 768px;
+  }
+
+  @media@desktop-width {
+    min-width: 1150px;
+  }
 }
 
 .page-header--main .main-nav__link--logo:hover,

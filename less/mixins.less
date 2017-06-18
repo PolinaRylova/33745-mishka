@@ -61,19 +61,3 @@
   clip: rect(0000);
   overflow: hidden;
 }
-
-.decor-wave(@top-position; @name; @height) {//для блоков с декором в виде волны
-  @pic-name: @name;
-  position: relative;
-  &::before {
-    content: "";
-    position: absolute;
-    top: @top-position;
-    left: 0;
-    display: block;
-    height: @height;
-    width: 100%;
-    background: url("/img/@{pic-name}.png") repeat-x 0% 50%;
-    z-index: 1;
-  }
-}

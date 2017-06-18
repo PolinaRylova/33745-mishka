@@ -43,7 +43,7 @@
 
     @media@tablet-width {
       height: 46px;
-      background: url("/img/logo-tablet.png") no-repeat bottom center;
+      background: url("/img/logo-tablet.svg") no-repeat bottom center;
     }
 
     @media(min-width: 800px) {
@@ -52,7 +52,7 @@
 
     @media@desktop-width {
       height: 72px;
-      background: url("/img/logo-desktop.png") no-repeat bottom center;
+      background: url("/img/logo-desktop.svg") no-repeat bottom center;
     }
   }
 
@@ -152,23 +152,24 @@
       flex-basis: 113px;
       width: 370px;
       height: 66px;
-      margin-right: 0;
       padding-left: 48px;
-      padding-right: 171px;
+      padding-right: 210px;
     }
 
     @media(min-width: 800px) {
       flex-grow: 1;
+      padding-right: 207px;
     }
 
     @media(min-width: 980px) {
       flex-basis: 250px;
+      padding-right: 184px;
     }
 
     @media@desktop-width {
-      flex-basis: 150px;
-      margin: 0;
-      padding: 8px 101px 13px 62px;
+      flex-basis: 149px;
+      height: 72px;
+      padding: 9px 101px 7px 63px;
       flex-grow: 0;
       border-bottom: 1px solid @border-color;
     }
@@ -331,13 +332,11 @@
       flex-grow: 0;
       width: 188px;
       height: 57px;
-      margin-left: auto;
       padding-top: 31px;
       padding-right: 50px;
-      padding-left: 0;
 
       svg {
-        margin-right: 26px;
+        margin-right: 29px;
         margin-bottom: -4px;
         margin-left: -44px;
         fill: @font-color;
@@ -366,7 +365,6 @@
     }
 
     @media@desktop-width {
-      margin: 0;
       padding-left: 74px;
       padding-right: 45px;
       border-bottom: 1px solid @border-color;
