@@ -1,10 +1,15 @@
 .categories-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+  align-content: flex-end;
+  flex-wrap: wrap;
   .unstyled-list();
-  font-size: 0;
 
   @media@tablet-width {
-    margin: 0 auto;
-    width: 668px;
+    margin: 0 50px;
+    min-width: 668px;
   }
 
   @media@desktop-width {
@@ -13,13 +18,9 @@
 
   &__item {
     position: relative;
-    display: inline-block;
-    vertical-align: middle;
     width: 100%;
 
     @media@tablet-width {
-      margin: 0;
-      padding: 0;
       width: 50%;
     }
   }

@@ -1,25 +1,44 @@
 .contacts {
-  margin-bottom: 39px;
-  .decor-wave(0px; "wave-mobile"; 7px);
-  display: flex;
-  flex-wrap: wrap;
+  background-image: url("/img/bg-zigzag-line.svg");
+  background-repeat: repeat-x;
+  background-position: 8px 0;
+  background-size: 320px 7px;
 
   @media@tablet-width {
-    margin-bottom: 38px;
-    .decor-wave(0px; "wave-tablet"; 17px);
+    background-position: 19px 0;
+    background-size: 768px 17px;
   }
 
   @media@desktop-width {
-    margin-bottom: 104px;
-    height: 552px;
-    flex-direction: column-reverse;
-    align-content: flex-end;
-    .decor-wave(0px; "wave-desktop"; 24px);
+    background-position: 20px 0;
+    background-size: 1150px 23px;
+  }
+
+  &__wrapper {
+    .container();
+    .max-width-container();
+
+    margin-bottom: 39px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    @media@tablet-width {
+      margin-bottom: 38px;
+    }
+
+    @media@desktop-width {
+      position: relative;
+      margin-bottom: 104px;
+    }
   }
 
   &__title {
+    box-sizing: border-box;
     margin: 0;
-    padding: 42px 30px 27px;
+    padding: 42px 29px 26px;
+    flex-grow: 1;
+    width: 100%;
     .font-param(18px; 30px; bold; @font-color);
 
     @media@tablet-width {
@@ -28,14 +47,14 @@
       line-height: 50px;
       margin-top: 36px;
       margin-left: 16px;
-      margin-bottom: 23px;
+      margin-bottom: 24px;
       width: 670px;
 
       &::after {
         content: "";
         position: absolute;
         top: 27px;
-        right: 28px;
+        right: 27px;
         height: 82px;
         width: 51px;
         background: url("/img/icon-flag.svg") no-repeat center center;
@@ -43,27 +62,28 @@
     }
 
     @media@desktop-width {
-      margin-bottom: 22px;
-      width: 380px;
+      margin-top: 50px;
+      margin-bottom: 0;
+      padding: 114px 0 49px 204px;
+      width: 381px;
       font-size: 53px;
       line-height: 57px;
       text-align: center;
 
       &::after {
-        top: 34px;
-        right: auto;
-        left: -24px;
-
+        top: 106px;
+        left: 95px;
       }
     }
   }
 
   &__container {
-    margin: 0 auto;
-    padding-bottom: 36px;
-    width: 260px;
+    margin: 0 auto 0 29px;
+    padding-bottom: 37px;
+    min-width: 260px;
     display: flex;
     flex-wrap: wrap;
+    flex-grow: 1;
     .font-param(15px; 30px; normal; @second-font-color);
 
     @media@tablet-width {
@@ -72,42 +92,71 @@
       margin-left: 50px;
       font-size: 17px;
       flex-wrap: nowrap;
-      width: 670px;
+      min-width: 670px;
     }
 
     @media@desktop-width {
-      width: 350px;
-      margin: 0;
-      margin-left: 105px;
-      padding-bottom: 79px;
       flex-wrap: wrap;
-      order: -1;
+      min-width: 280px;
+      max-width: 335px;
+      margin-left: 224px;
+      padding-bottom: 79px;
     }
   }
 
   &__label {
     width: 77px;
-    height: 60px;
+    padding-bottom: 30px;
     flex-shrink: 0;
     font: inherit;
   }
 
   &__address {
-    width: 180px;
+    flex-basis: 180px;
     font: inherit;
+    flex-grow: 0;
+  }
 
-    @media@tablet-width {
+  &__address--email {
+
+    @media(min-width: 379px) {
+      flex-grow: 1;
       margin-right: 75px;
     }
 
+    @media(min-width: 454px) {
+      margin-right: 150px;
+    }
+
+    @media(min-width: 529px) {
+      margin-right: 225px;
+    }
+
+    @media(min-width: 604px) {
+      margin-right: 0;
+    }
+
+    @media@tablet-width {
+      flex-grow: 0;
+      margin-right: 52px;
+    }
   }
 
   &__address--location {
-    width: 155px;
+    flex-basis: 155px;
+
+    @media(min-width: 379px) {
+      flex-grow: 1;
+      margin-right: 20px;
+    }
 
     @media@tablet-width {
-      margin-right: 0;
-      width: 230px;
+      margin-right: 45px;
+      flex-grow: 1;
+    }
+
+    @media@desktop-width {
+      margin-right: 35px;
     }
   }
 
@@ -126,11 +175,15 @@
     &::after {
       content: "";
       position: absolute;
-      bottom: -4px;
+      bottom: -5px;
       left: 0;
       right: 0;
       height: 1px;
       background: #62d1ba;
+
+      @media@tablet-width {
+        bottom: -3px;
+      }
     }
 
     &:hover {

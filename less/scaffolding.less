@@ -6,6 +6,12 @@ body {
   font-style: normal;
   color: @font-color;
   background-color: @main-color;
+  position: relative;
+  padding-top: 79px;
+
+  @media@tablet-width {
+    padding-top: 88px;
+  }
 }
 
 a:active,
@@ -14,7 +20,7 @@ a:hover {
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -25,9 +31,18 @@ textarea {resize:none;}
 textarea {resize:vertical;}
 textarea {resize:horizontal;}
 
+header,
 section,
 footer {
-  .container();
+  min-width: 320px;
+
+  @media@tablet-width {
+    min-width: 768px;
+  }
+
+  @media@desktop-width {
+    min-width: 1150px;
+  }
 }
 
 .page-header--main .main-nav__link--logo:hover,
@@ -35,4 +50,21 @@ footer {
 .page-header--catalog .main-nav__item--catalog a:hover,
 .page-header--catalog .main-nav__item--catalog a:active {
   opacity: 1;
+}
+
+.page-header--main .main-nav__item--cart svg,
+.page-header--catalog .main-nav__item--cart svg {
+  @media (min-width: 768px) {
+    margin-right: 29px;
+  }
+}
+
+.page-header--catalog .main-nav__item--cart {
+
+  @media (min-width: 1150px) {
+    padding-left: 77px;
+    svg {
+      margin-left: -45px;
+    }
+  }
 }

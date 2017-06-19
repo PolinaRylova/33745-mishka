@@ -1,20 +1,37 @@
 .about-us {
-  padding: 25px 30px 14px;
-  .decor-wave(0px; "wave-mobile"; 7px);
+  background-image: url("/img/bg-zigzag-line.svg");
+  background-repeat: repeat-x;
+  background-position: 8px 1px;
+  background-size: 320px 7px;
 
   @media@tablet-width {
-    .decor-wave(0px; "wave-tablet"; 17px);
-    padding-bottom: 35px;
+    background-position: 19px 0;
+    background-size: 768px 17px;
   }
 
   @media@desktop-width {
-    .decor-wave(0px; "wave-desktop"; 24px);
-    padding-bottom: 63px;
+    background-position: 20px 0;
+    background-size: 1150px 23px;
+  }
+
+  &__wrapper {
+    .container();
+    .max-width-container();
+    padding: 24px 29px 14px;
+
+    @media@tablet-width {
+      padding-top: 25px;
+      padding-bottom: 35px;
+    }
+
+    @media@desktop-width {
+      padding: 24px 0 67px;
+    }
   }
 
   &__title {
     margin: 0;
-    margin-bottom: 54px;
+    margin-bottom: 56px;
     padding-top: 11px;
     .font-param(25px; 30px; bold; @font-color);
 
@@ -22,15 +39,20 @@
       font-size: 43px;
       line-height: 50px;
       margin-left: 16px;
-      margin-bottom: 55px;
+      margin-bottom: 70px;
       padding-top: 41px;
     }
 
     @media@desktop-width {
-      margin-top: 16px;
-      margin-left: 241px;
+      margin-top: 17px;
+      margin-bottom: 69px;
+      margin-left: 221px;
       font-size: 53px;
       line-height: 57px;
+    }
+
+    @media(min-width: 1250px) {
+      margin-left: 241px;
     }
   }
 }

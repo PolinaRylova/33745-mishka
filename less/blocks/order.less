@@ -1,17 +1,47 @@
 .order {
-  padding: 18px 30px 22px;
+  background-color: @main-color;
 
   @media@tablet-width {
-    padding: 70px 0 23px;
-    .decor-wave(-17px; "wave-white-tablet"; 25px);
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -16px;
+      left: 0;
+      display: block;
+      height: 24px;
+      width: 100%;
+      background: url("/img/bg-zigzag-fill-tablet.svg") repeat-x 0% 0%;
+      z-index: 1;
+    }
   }
 
   @media@desktop-width {
-    .decor-wave(-24px; "wave-white-desktop"; 35px);
+
+    &::before {
+      top: -22px;
+      height: 34px;
+      background: url("/img/bg-zigzag-fill-desktop.svg") repeat-x 1% 0%;
+    }
+  }
+
+  &__wrapper {
+    .container();
+    .max-width-container();
+    padding: 22px 30px 0;
+
+    @media@tablet-width {
+      padding: 69px 0 0;
+    }
+
+    @media@desktop-width {
+      padding-top: 70px;
+    }
   }
 
   &__desc {
-    padding-bottom: 8px;
+    padding-bottom: 9px;
     .font-param(13px; 24px; normal; @second-font-color);
 
     @media@tablet-width {

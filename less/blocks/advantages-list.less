@@ -1,36 +1,36 @@
 .advantages-list {
   .unstyled-list;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
 
   @media@tablet-width {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: flex-start;
-    margin-left: 20px;
-    height: 485px;
+    margin: 0 20px 7px;
+    min-width: 668px;
   }
 
   @media@desktop-width {
-    margin-left: 225px;
-    height: 493px;
-
+    margin-bottom: 13px;
+    margin-left: 224px;
+    width: 702px;
   }
 
   &__item {
     position: relative;
     margin: 15px 0 53px;
-    padding-top: 30px;
+    padding-top: 15px;
     .font-param(17px; 20px; bold; @font-color);
 
     @media@tablet-width {
-      margin: 18px 34px 63px 0;
+      margin: 18px 34px 78px 0;
       width: 300px;
       font-size: 20px;
       line-height: 22px;
     }
 
     @media@desktop-width {
-      margin: 19px 31px 62px 20px;
+      margin: 19px 49px 77px 1px;
     }
 
     &::before {
@@ -38,13 +38,9 @@
       width: 50px;
       height: 37px;
       position: absolute;
-      top: -21px;
+      top: -39px;
       background-repeat: no-repeat;
       background-position: 50% 50%;
-
-      @media@tablet-width {
-        top: -24px;
-      }
     }
 
     &--eco::before {
@@ -53,55 +49,57 @@
 
     &--style::before {
       height: 27px;
+      top: -38px;
+      left: -1px;
       background-image: url("/img/icon-feature-3copy.svg");
-
-      @media@tablet-width {
-        top: -23px;
-        left: -1px;
-      }
     }
 
     &--likes::before {
-      top: -16px;
+      top: -33px;
       height: 28px;
       background-image: url("/img/icon-feature-5copy.svg");
-
-      @media@tablet-width {
-        top: -19px;
-      }
     }
 
     &--handmade::before {
       height: 37px;
-      left: -2px;
+      left: -4px;
       background-image: url("/img/icon-feature-2copy.svg");
-
-      @media@tablet-width {
-        top: -23px;
-        left: -5px;
-      }
     }
 
     &--native::before {
       height: 25px;
-      top: -20px;
+      top: -36px;
+      left: -3px;
       background-image: url("/img/icon-feature-4copy.svg");
-
-      @media@tablet-width {
-        top: -21px;
-        left: -4px;
-      }
     }
 
     &--gift::before {
       height: 33px;
-      left: -6px;
+      top: -38px;
+      left: -5px;
       background-image: url("/img/icon-feature-6copy.svg");
+    }
+  }
 
-      @media@tablet-width {
-        top: -23px;
-      }
+  @media@tablet-width {
+    &__item:nth-child(3) {
+      order: 4;
+    }
 
+    &__item:nth-child(5) {
+      order: 3;
+    }
+
+    &__item:nth-child(2) {
+      order: 2;
+    }
+
+    &__item:nth-child(4) {
+      order: 1;
+    }
+
+    &__item:nth-child(6) {
+      order: 5;
     }
   }
 }
