@@ -45,39 +45,53 @@
       position: relative;
       font-size: 43px;
       line-height: 50px;
+      box-sizing: border-box;
+      padding: 42px 45px 26px;
       margin-top: 36px;
-      margin-left: 16px;
       margin-bottom: 24px;
-      width: 670px;
+      min-width: 768px;
 
       &::after {
         content: "";
         position: absolute;
         top: 27px;
-        right: 27px;
+        right: 51px;
         height: 82px;
         width: 51px;
         background: url("/img/icon-flag.svg") no-repeat center center;
       }
     }
 
+    @media(min-width: 790px) {
+      width: 775px;
+      margin-right: auto;
+    }
+
+    @media(min-width: 840px) {
+      width: 826px;
+      margin-right: 0;
+
+      &::after {
+        top: 145px;
+      }
+    }
+
     @media@desktop-width {
-      margin-top: 50px;
-      margin-bottom: 0;
-      padding: 114px 0 49px 204px;
-      width: 381px;
+      margin: 50px 0 0;
+      padding: 114px 0 49px 220px;
       font-size: 53px;
       line-height: 57px;
-      text-align: center;
+      text-align: left;
 
       &::after {
         top: 106px;
-        left: 95px;
+        left: 111px;
       }
     }
   }
 
   &__container {
+    box-sizing: border-box;
     margin: 0 auto 0 29px;
     padding-bottom: 37px;
     min-width: 260px;
@@ -85,6 +99,10 @@
     flex-wrap: wrap;
     flex-grow: 1;
     .font-param(15px; 30px; normal; @second-font-color);
+
+    @media(min-width: 604px) {
+      width: 465px;
+    }
 
     @media@tablet-width {
       margin-right: auto;
@@ -125,18 +143,20 @@
     }
 
     @media(min-width: 454px) {
-      margin-right: 150px;
+      margin-right: 152px;
     }
 
     @media(min-width: 529px) {
-      margin-right: 225px;
+      margin-right: 227px;
     }
 
     @media(min-width: 604px) {
-      margin-right: 0;
+      margin-right: 52px;
+      flex-basis: 260px;
     }
 
     @media@tablet-width {
+      flex-basis: 180px;
       flex-grow: 0;
       margin-right: 52px;
     }
@@ -151,7 +171,7 @@
     }
 
     @media@tablet-width {
-      margin-right: 45px;
+      margin-right: 38px;
       flex-grow: 1;
     }
 
