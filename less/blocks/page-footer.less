@@ -16,13 +16,13 @@
 
     @media@tablet-width {
       display: block;
-      margin-top: -6px;
+      margin-top: 9px;
       margin-left: 50px;
       flex-basis: 183px;
     }
 
     @media@desktop-width {
-      margin: -6px 51px 0;
+      margin: 9px 51px 0;
       //margin: -6px 101px 0;
     }
   }
@@ -30,20 +30,26 @@
   &__logo-link {
     display: block;
     font-size: 0;
-    width: 102px;
-    height: 34px;
-    background: url("/img/logo-footer.png") no-repeat center center;
 
     transition-property: all;
     transition-duration: 0.7s;
 
+    svg {
+      width: 101.615px;
+      height: 34.056px;
+    }
+
     &:hover {
-      background: url("/img/logo-footer-green.png") no-repeat center center;
+      svg {
+        fill: @accent-color;
+      }
     }
 
     &:active {
-      background: url("/img/logo-footer-green.png") no-repeat center center;
-      opacity: 0.3;
+      svg {
+        fill: @accent-color;
+        opacity: 0.3;
+      }
     }
   }
 
@@ -51,10 +57,13 @@
     height: 80px;
     margin: auto;
 
+    @media(min-width: 509px) {
+      margin-right: 27px;
+    }
+
     @media(min-width: 568px) {
       margin-left: auto;
       margin-right: 28px;
-
     }
 
     @media@tablet-width {
