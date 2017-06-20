@@ -42,47 +42,18 @@
     margin: 0;
 
     @media@tablet-width {
-      display: inline-block;
-      box-sizing: border-box;
       width: 334px;
       height: 334px;
-      background: url("/img/photo-1-tablet@1x.jpg") no-repeat;
-      padding-left: 334px;
     }
 
     @media@desktop-width {
       width: 316px;
       height: 462px;
-      background: url("/img/photo-1-desktop@1x.jpg") no-repeat;
-      padding-left: 316px;
-    }
-  }
-
-  @media@tablet-width {
-
-    &:nth-of-type(2) .catalog-item__img {
-      background: url("/img/photo-2-tablet@1x.jpg") no-repeat;
-    }
-
-    &:nth-of-type(3) .catalog-item__img {
-      background: url("/img/photo-3-tablet@1x.jpg") no-repeat;
-    }
-  }
-
-  @media@desktop-width {
-
-    &:nth-of-type(2) .catalog-item__img {
-      background: url("/img/photo-2-desktop@1x.jpg") no-repeat;
-    }
-
-    &:nth-of-type(3) .catalog-item__img {
-      background: url("/img/photo-3-desktop@1x.jpg") no-repeat;
     }
   }
 
   &__img-link:hover + .catalog-item__definition,
-  &__img-link:focus + .catalog-item__definition
-  {
+  &__img-link:focus + .catalog-item__definition {
     box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
   }
 
