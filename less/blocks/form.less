@@ -320,6 +320,7 @@
 
       &:nth-of-type(2),
       &:nth-of-type(5) {
+
         @media@desktop-width {
           width: 158px;
         }
@@ -327,6 +328,7 @@
 
       &:nth-of-type(4),
       &:nth-of-type(6) {
+
         @media@desktop-width {
           width: 154px;
         }
@@ -490,16 +492,6 @@
     }
   }
 
-  &__tel-input:hover + svg {
-    fill: @accent-color;
-    opacity: 1;
-  }
-
-  &__tel-input:active + svg {
-    fill: @accent-color;
-    opacity: 1;
-  }
-
   &__text-input:last-of-type {
     padding-bottom: 13px;
   }
@@ -514,7 +506,6 @@
       width: 484px;
       background-color: #f1f1f1;
     }
-
 
     @media@desktop-width {
       width: 683px;
@@ -533,9 +524,7 @@
     position: absolute;
     right: 4px;
     top: 1px;
-    path {
-      fill: @second-font-color;
-    }
+    fill: @second-font-color;
     opacity: 0.3;
 
     transition-property: all;
@@ -550,17 +539,15 @@
     }
   }
 
+  &__tel-input:hover + svg,
   &__email-input:hover + svg {
-    path {
-      fill: @accent-color;
-    }
+    fill: @accent-color;
     opacity: 1;
   }
 
+  &__tel-input:active + svg,
   &__email-input:active + svg {
-    path {
-      fill: @accent-color;
-    }
+    fill: @accent-color;
     opacity: 1;
   }
 
