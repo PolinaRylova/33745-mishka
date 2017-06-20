@@ -45,15 +45,8 @@ footer {
   }
 }
 
-.page-header--main .main-nav__link--logo:hover,
-.page-header--main .main-nav__link--logo:active,
-.page-header--catalog .main-nav__item--catalog a:hover,
-.page-header--catalog .main-nav__item--catalog a:active {
-  opacity: 1;
-}
-
-.page-header--main .main-nav__item--cart svg,
-.page-header--catalog .main-nav__item--cart svg {
+.page-header--main .icon-cart,
+.page-header--catalog .icon-cart {
   @media (min-width: 768px) {
     margin-right: 29px;
   }
@@ -63,8 +56,11 @@ footer {
 
   @media (min-width: 1150px) {
     padding-left: 77px;
-    svg {
-      margin-left: -45px;
-    }
+  }
+}
+
+.page-header--catalog .icon-cart {
+  @media (min-width: 1150px) {
+    margin-left: -45px;
   }
 }
