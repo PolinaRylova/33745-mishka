@@ -25,36 +25,36 @@
       background: url("/img/bg-zigzag-fill-desktop.svg") repeat-x 1% 0%;
     }
   }
+}
 
-  &__wrapper {
-    .container();
-    .max-width-container();
-    padding: 22px 30px 0;
+.order__wrapper {
+  .container();
+  .max-width-container();
+  padding: 22px 30px 0;
 
-    @media@tablet-width {
-      padding: 69px 0 0;
-    }
-
-    @media@desktop-width {
-      padding-top: 70px;
-    }
+  @media@tablet-width {
+    padding: 69px 0 0;
   }
 
-  &__desc {
-    padding-bottom: 9px;
-    .font-param(13px; 24px; normal; @second-font-color);
+  @media@desktop-width {
+    padding-top: 70px;
+  }
+}
 
-    @media@tablet-width {
-      font-size: 17px;
-      line-height: 30px;
-      padding-left: 50px;
-      padding-right: 50px;
-    }
+.order__desc {
+  padding-bottom: 9px;
+  .font-param(13px; 24px; normal; @second-font-color);
 
-    @media@desktop-width {
-      margin: 0 auto;
-      width: 698px;
-      padding-top: 45px;
-    }
+  @media@tablet-width {
+    font-size: 17px;
+    line-height: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  @media@desktop-width {
+    margin: 0 auto;
+    width: 698px;
+    padding-top: 45px;
   }
 }

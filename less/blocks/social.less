@@ -34,27 +34,27 @@
   @media@desktop-width {
     margin: 31px 51px 31px 0;
   }
+}
 
-  &__link {
-    display: block;
-    padding: 0 22px 0 18px;
-    font-size: 0;
-    .unstyled-link();
+.social__link {
+  display: block;
+  padding: 0 22px 0 18px;
+  font-size: 0;
+  .unstyled-link();
 
+  svg {
+    transition-property: all;
+    transition-duration: 0.7s;
+  }
+
+  &:hover svg {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
     svg {
-      transition-property: all;
-      transition-duration: 0.7s;
-    }
-
-    &:hover svg {
       fill: #46c1ae;
-    }
-
-    &:active {
-      opacity: 0.3;
-      svg {
-        fill: #46c1ae;
-      }
     }
   }
 }

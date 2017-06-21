@@ -32,145 +32,145 @@
     width: 1048px;
     height: auto;
   }
+}
 
-  &__title {
-    position: relative;
-    box-sizing: border-box;
-    width: 260px;
-    padding: 24px 34px 24px 89px;
-    .font-param(17px; 24px; bold; @font-color);
-    cursor: pointer;
+.video-container__title {
+  position: relative;
+  box-sizing: border-box;
+  width: 260px;
+  padding: 24px 34px 24px 89px;
+  .font-param(17px; 24px; bold; @font-color);
+  cursor: pointer;
 
-    &:hover {
-      opacity: 0.6;
-    }
-
-    &:active {
-      opacity: 0.3;
-    }
-
-    @media@tablet-width {
-      font-size: 20px;
-      padding: 37px 33px 24px 105px;
-      width: 668px;
-    }
-
-    @media@desktop-width {
-      width: 368px;
-      margin-left: auto;
-      padding: 95px 52px 24px 80px;
-    }
-
-    &::before {
-      content: "";
-      width: 32px;
-      height: 22px;
-      position: absolute;
-      top: 35px;
-      left: 33px;
-      background: url("/img/icon-video.svg") no-repeat 50% 50%;
-
-      @media@tablet-width {
-        top: 37px;
-        left: 41px;
-      }
-
-      @media@desktop-width {
-        top: 45px;
-        left: 82px;
-      }
-    }
+  &:hover {
+    opacity: 0.6;
   }
 
-  &__content {
-    position: relative;
-    margin: 0;
-    width: 260px;
-    height: 150px;
-    box-sizing: border-box;
-    overflow: hidden;
-
-    @media@tablet-width {
-      order: -1;
-      width: 666px;
-      height: 455px;
-      background-color: @border-color;
-    }
-
-    @media@desktop-width {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 682px;
-    }
+  &:active {
+    opacity: 0.3;
   }
 
-  &__img {
-    cursor: pointer;
-
-    @media@tablet-width {
-      width: 668px;
-      height: 455px;
-    }
-
-    @media@desktop-width {
-      width: 682px;
-      height: 455px;
-    }
+  @media@tablet-width {
+    font-size: 20px;
+    padding: 37px 33px 24px 105px;
+    width: 668px;
   }
 
-  &__play-btn {
+  @media@desktop-width {
+    width: 368px;
+    margin-left: auto;
+    padding: 95px 52px 24px 80px;
+  }
+
+  &::before {
+    content: "";
+    width: 32px;
+    height: 22px;
     position: absolute;
-    width: 100px;
-    height: 78px;
-    top: 50%;
-    left: 50%;
-    margin-left: -50px;
-    margin-top: -39px;
-    cursor: pointer;
+    top: 35px;
+    left: 33px;
+    background: url("/img/icon-video.svg") no-repeat 50% 50%;
 
-    transition-property: all;
-    transition-duration: 0.7s;
+    @media@tablet-width {
+      top: 37px;
+      left: 41px;
+    }
 
-    svg {
-      width: 100%;
-      height: 100%;
+    @media@desktop-width {
+      top: 45px;
+      left: 82px;
     }
   }
+}
 
-  &__play-btn:hover {
+.video-container__content {
+  position: relative;
+  margin: 0;
+  width: 260px;
+  height: 150px;
+  box-sizing: border-box;
+  overflow: hidden;
+
+  @media@tablet-width {
+    order: -1;
+    width: 666px;
+    height: 455px;
+    background-color: @border-color;
+  }
+
+  @media@desktop-width {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 682px;
+  }
+}
+
+.video-container__img {
+  cursor: pointer;
+
+  @media@tablet-width {
+    width: 668px;
+    height: 455px;
+  }
+
+  @media@desktop-width {
+    width: 682px;
+    height: 455px;
+  }
+}
+
+.video-container__play-btn {
+  position: absolute;
+  width: 100px;
+  height: 78px;
+  top: 50%;
+  left: 50%;
+  margin-left: -50px;
+  margin-top: -39px;
+  cursor: pointer;
+
+  transition-property: all;
+  transition-duration: 0.7s;
+
+  svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  &:hover {
     width: 120px;
     height: 94px;
     margin-left: -60px;
     margin-top: -47px;
   }
 
-  &__play-btn:active {
+  &:active {
     width: 80px;
     height: 62px;
     margin-left: -40px;
     margin-top: -31px;
     opacity: 0.7;
   }
+}
 
-  &__desc {
-    box-sizing: border-box;
-    padding: 27px 35px 32px 33px;
-    width: 260px;
-    .font-param(13px; 24px; normal; @second-font-color);
-    cursor: pointer;
+.video-container__desc {
+  box-sizing: border-box;
+  padding: 27px 35px 32px 33px;
+  width: 260px;
+  .font-param(13px; 24px; normal; @second-font-color);
+  cursor: pointer;
 
-    @media@tablet-width {
-      width: 668px;
-      padding: 8px 39px 32px;
-      font-size: 15px;
-      line-height: 30px;
-    }
+  @media@tablet-width {
+    width: 668px;
+    padding: 8px 39px 32px;
+    font-size: 15px;
+    line-height: 30px;
+  }
 
-    @media@desktop-width {
-      margin-left: auto;
-      padding: 8px 50px 46px 80px;
-      width: 368px;
-    }
+  @media@desktop-width {
+    margin-left: auto;
+    padding: 8px 50px 46px 80px;
+    width: 368px;
   }
 }
