@@ -97,7 +97,7 @@
             <img src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" class="popular-product__img" alt="Вязаные корзинки">
           </picture>
           <div class="popular-product__price">Цена: <span>990</span> руб.</div>
-          <a href="/cart.html" class="btn btn--popular-order">Заказать</a>
+          <a href="/cart.html" class="btn btn--popular-order btn--open-modal">Заказать</a>
         </div>
       </div>
     </section>
@@ -209,21 +209,24 @@
     </footer>
 
     <div class="add-to-cart">
-      <button type="button" class="btn btn--modal-close">Закрыть</button>
-      <h1 class="add-to-cart__title">Добавить в корзину</h1>
-      <p class="add-to-cart__desc">Выберите размер:</p>
-      <div class="add-to-cart__sizes">
-        <input type="radio" name="size" class="add-to-cart__input" id="s-size">
-        <label for="s-size"><a class="add-to-cart__size">S</a></label>
-        <input type="radio" name="size" class="add-to-cart__input" id="m-size">
-        <label for="m-size"><a class="add-to-cart__size">M</a></label>
-        <input type="radio" name="size" class="add-to-cart__input" id="l-size">
-        <label for="l-size"><a class="add-to-cart__size">L</a></label>
+      <div class="add-to-cart__wrapper">
+        <h1 class="add-to-cart__title">Добавить в корзину</h1>
+        <p class="add-to-cart__desc">Выберите размер:</p>
+        <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+          <div class="modal-form__sizes">
+            <input type="radio" name="size" class="modal-form__input" id="s-size" checked="checked">
+            <label for="s-size"><a class="modal-form__size">S</a></label>
+            <input type="radio" name="size" class="modal-form__input" id="m-size">
+            <label for="m-size"><a class="modal-form__size">M</a></label>
+            <input type="radio" name="size" class="modal-form__input" id="l-size">
+            <label for="l-size"><a class="modal-form__size">L</a></label>
+          </div>
+          <a class="btn btn--add-to-cart" href="/cart.html">Добавить</a>
+        </form>
       </div>
-      <a class="btn btn--add-to-cart" href="/cart.html">Добавить</a>
     </div>
 
-    <script type="text/javascript" src="js/popular-product.js"></script>
+    <script type="text/javascript" src="js/add-to-cart.js"></script>
     <script type="text/javascript" src="js/page-header.js"></script>
     <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac0454e273c88c90af7b3b7f59387aa0c7c083850389827b5b2c79f7c7bb3ade3&amp;width=100%25&amp;height=457&amp;lang=ru_RU&amp;scroll=true&amp;id=yandex-map"></script>
   </body>
