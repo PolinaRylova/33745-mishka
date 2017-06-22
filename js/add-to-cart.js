@@ -8,6 +8,13 @@ for (var i = 0; i < orderBtn.length; i++) {
   });
 }
 
+modalCart.addEventListener("click", function(event) {
+  event.preventDefault();
+  if (modalCart.classList.contains("modal-content-show")) {
+    modalCart.classList.remove("modal-content-show");
+  }
+});
+
 window.addEventListener("keydown", function(event) {
   if(event.keyCode == 27) {
     if (modalCart.classList.contains("modal-content-show")) {
