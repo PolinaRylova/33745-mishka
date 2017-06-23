@@ -209,22 +209,21 @@
     </footer>
 
     <div class="add-to-cart">
-      <div class="add-to-cart__wrapper">
-        <h1 class="add-to-cart__title">Добавить в корзину</h1>
-        <p class="add-to-cart__desc">Выберите размер:</p>
-        <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
-          <div class="modal-form__sizes">
-            <input type="radio" name="size" class="modal-form__input" id="s-size" checked="checked">
-            <label for="s-size"><a class="modal-form__size">S</a></label>
-            <input type="radio" name="size" class="modal-form__input" id="m-size">
-            <label for="m-size"><a class="modal-form__size">M</a></label>
-            <input type="radio" name="size" class="modal-form__input" id="l-size">
-            <label for="l-size"><a class="modal-form__size">L</a></label>
-          </div>
-          <a class="btn btn--add-to-cart" href="/cart.html">Добавить</a>
-        </form>
-      </div>
+      <h1 class="add-to-cart__title">Добавить в корзину</h1>
+      <p class="add-to-cart__desc">Выберите размер:</p>
+      <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+        <div class="modal-form__sizes">
+          <input type="radio" name="size" class="modal-form__input" id="s-size" checked="checked">
+          <label for="s-size"><a class="modal-form__size">S</a></label>
+          <input type="radio" name="size" class="modal-form__input" id="m-size">
+          <label for="m-size"><a class="modal-form__size">M</a></label>
+          <input type="radio" name="size" class="modal-form__input" id="l-size">
+          <label for="l-size"><a class="modal-form__size">L</a></label>
+        </div>
+        <a class="btn btn--add-to-cart" href="/cart.html">Добавить</a>
+      </form>
     </div>
+    <div class="overlay"></div>
 
     <script type="text/javascript" src="js/add-to-cart.js"></script>
     <script type="text/javascript" src="js/page-header.js"></script>
