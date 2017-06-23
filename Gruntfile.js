@@ -44,13 +44,19 @@ module.exports = function(grunt) {
       },
       symbols: {
         files: {
-          "build/img/symbols.svg": ["img/*.svg"]
+          "build/img/symbols.svg": ["./img/to-sprite/*.svg"]
         }
       }
     },
 
     svgmin: {
       symbols: {
+        files: [{
+          expand: true,
+          src: ["./img/to-sprite/*.svg"]
+        }]
+      },
+      svgbg: {
         files: [{
           expand: true,
           src: ["build/img/*.svg"]
@@ -100,8 +106,8 @@ module.exports = function(grunt) {
           expand: true,
           src: [
             "fonts/**/*.{woff, woff2}",
-            "img/**",
-            "js/**",
+            "img/*.{png,jpg,gif,svg}",
+            "js/**/*.js",
             "*.html"
           ],
           dest: "build"
