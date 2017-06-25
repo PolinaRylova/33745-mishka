@@ -1,13 +1,33 @@
 .main-nav {
+  .max-width-container();
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: transparent;
+
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   align-content: stretch;
   flex-wrap: wrap;
 
+  @media(min-width: 330px) {
+    justify-content: stretch;
+  }
+
   @media@desktop-width {
     justify-content: flex-start;
   }
+}
+
+.main-nav--no-js {
+  position: static;
+  .container();
 }
 
 .main-nav__item {
@@ -225,6 +245,10 @@
       display: block;
     }
   }
+}
+
+.main-nav__item--no-js-toggle .main-nav__link--toggle {
+  visibility: hidden;
 }
 
 .main-nav__item--catalog,

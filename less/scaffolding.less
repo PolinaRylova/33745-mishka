@@ -7,11 +7,6 @@ body {
   color: @font-color;
   background-color: @main-color;
   position: relative;
-  padding-top: 79px;
-
-  @media@tablet-width {
-    padding-top: 88px;
-  }
 }
 
 a:active,
@@ -28,12 +23,18 @@ svg path {
   fill: inherit;
 }
 
-input, textarea {outline:none;}
-input:active, textarea:active {outline:none;}
-:focus {outline:none;}
-textarea {resize:none;}
-textarea {resize:vertical;}
-textarea {resize:horizontal;}
+input, textarea {
+  outline:none;
+}
+
+input:active,
+textarea:active {
+  outline:none;
+}
+
+:focus {
+  outline:none;
+}
 
 header,
 section,
@@ -51,6 +52,7 @@ footer {
 
 .page-header--main .icon-cart,
 .page-header--catalog .icon-cart {
+
   @media (min-width: 768px) {
     margin-right: 29px;
   }
@@ -64,6 +66,7 @@ footer {
 }
 
 .page-header--catalog .icon-cart {
+
   @media (min-width: 1150px) {
     margin-left: -45px;
   }

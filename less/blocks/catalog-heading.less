@@ -1,0 +1,29 @@
+.catalog-heading {
+  background: @default-bg;
+}
+
+.catalog-heading__wrapper {
+  .container();
+  .max-width-container();
+}
+
+.catalog-heading__title {
+  margin: 0;
+  padding: 70px 30px 76px;
+  text-align: center;
+  .font-param(27px; 30px; bold; @font-color);
+
+  @media@tablet-width {
+    font-size: 43px;
+    line-height: 50px;
+    padding-top: 96px;
+    padding-bottom: 83px;
+  }
+
+  @media@desktop-width {
+    font-size: 53px;
+    line-height: 57px;
+    padding-top: 94px;
+    padding-bottom: 108px;
+  }
+}

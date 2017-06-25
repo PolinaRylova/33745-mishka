@@ -36,20 +36,6 @@
   transition-property: padding;
   transition-duration: 0.7s;
 
-  @media@tablet-width {
-    padding: 28px 0 30px 35px;
-    .font-param(20px; 30px; bold; @main-color);
-
-    &:hover {
-      padding-bottom: 35px;
-    }
-  }
-
-  @media@desktop-width {
-    padding-right: 263px;
-    box-sizing: border-box;
-  }
-
   &:hover {
     margin-top: -5px;
     padding-bottom: 34px;
@@ -85,6 +71,20 @@
 
   &:active::after {
     opacity: 0.3;
+  }
+
+  @media@tablet-width {
+    padding: 28px 0 30px 35px;
+    .font-param(20px; 30px; bold; @main-color);
+
+    &:hover {
+      padding-bottom: 35px;
+    }
+  }
+
+  @media@desktop-width {
+    padding-right: 263px;
+    box-sizing: border-box;
   }
 }
 
