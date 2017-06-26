@@ -11,7 +11,7 @@
         display: block;
         height: 24px;
         width: 100%;
-        background: url("/img/bg-zigzag-fill-tablet.svg") repeat-x 0 0;
+        background: url("../img/bg-zigzag-fill-tablet.svg") repeat-x 0 0;
         z-index: 1;
       }
   }
@@ -21,7 +21,7 @@
     &::before {
       top: -16px;
       height: 34px;
-      background: url("/img/bg-zigzag-fill-desktop.svg") repeat-x 1% 0;
+      background: url("../img/bg-zigzag-fill-desktop.svg") repeat-x 1% 0;
     }
   }
 }
@@ -78,12 +78,8 @@
   @media@desktop-width {
     align-content: flex-end;
     margin-right: 19px;
-    flex-basis: 1050px;
+    width: 1050px;
     margin-bottom: 24px;
-  }
-
-  @media(min-width: 1250px) {
-    margin-right: 70px;
   }
 }
 
